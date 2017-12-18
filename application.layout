@@ -62,7 +62,7 @@
     <script src="/helper.js" type="text/javascript"></script>
     
     <script>
-        setEndPoint('//twinpines.mallmaverick.com/api/v4/cornwall/all.json');
+        setEndPoint('//cornwall.mallmaverick.com/api/v4/cornwall/all.json');
     </script>
 </head>
 
