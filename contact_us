@@ -26,7 +26,7 @@
             <div id="mm_page_content"></div>
             <hr class="horizontal_div show_phone">
         </div>
-        <div class="col-md-6 border_left">
+        <div class="col-md-6 ">
             <h2>Contact us with your questions, comments, or for more information.</h2>
             <div id="send_contact_success" class="alert alert-success hidden_now" role="alert">
                 <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
