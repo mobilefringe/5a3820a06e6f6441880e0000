@@ -108,7 +108,7 @@ function jobs_filter(){
             // $('#no_jobs'),hide()
         }
         else {
-            
+            $('#no_jobs').text("There are currently no jobs available, please check back again later.")
         }
     });
 }
