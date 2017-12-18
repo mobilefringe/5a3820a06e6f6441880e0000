@@ -105,7 +105,7 @@ function jobs_filter(){
         }
         if($('.filter_row:hidden').length == rows.length){
             $('#no_jobs_in_filter').text("There are currently no " + filter_id + " jobs available, please check back again later.")
-            $('#no_jobs_in_filter'),hide()
+            $('#no_jobs'),hide()
         }
     });
 }
