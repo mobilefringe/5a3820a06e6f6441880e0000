@@ -15,7 +15,7 @@
 <div class="content_container margin_30">
     <div class="margin_30 hidden_phone"></div>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 border_right">
             <!--<h2>Management Office</h2>-->
             <!--<p>216 Chrislea Road<br>Vaughan, ON L4L 8S5</p> -->
             <!--<h2 class="hidden_phone"><div class="phone_pad">Tel: </div>416.254.7777</h2>-->
