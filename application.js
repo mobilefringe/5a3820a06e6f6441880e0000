@@ -482,11 +482,11 @@ function renderPromotions(container, template, collection){
                 val.days_left = "1 DAY LEFT";
             }
             else {
-                
+                val.days_left = "SALE ENDS in " + end.diff(today, 'days',true);
             }
-            val.days_left = "SALE ENDS in " + end.diff(today, 'days',true);
-             console.log(today.format("DMY") , end.format("DMY"), today.format("DMY") == end.format("DMY"))
-            console.log(val.days_left);
+            
+            //  console.log(today.format("DMY") , end.format("DMY"), today.format("DMY") == end.format("DMY"))
+            // console.log(val.days_left);
         }
         if(val.description.length > 160){
             val.description_short = val.description.substring(0, 164) + "...";
