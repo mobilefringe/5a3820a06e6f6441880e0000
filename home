@@ -151,7 +151,7 @@
             // if(published_promos.length > 0){
             //     renderPromotions("#promo_container","#promo_template", published_promos);
             // }
-            renderPromotions('#home_promo_container','#home_promo_template',published_promos);
+            renderPromotions('#home_promo_container','#home_promo_template', published_promos);
             
             // LOGO SCROLL //
             var stores = getStoresList();
