@@ -482,7 +482,7 @@ function renderPromotions(container, template, collection){
                 val.days_left = "1 DAY LEFT";
             }
             else {
-                val.days_left = "SALE ENDS in " + end.diff(today, 'days',true);
+                val.days_left = "SALE ENDS in " + end.diff(today, 'days',true) + val.days_left = "1 DAY LEFT";
             }
             
             //  console.log(today.format("DMY") , end.format("DMY"), today.format("DMY") == end.format("DMY"))
