@@ -473,6 +473,7 @@ function renderPromotions(container, template, collection){
         }
         
         if(today.format("DMY") == end.format("DMY")){
+            val.days_left = "";
         }
         if(val.description.length > 160){
             val.description_short = val.description.substring(0, 164) + "...";
