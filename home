@@ -181,7 +181,7 @@
             //     renderPromotions("#promo_container","#promo_template", published_promos);
             // }
             renderPromotions('#home_promo_container','#home_promo_template', published_promos);
-            renderPosts('#home_promo_container','#home_promo_template', blog_posts);
+            renderPosts('#home_blog_container','#home_blog_template', blog_posts);
             // LOGO SCROLL //
             var stores = getStoresList();
             renderLogoScroll('#logo_container','#logo_template', stores);
