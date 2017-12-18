@@ -226,7 +226,6 @@ function renderHours(container, template, collection, type){
         
         $.each( collection , function( key, val ) {
             if (!val.store_id && val.is_holiday == true) {
-                console.log("holiday hours",val.is_holiday)
                 holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
                 var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
                 val.formatted_date = holiday.format("MMM D");
