@@ -472,6 +472,8 @@ function renderPromotions(container, template, collection){
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
         
+        if(start.format("DMY") == end.format("DMY")){
+        }
         if(val.description.length > 160){
             val.description_short = val.description.substring(0, 164) + "...";
         } else {
