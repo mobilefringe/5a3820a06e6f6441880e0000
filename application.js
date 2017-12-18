@@ -478,6 +478,7 @@ function renderPromotions(container, template, collection){
         }
         else if (today.diff(end, 'days') < 5) {
             val.days_left = "SALE ENDS in " + today.diff(end, 'days');
+             console.log(today.format("DMY") , end.format("DMY"), today.format("DMY") == end.format("DMY"))
             console.log(val.days_left);
         }
         if(val.description.length > 160){
