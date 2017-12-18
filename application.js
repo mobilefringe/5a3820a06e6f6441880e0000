@@ -475,7 +475,7 @@ function renderPromotions(container, template, collection){
         if(today.format("DMY") == end.format("DMY")){
             val.days_left = "SALE ENDS TODAY";
         }
-        else if (today.format("DMY") == end.format("DMY")){ {
+        else if (today.diff(end, 'days')){ {
             
         }
         if(val.description.length > 160){
