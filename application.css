@@ -16,7 +16,7 @@ For more information on asset types please see http://www.getcodecloud.com/docs#
 
 /* COLOUR VARIABLES */
 $primary: #066F97;
-$primary_opac: rgba(6, 111, 151, .9);
+$primary_opac: #066F97FE;
 $primary_shade: #004B68;
 $accent: #6b6c70;
 
