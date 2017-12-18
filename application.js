@@ -474,7 +474,7 @@ function renderPromotions(container, template, collection){
         
         if(today.format("DMY") == end.format("DMY")){
             val.days_left = "SALE ENDS TODAY";
-            console.log(val.days_left);
+            // console.log(val.days_left);
         }
         else if (end.diff(today, 'days',true) < 5) {
             var day_diff = end.diff(today, 'days',true);
