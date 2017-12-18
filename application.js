@@ -478,7 +478,7 @@ function renderPromotions(container, template, collection){
         }
         else if (today.diff(end, 'days') ) {
             val.days_left = "SALE ENDS TODAY";
-            console.log();
+            console.log(val.days_left);
         }
         if(val.description.length > 160){
             val.description_short = val.description.substring(0, 164) + "...";
