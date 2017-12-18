@@ -107,6 +107,9 @@ function jobs_filter(){
             $('#no_jobs').text("There are currently no " + filter_id + " jobs available, please check back again later.")
             // $('#no_jobs'),hide()
         }
+        else {
+            
+        }
     });
 }
 
