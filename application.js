@@ -474,12 +474,10 @@ function renderPromotions(container, template, collection){
         
         if(today.format("DMY") == end.format("DMY")){
             val.days_left = "SALE ENDS TODAY";
-            console.log(today.format("DMY") , end.format("DMY"), today.format("DMY") == end.format("DMY"))
             console.log(val.days_left);
         }
-        else if (end.diff(today, 'days') < 5) {
-            val.days_left = "SALE ENDS in " + end.diff(today, 'days');
-             console.log(today.format("DMY") , end.format("DMY"), today.format("DMY") == end.format("DMY"))
+        else if (today.diff(end, 'days') < 5) {
+            val.days_left = "SALE ENDS in " + today.diff(end, 'days');
             console.log(val.days_left);
         }
         if(val.description.length > 160){
