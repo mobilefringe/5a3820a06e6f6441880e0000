@@ -199,7 +199,7 @@ function store_search() {
     });
     console.log($("#site_search"));
     $("#site_search").focusout(function() {
-        focus++;
+        console.log("not focused");
         // $( "#focus-count" ).text( "focusout fired: " + focus + "x" );
     })
     $('#site_search').keyup(function(){
