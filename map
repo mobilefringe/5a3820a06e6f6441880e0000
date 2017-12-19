@@ -48,7 +48,7 @@
       white-space: normal;
     }
     #_zi_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -8px -9px no-repeat !important}
-    #_zo_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -66px -16px no-repeat !important}
+    #_zo_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -58px -9px no-repeat !important}
     /*.map{max-width:100%;max-height:586px;position:relative;top:0;left:0;border-radius:4px;overflow:hidden}*/
 </style>
 <div class="inside_banner">   
