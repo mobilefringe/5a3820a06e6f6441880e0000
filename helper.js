@@ -183,6 +183,7 @@ function store_search() {
         if ($('#site_search').val() == ""){
             console.log("hey");
             $("#site_search").hide();
+            console.log($("#site_search"))
         }
         
     });
