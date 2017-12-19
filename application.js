@@ -477,8 +477,7 @@ function renderPromotions(container, template, collection){
             // console.log(val.days_left);
         }
         else if (end.diff(today, 'days',true) < 5) {
-            var day_diff = end.diff(today, 'days',true);
-            console.log("day_diff",day_diff, Math.ceil(day_diff));
+            var day_diff = Math.ceil(end.diff(today, 'days',true));
             if(day_diff >0 && day_diff<=1){
                 val.days_left = "1 DAY LEFT";
             }
