@@ -102,7 +102,7 @@
                 });      
             });
 
-            setEndPoint('//ptc.mallmaverick.com/api/v4/cornwall/all.json');
+            setEndPoint('//cornwall.mallmaverick.com/api/v4/cornwall/all.json');
             sessionStorage.setItem('primary_locale', 'en-CA');
             sessionStorage.setItem('secondary_locale', 'fr-CA');
         </script>
