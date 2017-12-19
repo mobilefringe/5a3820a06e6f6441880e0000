@@ -99,9 +99,9 @@
                     
                 </div>
                        <img src="" class="imgMap" id="map_image">                
-                                	<div class="marker" id='scroll_to_marker' data-coords="{{map_x_coordinate}}, {{map_y_coordinate}}">
-                                	    {{name}}
-                                    </div>
+                            	<div class="marker" id='scroll_to_marker' data-coords="{{map_x_coordinate}}, {{map_y_coordinate}}">
+                            	    {{name}}
+                                </div>
                                 </div>   
                                 <div class="store_details_desc hidden_phone">{{{rich_description}}}</div>-->
                                 <div class="zoom_container" id="zoom_container_store">
