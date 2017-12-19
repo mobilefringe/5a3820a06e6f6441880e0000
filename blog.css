@@ -3216,6 +3216,7 @@ h2,  h3 { page-break-after: avoid; }
     font-size: 10pt;
     font-weight: bold;
     margin-top: 6px;
+    width:100%;
     display: inline-block;
     /*background-image: url('//kodekloud.s3.amazonaws.com/sites/5512e0606e6f64112d000000/29a93cc9dd3b7f858a31366f54bbc07b/arrow_down.png');*/
     /*background-repeat: no-repeat;*/
