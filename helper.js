@@ -178,6 +178,9 @@ function show_png_pin(trigger, map){
 }
 
 function store_search() {
+    $().click(function(){
+        
+    });
     $('#close_search').click(function(){
         $(this).hide();
         $('#search_results_stores').html('');
