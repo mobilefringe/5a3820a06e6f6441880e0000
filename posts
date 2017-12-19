@@ -41,7 +41,7 @@ $(document).ready(function() {
     function renderPageData(){
         
         
-        renderPostTileTemplate('#blog_tile_template', '#main-content', getBlogDataBySlug('ptc-blog').posts);
+        renderPostTileTemplate('#blog_tile_template', '#main-content', getBlogDataBySlug('cornwall-main').posts);
         
         
     }
