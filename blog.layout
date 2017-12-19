@@ -35,7 +35,8 @@
 		<!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png" />-->
 		<!-- For third-generation iPad with high-resolution Retina display: -->
 		<!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png" />-->
-		<link href="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/vnd.microsoft.icon/1488494569000/ptc_favicon.ico" rel="shortcut icon"/>
+		<link rel="icon" href="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1513700491203/cornwall_logo.png"> <!--Add Favicon-->
+    
 
 		<!-- SCRIPTS ============================================== -->
         <!--	NOTE:: jquery 1.9.1 supports older ie, 2.0 does not, but 1.9.1 does not work well on ie8 and 
