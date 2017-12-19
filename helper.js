@@ -180,12 +180,6 @@ function show_png_pin(trigger, map){
 function store_search() {
     $('#search_icon').click(function(){
         $("#site_search").show();
-        if ($('#site_search').val() == ""){
-            console.log("hey");
-            $("#site_search").hide();
-            console.log($("#site_search"))
-        }
-        
     });
     $('#close_search').click(function(){
         $(this).hide();
