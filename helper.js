@@ -197,6 +197,7 @@ function store_search() {
         $('#search_icon').show();
         $("#site_search").hide();
     });
+    console.log($("#site_search"));
     $('#site_search').keyup(function(){
         if ($('#site_search').val() == ""){
             $('#search_results_stores').html('');
