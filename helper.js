@@ -23,6 +23,10 @@ function init() {
             scrollTop: $(id).offset().top -25
         }, 1500);
     });
+    $('.locate_store').click(function(e){
+        e.preventDefault();
+        $('.stores_table').show()
+    })
 }
 
 function show_content() {
