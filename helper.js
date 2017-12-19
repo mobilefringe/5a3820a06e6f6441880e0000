@@ -181,7 +181,7 @@ function store_search() {
     $('#search_icon').click(function(){
         $("#site_search").show();
         if ($('#site_search').val() == ""){
-            
+            $("#site_search").hide();
         }
     });
     $('#close_search').click(function(){
