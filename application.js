@@ -476,7 +476,7 @@ function renderPromotions(container, template, collection){
             val.days_left = "SALE ENDS TODAY!";
             // console.log(val.days_left);
         }
-        else if (end.diff(today, 'days',true) < 9) {
+        else if (end.diff(today, 'days',true) < 7) {
             var day_diff = Math.ceil(end.diff(today, 'days',true));
             if(day_diff >0 && day_diff<=1){
                 val.days_left = "1 DAY LEFT";
