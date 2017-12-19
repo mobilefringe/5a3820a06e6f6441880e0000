@@ -60,7 +60,7 @@
         <link href="//cdn.jsdelivr.net/jquery.jreject/1.0.2/css/jquery.reject.css" rel="stylesheet" type="text/css">
         
         <!--MallMaverick SDK-->
-        <script src="//preview-mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
+        <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
         <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
 
         <script>
