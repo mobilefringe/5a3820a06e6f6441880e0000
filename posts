@@ -27,7 +27,7 @@
             			</div>
 				    </script>
 	   		<div class="sparkNowMore">
-				<a href="javascript:void(0);" onclick="renderPostTileTemplate('#blog_tile_template', '#main-content',getBlogDataBySlug('ptc-blog').posts);">SEE MORE</a>
+				<a href="javascript:void(0);" onclick="renderPostTileTemplate('#blog_tile_template', '#main-content',getBlogDataBySlug('cornwall-main').posts);">SEE MORE</a>
 				<i class="fa fa-caret-down fa-lg"></i>
 			</div>
 		</div>
