@@ -178,7 +178,7 @@ function show_png_pin(trigger, map){
 }
 
 function store_search() {
-    $().click(function(){
+    $('#search_icon').click(function(){
         
     });
     $('#close_search').click(function(){
