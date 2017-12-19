@@ -213,9 +213,9 @@
            <!--                             <li><a href="/posts">Community</a></li>-->
            <!--                         </ul>-->
 							    <!--</li>-->
-							    <li><a href="/categories/redevelopment%20news" id="dev_news">REDEVELOPMENT NEWS</a></li>
-							    <li><a href="/categories/lookbook" id="fashion">FASHION LOOK BOOK</a></li>
-								<li><a href="/categories/store%20updates" id="store_updates">STORE UPDATES</a></li>
+							 <!--   <li><a href="/categories/redevelopment%20news" id="dev_news">REDEVELOPMENT NEWS</a></li>-->
+							 <!--   <li><a href="/categories/lookbook" id="fashion">FASHION LOOK BOOK</a></li>-->
+								<!--<li><a href="/categories/store%20updates" id="store_updates">STORE UPDATES</a></li>-->
 								<!--<li><a href="/media">MEDIA</a></li>-->
 								<!--<li><a href="/renderings">RENDERINGS</a></li>-->
 							</ul>
