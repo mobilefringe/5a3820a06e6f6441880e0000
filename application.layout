@@ -233,7 +233,7 @@
                             <img class="show_phone logo" src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1513700491203/cornwall_logo.png"/>
                         </a>
                             
-                        <p>&copy; Cornwall Centre. All rights reserved. <a href="/pages/cornwall-privacy-policy">Privacy Policy</a> | <a href="">Terms & Conditions</a>. Powered by <a href="http://www.mallmaverick.com/" target="_blank">Mall Maverick</a></p>
+                        <p>&copy; <span id="current_year"></span> Cornwall Centre. All rights reserved. <a href="/pages/cornwall-privacy-policy">Privacy Policy</a> | <a href="">Terms & Conditions</a>. Powered by <a href="http://www.mallmaverick.com/" target="_blank">Mall Maverick</a></p>
                     </div>
                 </div>
             </div>
