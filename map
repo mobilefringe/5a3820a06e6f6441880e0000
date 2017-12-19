@@ -11,7 +11,7 @@
     #zoom_image{
 		width:795px;
 		height: 1230px;
-		min-width:3000px;
+		min-width:795px;
 		min-height: 2200px;
 		max-width: none;
 		
