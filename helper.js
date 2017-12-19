@@ -296,3 +296,62 @@ function submit_contest(slug) {
         }
     });
 }
+
+function show_pin_store(svg){
+// 	store_id = $(param).attr('store_id');
+// 	if($("#"+store_id).is(":visible")){
+// 		$("."+store_id).hide();				
+// 		$("#"+store_id).hide();
+// 		$("#no_pin_"+store_id).show();
+// 		$("#show_pin_"+store_id).hide();
+// 		$("#m_no_pin_"+store_id).show();
+// 		$("#m_show_pin_"+store_id).hide();
+// 	}else{
+// 		$(".marker").hide();
+// 		$("#"+store_id).show();
+// 		$("#"+store_id).click();
+// 		$("#no_pin_"+store_id).hide();
+// 		$("#show_pin_"+store_id).show();
+// 		$("#m_no_pin_"+store_id).hide();
+// 		$("#m_show_pin_"+store_id).show();
+// 	}
+// 	$("#"+prev_shown_store_svg).attr("class", '');
+// // 	console.log(param);
+// 	var svg = $(param).attr('svgmap_region');
+// 	console.log(svg);
+// 	console.log($("#"+svg));
+	$("#"+svg).attr("class", 'svg_region_selected');
+	map.marksHide();
+    var coords = map.get_coords(svg);
+    var height = parseInt(coords["height"]);
+    var width = parseInt(coords["width"]);
+    var x_offset = (parseInt(width) / 2);
+    var y_offset = (parseInt(height) /2);
+    map.setMarks([{ xy: [coords["x"] - 30 + x_offset, coords["y"] - 60 + y_offset],
+        attrs: {
+            src:  '//codecloud.cdn.speedyrails.net/sites/59e0c5676e6f642b330a0000/image/png/1508191201000/red_map_pin.png'
+        }
+    }]);
+    map.setViewBox(svg);
+	//svg_region_selected
+	$('.stores_table').hide()
+	prev_shown_store_svg = svg;
+	return false;
+}
+function init_map(reg){
+    map = $('#map').mapSvg({
+        source: getSVGMapURL(),//'//mallmaverick.com/' + property.svgmap_url,    // Path to SVG map
+        colors: {stroke: '#cccccc', selected: -20, hover: "#cccccc"},
+        height:800,
+        width:1140,
+        viewBox:[0, 0, 1174, 724],
+        regions: reg,
+        tooltipsMode:'custom',
+        zoom: true,
+        pan:true,
+        cursor:'pointer',
+        responsive:true,
+        zoomLimit: [0,10]
+    });
+    
+}
