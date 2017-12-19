@@ -199,8 +199,8 @@ function store_search() {
     });
     console.log($("#site_search"));
     $("#site_search").focusout(function() {
-    focus++;
-    $( "#focus-count" ).text( "focusout fired: " + focus + "x" );
+        focus++;
+        $( "#focus-count" ).text( "focusout fired: " + focus + "x" );
     })
     $('#site_search').keyup(function(){
         if ($('#site_search').val() == ""){
