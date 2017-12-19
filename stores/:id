@@ -95,7 +95,17 @@
         <div class="col-md-6">
             <!-- MAP -->
             <div class="store_map_container">
-                <div id="mapView"></div>
+                <!--<div id="mapView"></div>-->
+                       <img src="" class="imgMap" id="map_image">                
+                                	<div class="marker" id='scroll_to_marker' data-coords="{{map_x_coordinate}}, {{map_y_coordinate}}">
+                                	    {{name}}
+                                    </div>
+                                </div>   
+                                <div class="store_details_desc hidden_phone">{{{rich_description}}}</div>-->
+                                <div class="zoom_container" id="zoom_container_store">
+                        		<img id="zoom_image" src=""/>
+                        		<div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>
+                        	</div>
                 <!--<select id="mapList"></select>-->
             </div>
         </div>
