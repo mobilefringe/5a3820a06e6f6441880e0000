@@ -183,9 +183,7 @@ function store_search() {
         if ($('#site_search').val() == ""){
             $("#site_search").hide();
         }
-        else {
-            
-        }
+        
     });
     $('#close_search').click(function(){
         $(this).hide();
