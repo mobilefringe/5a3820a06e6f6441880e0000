@@ -93,7 +93,7 @@
 <script>
     $(document).ready(function(e){
         init(e);
-        initMappedin();
+        // initMappedin();
         function renderAll(){
             // var repo = getRepoDetailsByName("Store Directory Banner");
             // if (repo != undefined) {
