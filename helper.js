@@ -181,6 +181,7 @@ function store_search() {
     $('#search_icon').click(function(){
         $("#site_search").show();
         if ($('#site_search').val() == ""){
+            console.log("hey");
             $("#site_search").hide();
         }
         
