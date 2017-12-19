@@ -197,11 +197,9 @@ function store_search() {
         $('#search_icon').show();
         $("#site_search").hide();
     });
-    console.log($("#site_search"));
     $("#site_search").focusout(function() {
         console.log("not focused");
         $("#site_search").hide();
-        // $( "#focus-count" ).text( "focusout fired: " + focus + "x" );
     })
     $('#site_search').keyup(function(){
         if ($('#site_search').val() == ""){
