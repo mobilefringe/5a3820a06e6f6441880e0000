@@ -277,28 +277,7 @@
         loadMallDataCached(renderAll); 
     });
     
-    // window.onload = function() {
-    //     setTimeout(function(){
-    //         var pathArray = window.location.pathname.split( '/' );
-    //         var slug = pathArray[pathArray.length-1];
-    //         var store_details = getStoreDetailsBySlug(slug);
-    //         var name = store_details.name;
-    //         console.log(name)
-    //         hightlightStore(name);
-    //     }, 1500);
-    // }
-    $(window).load(function(e){
-        // $(".map_pin_a").click();
-        
-        
-        
-        // $(window).resize();
-        // $("#anchor_id").click();
-        // setTimeout(function(){ $("#zoom_image").scroll(); }, 1000);
-        // $("#zoom_image").dblclick();
-        
-        
-    });
+   
     function add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name){
         console.log("Adding landmark at",store_x_coordinate, store_y_coordinate, "for",pin_id, store_name);
     	var name = store_name;
