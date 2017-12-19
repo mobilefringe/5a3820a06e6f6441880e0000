@@ -30,6 +30,8 @@
             <div class="map_container">
                 <!--<div id="mappedin-map"></div>-->
                 <!--<main data-venue="10-dundas" data-key="" data-header="0" id="mappedin-app"></main> -->
+                <div id="map">
+                </div>
             </div>
         </div> 
     </div>
