@@ -293,8 +293,8 @@
         
         
         // $(window).resize();
-        $("#anchor_id").click();
-        setTimeout(function(){ $("#zoom_image").scroll(); }, 1000);
+        // $("#anchor_id").click();
+        // setTimeout(function(){ $("#zoom_image").scroll(); }, 1000);
         // $("#zoom_image").dblclick();
         
         
