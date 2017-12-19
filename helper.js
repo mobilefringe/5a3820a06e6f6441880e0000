@@ -26,7 +26,10 @@ function init() {
     $('.locate_store').click(function(e){
         e.preventDefault();
         $('.stores_table').show()
-    })
+    });
+    //dynamically changing copyright year
+var current_year = moment().year();
+$("#current_year").text(current_year);
 }
 
 function show_content() {
