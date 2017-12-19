@@ -26,10 +26,10 @@
         overflow: hidden;
     }
     #zoom_image{
-		width:3000px;
-		height: 2200px;
-		min-width:3000px;
-		min-height: 2200px;
+		width:795px;
+		height: 1230px;
+		min-width:795px;
+		min-height: 1230px;
 		max-width: none;
 		
 	}
