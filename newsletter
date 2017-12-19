@@ -38,6 +38,7 @@
                 <br>
                 <button class="contact_btn" data-i18n="general.submit">SUBMIT</button>
                 <br>
+                <span id="success_subscribe">Thank you for subscribing to our newsletter.</span>
             </form>
         </div>
     </div>
