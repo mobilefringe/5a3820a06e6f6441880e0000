@@ -95,7 +95,7 @@
         <div class="col-md-6">
             <!-- MAP -->
             <div class="store_map_container">
-                <!--<div id="mapView"></div>-->
+                <div id="mapView"></div>
                        <img src="" class="imgMap" id="map_image">                
                                 	<div class="marker" id='scroll_to_marker' data-coords="{{map_x_coordinate}}, {{map_y_coordinate}}">
                                 	    {{name}}
