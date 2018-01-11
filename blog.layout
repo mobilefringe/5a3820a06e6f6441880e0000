@@ -107,7 +107,6 @@
                         <nav id="primary_nav">
                             <ul class="">
                                 <li class="menu_item"><a href="/">Home</a></li>
-                                
                                 <li class="menu_item"><a href="/events">Events</a></li>
                                 <li class="menu_item"><a href="/promotions">Promos</a></li>
                                 <!--<li class="menu_item">-->
