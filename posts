@@ -62,7 +62,7 @@ $(document).ready(function() {
         // impression_count
         }
         else {
-            
+            //sort by newest post
         }
     })
     loadMallData(renderPageData);
