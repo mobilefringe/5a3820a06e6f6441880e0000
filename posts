@@ -25,7 +25,7 @@
     					
     					<div class="col-sm-8">
     					    <div>
-    					       <span class="blog_tag" style="show_tag">{{main_tag}}</span>
+    					       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
     					       <h3>  {{title}} <h3/>
     					       <p>{{publish_date}}</p>
     					       <p> {{description_short}}</p>
