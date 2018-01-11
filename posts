@@ -61,12 +61,12 @@ $(document).ready(function() {
         if(current_choice == "Popular") {
             //sort by highest impression count
             // impression_count
-            blog_posts = blog_posts.sortBy(function(o){ return o.impression}).reverse();
+            var blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.impression}).reverse();
             renderPosts('#blog_container','#blog_template', blog_posts);
         }
         else {
             //sort by newest post
-            blog_posts = blog_posts.sortBy(function(o){ return o.publish_date}).reverse();
+            var blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
             renderPosts('#blog_container','#blog_template', blog_posts);
         }
     })
