@@ -35,7 +35,7 @@
 			<div id="popular_blog_container" class="hidden_now" >
 				<script id = "popular_blog_template" type="x-tmpl/mustache">
 					<div class="col-sm-4">
-					<img src="{{image_url}}"/>
+					    <img src="{{image_url}}"/>
 					</div>
 					<div class="col-sm-8">
 					<div>
