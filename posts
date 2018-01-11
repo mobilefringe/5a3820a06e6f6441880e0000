@@ -162,7 +162,7 @@ function renderPosts(container, template, collection){
         if(val.tag != null && val.tag !== undefined) {
             val.main_tag = val.tag[0];
             console.log("main tag", val.main_tag);
-            val.show_tag = "display:block"
+            val.show_tag = "display:block";
         }
         //get the tag that is capitalized
         // if(val.tag != null && val.tag !== undefined) {
