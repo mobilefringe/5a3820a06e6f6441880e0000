@@ -165,7 +165,7 @@ function renderPosts(container, template, collection){
             if(tag[0] === tag[0].toUpperCase()){
                 val.tag = tag;
             }
-        }
+        })
         console.log(val.tag);
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
