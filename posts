@@ -224,7 +224,6 @@ function renderPosts(container, template, collection){
         var blog_rendered = Mustache.render(blog_template_html,val);
         item_rendered.push(blog_rendered);
     });
-    $(blog_block).html(item_rendered.join(''));
     checkSeeMoreButton();
     $(container).html(item_rendered.join(''));
 }
