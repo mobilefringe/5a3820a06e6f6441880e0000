@@ -160,14 +160,7 @@ function renderPosts(container, template, collection){
         
         //get first tag 
         if(val.tag != null && val.tag !== undefined) {
-            console.log(val.tag);
-            $.each( val.tag , function( key, tag ) {
-               
-                
-                if(tag[0] === tag[0].toUpperCase()){
-                    val.main_tag = tag;
-                }
-            })
+            val.main_tag = val.tag[0]
             console.log("main tag", val.main_tag);
         }
         //get the tag that is capitalized
