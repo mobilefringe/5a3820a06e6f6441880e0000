@@ -163,7 +163,7 @@ function renderPosts(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     
     totalPosts = collection.length;
-    showingPosts = $('.sparkNowTile').length + interval;
+    showingPosts = $('.blog_post').length + interval;
     
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
