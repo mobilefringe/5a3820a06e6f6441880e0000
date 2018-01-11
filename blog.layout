@@ -126,16 +126,16 @@
                                 <!--        <li class="dropdown_item"><a href="/photos">Photos</a></li>-->
                                 <!--    </ul>        -->
                                 <!--</li>-->
-                                <li class="menu_item">
-                                    <a href="#">Contact Us <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <ul>
-                                        <li class="dropdown_item"><a href="/contact_us">Contact Us</a></li>
-                                        <li class="dropdown_item"><a href="/jobs">Jobs</a></li>
-                                        <li class="dropdown_item"><a href="/leasing">Leasing</a></li>
-                                        <li class="dropdown_item"><a href="/photos">Photos</a></li>
-                                    </ul> 
-                                </li>
-                                <li class="menu_item"><a href="/posts">Blog</a></li>
+                                <!--<li class="menu_item">-->
+                                <!--    <a href="#">Contact Us <i class="fa fa-angle-down" aria-hidden="true"></i></a>-->
+                                <!--    <ul>-->
+                                <!--        <li class="dropdown_item"><a href="/contact_us">Contact Us</a></li>-->
+                                <!--        <li class="dropdown_item"><a href="/jobs">Jobs</a></li>-->
+                                <!--        <li class="dropdown_item"><a href="/leasing">Leasing</a></li>-->
+                                <!--        <li class="dropdown_item"><a href="/photos">Photos</a></li>-->
+                                <!--    </ul> -->
+                                <!--</li>-->
+                                <!--<li class="menu_item"><a href="/posts">Blog</a></li>-->
                             </ul>
                         </nav>
                     </div>
