@@ -56,7 +56,7 @@ $(document).ready(function() {
         console.log("clicked!", $(this));
         $(".blog_selector").removeClass("active");
         $(this).addClass("active");
-        var current_choice =$(this).textContent;
+        
         if(current_choice == "Popular") {
             //sort by highest impression count
             // impression_count
