@@ -57,6 +57,9 @@ $(document).ready(function() {
     loadMallData(renderPageData);
     show_content();
 });
+
+
+
 function renderMainPost(container, template, val){
     var item_list = [];
     var item_rendered = [];
