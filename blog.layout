@@ -106,9 +106,9 @@
                         <div class="nav_container pull-right">
                         <nav id="primary_nav">
                             <ul class="">
-                                <li class="menu_item"><a href="/">Home</a></li>
-                                <li class="menu_item"><a href="/events">Events</a></li>
-                                <li class="menu_item"><a href="/promotions">Promos</a></li>
+                                <li class="menu_item"><a href="">Home</a></li>
+                                <li class="menu_item"><a href="">Events</a></li>
+                                <li class="menu_item"><a href="">Promos</a></li>
                                 <!--<li class="menu_item">-->
                                 <!--    <a href="#">Stores <i class="fa fa-angle-down" aria-hidden="true"></i></a>-->
                                 <!--    <ul>-->
