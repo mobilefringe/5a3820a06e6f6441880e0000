@@ -200,9 +200,9 @@ Queen City Current has steadily built a strong brand in the online fashion and l
                             <span><a href="">About</a></span>
                             <span><a href="">Contact</a></span>
                             <span>Follow us: </span>
-                            <a href="https://www.facebook.com/CornwallCentre" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="https://twitter.com/CornwallCentre" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="https://www.instagram.com/CornwallCentre" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <span><a href="https://www.facebook.com/CornwallCentre" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+                            <span><a href="https://twitter.com/CornwallCentre" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+                            <span><a href="https://www.instagram.com/CornwallCentre" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
                         </div>
                         <!--<h3 class="footer_nav_title caps">Location</h3>-->
                         <!--<div class="margin_60 hidden_phone"></div>-->
