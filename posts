@@ -5,6 +5,7 @@
             <img src="{{image_url}}"/>
             <div class="blog_banner_title">
                 {{title}}
+                <p></p>
             </div>
         </script>
     </div>
