@@ -61,6 +61,7 @@ $(document).ready(function() {
         if(current_choice == "Popular") {
             //sort by highest impression count
         // impression_count
+        renderPosts('#blog_container','#blog_template', blog_posts);
         }
         else {
             //sort by newest post
