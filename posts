@@ -62,7 +62,7 @@
 		</div>
 	</div>
 	<div class="sparkNowMore">
-			<a href="javascript:void(0);" onclick="renderPosts('#blog_container', '#blog_template',getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse());">SEE MORE</a>
+			<a href="javascript:void(0);" onclick="renderPosts('#blog_container', '#blog_template',getBlogDataBySlug('cornwall-main').posts);">SEE MORE</a>
 			<i class="fa fa-caret-down fa-lg"></i>
 		</div>
 </div>
