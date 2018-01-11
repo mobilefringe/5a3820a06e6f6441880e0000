@@ -53,7 +53,7 @@ $(document).ready(function() {
         renderPosts('#blog_container','#blog_template', blog_posts);
         
         var blog_popular_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.impression_count}).reverse();
-        renderPosts('#blog_container','#blog_template', blog_posts);
+        renderPosts('#blog_container','#blog_template', blog_popular_posts);
         
     }
     $(".blog_selector").click(function(){
