@@ -54,7 +54,7 @@ $(document).ready(function() {
     }
     $(".blog_selector").click(function(){
         var current_choice =$(this).textContent;
-        console.log("clicked!", $(this));
+        console.log("clicked!", current_choice);
         $(".blog_selector").removeClass("active");
         $(this).addClass("active");
         
