@@ -167,7 +167,7 @@ function renderPosts(container, template, collection){
                     val.main_tag = tag;
                 }
             })
-            console.log(val.tag);
+            console.log(val.main_tag);
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
