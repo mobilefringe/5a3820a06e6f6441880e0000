@@ -164,7 +164,7 @@ function renderPosts(container, template, collection){
                 console.log(tag);
                 
                 if(tag[0] === tag[0].toUpperCase()){
-                    val.tag = tag;
+                    val.main_tag = tag;
                 }
             })
             console.log(val.tag);
