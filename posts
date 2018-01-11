@@ -165,7 +165,7 @@ function renderPosts(container, template, collection){
             val.show_tag = "display:block";
         }
         else {
-            val.show_tag = "display:block"
+            val.show_tag = "display:none"
         }
         //get the tag that is capitalized
         // if(val.tag != null && val.tag !== undefined) {
