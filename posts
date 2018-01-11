@@ -240,7 +240,7 @@ function checkSeeMoreButton(){
     }
 }
 
-function renderPostTileTemplate(blog_template, blog_block, post){
+function renderPostTileTemplate( blog_block,blog_template, post){
 
     var item_list = [];
     var item_rendered = [];
