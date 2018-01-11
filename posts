@@ -65,6 +65,7 @@
 <div class="row blog_newsletter_banner">
 		    <div class="blog_img" style="background-image: url('http://via.placeholder.com/1920x350/000000/ffffff?text=+');">
 		        <p>Your Weekly Dose of</p>
+		        <img>
 		    </div>
 		    
 		</div>
