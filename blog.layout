@@ -218,27 +218,27 @@ Queen City Current has steadily built a strong brand in the online fashion and l
                     </div>
                     <!--<hr class="horizontal_div show_phone">-->
                     <div class="col-md-4">
-                        <h3 class="footer_nav_title caps">Menu</h3>
-                        <div class="margin_60 hidden_phone"></div>
-                        <ul class="footer_menu footer_menu_left">
-                            <li><a href="/map">Map</a></li>
-                            <li><a href="/promotions">Promotions</a></li>
-                            <li><a href="/events">Events</a></li>
-                            <li><a href="/contact_us">Contact Us</a></li>
-                        </ul>
-                        <ul class="footer_menu footer_menu_right">
-                            <li><a href="/find_us">Location</a></li>
-                            <li><a href="/jobs">Jobs</a></li>
-                            <li><a href="/leasing">Leasing</a></li>
-                        </ul>  
-                        <a href="/newsletter">
-                            <div class="footer_btn">
-                                <div class="footer_btn_text caps">Join Our Newsletter</div>
-                                <div class="footer_btn_icon">
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </a>
+                        <!--<h3 class="footer_nav_title caps">Menu</h3>-->
+                        <!--<div class="margin_60 hidden_phone"></div>-->
+                        <!--<ul class="footer_menu footer_menu_left">-->
+                        <!--    <li><a href="/map">Map</a></li>-->
+                        <!--    <li><a href="/promotions">Promotions</a></li>-->
+                        <!--    <li><a href="/events">Events</a></li>-->
+                        <!--    <li><a href="/contact_us">Contact Us</a></li>-->
+                        <!--</ul>-->
+                        <!--<ul class="footer_menu footer_menu_right">-->
+                        <!--    <li><a href="/find_us">Location</a></li>-->
+                        <!--    <li><a href="/jobs">Jobs</a></li>-->
+                        <!--    <li><a href="/leasing">Leasing</a></li>-->
+                        <!--</ul>  -->
+                        <!--<a href="/newsletter">-->
+                        <!--    <div class="footer_btn">-->
+                        <!--        <div class="footer_btn_text caps">Join Our Newsletter</div>-->
+                        <!--        <div class="footer_btn_icon">-->
+                        <!--            <i class="fa fa-envelope-o" aria-hidden="true"></i>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--</a>-->
                     </div>
                     <!--<hr class="horizontal_div show_phone">-->
                     <!--<div class="col-md-4 footer_center">-->
