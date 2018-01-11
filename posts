@@ -46,7 +46,7 @@
     					<div class="col-sm-8">
     					    <div>
     					       <h1>  {{title}} <h1/>
-    					       <p>{{publish_date}}</p>
+    					       <p>{{publish_date}} - {impression_count}}</p>
     					       <p> {{description_short}}</p>
     					   </div>
     					</div>
