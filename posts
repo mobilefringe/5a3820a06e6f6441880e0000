@@ -54,9 +54,11 @@ $(document).ready(function() {
 <!--        renderPostTileTemplate('#blog_tile_template', '#main-content', getBlogDataBySlug('cornwall-main').posts);-->
     }
     $(".blog_selector").click(function(){
-        console.log("clicked!");
+        console.log("clicked!", $(this));
         $(".blog_selector").removeClass("active");
         $(this).addClass("active");
+        
+        if($)
     })
     loadMallData(renderPageData);
     show_content();
