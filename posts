@@ -160,14 +160,14 @@ function renderPosts(container, template, collection){
         
         //get the tag that is capitalized
         if(val.tag != null && val.tag !== undefined) {
-        $.each( val.tag , function( key, tag ) {
-            console.log(tag);
-            
-            if(tag[0] === tag[0].toUpperCase()){
-                val.tag = tag;
-            }
-        })
-        console.log(val.tag);
+            $.each( val.tag , function( key, tag ) {
+                console.log(tag);
+                
+                if(tag[0] === tag[0].toUpperCase()){
+                    val.tag = tag;
+                }
+            })
+            console.log(val.tag);
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
