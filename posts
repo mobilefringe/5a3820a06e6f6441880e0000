@@ -8,7 +8,7 @@
 $(document).ready(function() {
     function renderPageData(){
         var blog_posts = getBlogDataBySlug('cornwall-main').posts;
-        console.log(blog_posts)
+        console.log(blog_posts);
 <!--        renderPostTileTemplate('#blog_tile_template', '#main-content', getBlogDataBySlug('cornwall-main').posts);-->
     }
     
