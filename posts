@@ -25,7 +25,7 @@
     					
     					<div class="col-sm-8">
     					    <div>
-    					       <h1>  {{title}} <h1/>
+    					       <h3>  {{title}} <h3/>
     					       <p>{{publish_date}}</p>
     					       <p> {{description_short}}</p>
     					   </div>
@@ -45,7 +45,7 @@
     					
     					<div class="col-sm-8">
     					    <div>
-    					       <h1>  {{title}} <h1/>
+    					       <h3>  {{title}} <h3/>
     					       <p>{{publish_date}}</p>
     					       <p> {{description_short}}</p>
     					   </div>
