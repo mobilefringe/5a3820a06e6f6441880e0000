@@ -160,6 +160,7 @@ function renderPosts(container, template, collection){
         
         //get the tag that is capitalized
         if(val.tag != null && val.tag !== undefined) {
+            console.log(val.tag);
             $.each( val.tag , function( key, tag ) {
                
                 
