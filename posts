@@ -256,7 +256,7 @@ function renderPostTileTemplate( blog_block,blog_template, post){
     });
 
     $.each( item_list , function(key,val){
-        if(val.tag.length != 0){
+        if(val.tag != null && val.tag !== undefined && val.tag.length != 0){
             val.tag_first = val.tag[0];
         }
     });
