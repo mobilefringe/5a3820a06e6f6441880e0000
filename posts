@@ -39,7 +39,7 @@
 
 
 
-<!--<script>-->
+<script>
 $(document).ready(function() {
     function renderPageData(){
 <!--        renderPostTileTemplate('#blog_tile_template', '#main-content', getBlogDataBySlug('cornwall-main').posts);-->
@@ -95,7 +95,7 @@ $(document).ready(function() {
 <!--    checkSeeMoreButton();-->
 <!--}-->
 
-<!--</script>-->
+</script>
 
 
 
