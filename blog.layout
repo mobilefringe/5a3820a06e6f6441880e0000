@@ -102,7 +102,7 @@
                             <img class="logo" src="///codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1515625609834/Screen Shot 2018-01-10 at 6.06.40 PM.png">
                         </a>
                     </div>
-                    <div class="nav_header_menu_container">
+                    <div class="nav_header_menu_container col-sm-5">
                         <div class="nav_container pull-right">
                             <nav id="primary_nav">
                                 <ul class="">
