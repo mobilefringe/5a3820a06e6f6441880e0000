@@ -46,6 +46,7 @@ $(document).ready(function() {
     }
     
     loadMallData(renderPageData);
+    show_content();
 });
 <!--var interval = 4;-->
 <!--var totalPosts;-->
