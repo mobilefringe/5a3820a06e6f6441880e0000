@@ -168,6 +168,7 @@ function renderPosts(container, template, collection){
             }
         })
         console.log(val.tag);
+        }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
         counter = counter + 1;
