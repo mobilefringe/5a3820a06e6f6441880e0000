@@ -65,7 +65,7 @@
 <div class="row blog_newsletter_banner">
 		    <div class="blog_img" style="background-image: url('http://via.placeholder.com/1920x350/000000/ffffff?text=+');">
 		        <div class="subscribeBlog">
-		            <p>Your Weekly Dose of</p>
+		            <p class="caps">Your Weekly Dose of</p>
 		            <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1515709428865/Screen Shot 2018-01-11 at 5.23.41 PM.png" class="" alt="">
 		        <form action=//mobilefringe.createsend.com/t/d/s/ykouu/ method="post" id="newsletterBlogForm">
                     <label for="fieldEmail" style="display:none"></label>
