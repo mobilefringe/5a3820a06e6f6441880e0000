@@ -57,10 +57,7 @@
 				</script>
 			</div>
 		</div>
-		<div class="sparkNowMore">
-			<a href="javascript:void(0);" onclick="renderPosts('#blog_tile_template', '#main-content',getBlogDataBySlug('cornwall-main').posts);">SEE MORE</a>
-			<i class="fa fa-caret-down fa-lg"></i>
-		</div>
+		
 		<div class="col-sm-4 newsletter_box">
 		</div>
 	</div>
