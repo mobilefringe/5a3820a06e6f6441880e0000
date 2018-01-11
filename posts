@@ -14,7 +14,7 @@
         <div class="col-sm-8">
             <div>
                 <span class="blog_selector">Popular</span>
-                <span class="blog_selector">Latest</span>
+                <span class="blog_selector active">Latest</span>
                 <hr>
             </div>
         
