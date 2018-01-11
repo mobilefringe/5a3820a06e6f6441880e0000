@@ -66,7 +66,7 @@
 		    <div class="blog_img" style="background-image: url('http://via.placeholder.com/1920x350/000000/ffffff?text=+');">
 		        <p>Your Weekly Dose of</p>
 		        <img>
-		        <form action=//mobilefringe.createsend.com/t/d/s/ykouu/ method="post" id="newsletterBlogForm">
+		        <form action=//mobilefringe.createsend.com/t/d/s/ykouu/ method="post" id="newsletterForm">
                     <label for="fieldEmail" style="display:none"></label>
                     <input id="fieldEmail" name="cm-tkyhii-tkyhii" class="form-control" type="email" value="" placeholder="Enter your email for weekly updates" required/> 
                     <button class="contact_btn" data-i18n="general.submit"><i class="fa fa-chevron-right"></i></button>
