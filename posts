@@ -160,7 +160,7 @@ function renderPosts(container, template, collection){
         
         //get the tag that is capitalized
         $.each( val.tags , function( key, val ) {
-            
+            console.log(tag)
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
