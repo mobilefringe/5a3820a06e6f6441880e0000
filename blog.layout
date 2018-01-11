@@ -228,7 +228,7 @@ Queen City Current has steadily built a strong brand in the online fashion and l
                             <!--    <input type="checkbox" class="info_check" id="agree_terms" required>-->
                             <!-- I agree to receive emails from Cornwall Centre Change to Mall Name -->
                             <!--</label>-->
-                            <div id="RecaptchaField1"></div>
+                            <!--<div id="RecaptchaField1"></div>-->
                             <br>
                             <button class="contact_btn" data-i18n="general.submit">SUBMIT</button>
                             <br>
