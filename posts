@@ -161,17 +161,17 @@ function renderPosts(container, template, collection){
         //get first tag 
         
         //get the tag that is capitalized
-        if(val.tag != null && val.tag !== undefined) {
-            console.log(val.tag);
-            $.each( val.tag , function( key, tag ) {
+        // if(val.tag != null && val.tag !== undefined) {
+        //     console.log(val.tag);
+        //     $.each( val.tag , function( key, tag ) {
                
                 
-                if(tag[0] === tag[0].toUpperCase()){
-                    val.main_tag = tag;
-                }
-            })
-            console.log("main tag", val.main_tag);
-        }
+        //         if(tag[0] === tag[0].toUpperCase()){
+        //             val.main_tag = tag;
+        //         }
+        //     })
+        //     console.log("main tag", val.main_tag);
+        // }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
         counter = counter + 1;
