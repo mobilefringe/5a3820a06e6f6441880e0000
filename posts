@@ -57,7 +57,7 @@ $(document).ready(function() {
         console.log("clicked!", $(this));
         $(".blog_selector").removeClass("active");
         $(this).addClass("active");
-        var current_choice =$(this).textContent
+        var current_choice =$(this).textContent;
         if($)
         // impression_count
     })
