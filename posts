@@ -200,14 +200,11 @@ function renderPosts(container, template, collection){
         //     })
         //     console.log("main tag", val.main_tag);
         // }
-        
+        // var rendered = Mustache.render(template_html,val);
+        // item_rendered.push(rendered);
         counter = counter + 1;
         item_list.push(val);
     });
-    
-    var rendered = Mustache.render(template_html,val);
-        item_rendered.push(rendered);
-        
     $(container).html(item_rendered.join(''));
 }
 
