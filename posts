@@ -62,7 +62,7 @@ $(document).ready(function() {
         if(current_choice == "Popular") {
             //sort by highest impression count
             var blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.impression_count}).reverse();
-            renderPosts('#blog_container','#blog_template', blog_posts);
+            // renderPosts('#blog_container','#blog_template', blog_posts);
         }
         else {
             //sort by newest post
