@@ -16,7 +16,7 @@
              <img src="{{image_url}}"/>
              </div>
              <div class="cold-sm-8">
-             <div class="blog_banner_title">
+             <div>
                     <h1>  {{title}} <h1/>
                     <p>{{publish_date}}</p>
                     <p> {{description_short}}</p>
