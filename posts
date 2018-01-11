@@ -12,7 +12,9 @@
     <div class="row blogs_container" >
         
         <div class="col-sm-8">
-            
+            <div>
+                
+            </div>
         
             <div id="blog_container" >
                  <script id = "blog_template" type="x-tmpl/mustache">
