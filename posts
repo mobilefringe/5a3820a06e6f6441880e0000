@@ -225,7 +225,7 @@ function renderPosts(container, template, collection){
     $.each( item_list , function( index, val ) {
         if (index >= showingPosts) {return false;};
         
-        var blog_rendered = Mustache.render(blog_template_html,val);
+        var blog_rendered = Mustache.render(template_html,val);
         item_rendered.push(blog_rendered);
     });
     $(container).html(item_rendered.join(''));
