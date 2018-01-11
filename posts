@@ -53,7 +53,7 @@ $(document).ready(function() {
         renderPosts('#blog_container','#blog_template', blog_posts);
     }
     $(".blog_selector").click(function(){
-        var current_choice =$(this).textContent();
+        var current_choice =$(this).text();
         console.log("clicked!", current_choice);
         
         $(".blog_selector").removeClass("active");
