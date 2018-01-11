@@ -211,11 +211,11 @@ function renderPosts(container, template, collection){
         item_list.push(val);
     });
     
-    $.each( item_list , function(key,val){
-        if(val.tag.length != 0){
-            val.tag_first = val.tag[0];
-        }
-    });
+    // $.each( item_list , function(key,val){
+    //     if(val.tag.length != 0){
+    //         val.tag_first = val.tag[0];
+    //     }
+    // });
     item_list.sort(function(a, b){
         if(a.publish_date > b.publish_date) return -1;
         if(a.publish_date < b.publish_date) return 1;
