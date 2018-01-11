@@ -64,7 +64,7 @@
 		</div>
 		
 		<div class="row">
-		    <div class="banner_img" style="background-image: url({{image_url}});"
+		    <div class="banner_img" style="background-image: url({{image_url}});"></div>
 		    
 		</div>
 	</div>
