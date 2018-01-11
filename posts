@@ -15,7 +15,7 @@
              <div class="col-sm-4">
              <img src="{{image_url}}"/>
              </div>
-             <div class="cold-sm-8">
+             <div class="col-sm-8">
              <div>
                     <h1>  {{title}} <h1/>
                     <p>{{publish_date}}</p>
