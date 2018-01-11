@@ -60,7 +60,7 @@
 <!--    var item_list = [];-->
 <!--    var item_rendered = [];-->
 <!--    var blog_template_html = $(blog_template).html();-->
-    Mustache.parse(blog_template_html);   // optional, speeds up future uses
+    <!--Mustache.parse(blog_template_html);   // optional, speeds up future uses-->
     
 <!--    totalPosts = post.length;-->
 <!--    showingPosts = $('.sparkNowTile').length + interval;-->
