@@ -158,6 +158,8 @@ function renderPosts(container, template, collection){
         var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
         val.publish_date = published_on.format("MMM DD, YYYY");
         
+        //get first tag 
+        
         //get the tag that is capitalized
         if(val.tag != null && val.tag !== undefined) {
             console.log(val.tag);
