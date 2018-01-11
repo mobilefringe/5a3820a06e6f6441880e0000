@@ -159,7 +159,7 @@ function renderPosts(container, template, collection){
         val.publish_date = published_on.format("MMM DD, YYYY");
         
         //get the tag that is capitalized
-        if(val.tags)
+        if(val.tag != null && val.tag !== undefined)
         $.each( val.tag , function( key, tag ) {
             console.log(tag);
             
