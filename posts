@@ -7,7 +7,7 @@
 <script>
 $(document).ready(function() {
     function renderPageData(){
-        var blog_posts = getBlogDataBySlug('cornwall-main').posts;
+        var blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.holiday_date});;
         console.log(blog_posts);
 <!--        renderPostTileTemplate('#blog_tile_template', '#main-content', getBlogDataBySlug('cornwall-main').posts);-->
     }
