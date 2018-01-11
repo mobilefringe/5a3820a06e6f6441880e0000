@@ -39,13 +39,13 @@
 
 
 
-<!--<script>-->
-<!--$(document).ready(function() {-->
-<!--    function renderPageData(){-->
+<script>
+$(document).ready(function() {
+    function renderPageData(){
 <!--        renderPostTileTemplate('#blog_tile_template', '#main-content', getBlogDataBySlug('cornwall-main').posts);-->
-<!--    }-->
+    }
     
-<!--    loadMallData(renderPageData);-->
+    loadMallData(renderPageData);
 <!--});-->
 <!--var interval = 4;-->
 <!--var totalPosts;-->
@@ -93,9 +93,9 @@
 <!--    });-->
 <!--    $(blog_block).html(item_rendered.join(''));-->
 <!--    checkSeeMoreButton();-->
-<!--}-->
+}
 
-<!--</script>-->
+</script>
 
 
 
