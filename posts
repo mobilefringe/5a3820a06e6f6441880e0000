@@ -58,7 +58,8 @@ $(document).ready(function() {
         $(".blog_selector").removeClass("active");
         $(this).addClass("active");
         
-        if($)
+        // if($)
+        // impression_count
     })
     loadMallData(renderPageData);
     show_content();
