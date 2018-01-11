@@ -182,7 +182,7 @@
         <div class="footer_nav">
             <div class="content_container">
                 <div class="row">
-                    <div class="col-md-4 footer_center">
+                    <div class="col-sm-8 footer_center">
                         <h3 class="footer_nav_title caps">Location</h3>
                         <div class="margin_60 hidden_phone"></div>
                         <div class="footer_address">
@@ -227,13 +227,13 @@
                             </div>
                         </a>
                     </div>
-                    <hr class="horizontal_div show_phone">
-                    <div class="col-md-4 footer_center">
-                        <h3 class="footer_nav_title caps">Twitter</h3>
-                        <div class="margin_20"></div>
-                        <a class="twitter-timeline" data-height="360" data-theme="light" data-link-color="#DF62A5" href="https://twitter.com/CornwallCentre"></a> 
-                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
+                    <!--<hr class="horizontal_div show_phone">-->
+                    <!--<div class="col-md-4 footer_center">-->
+                    <!--    <h3 class="footer_nav_title caps">Twitter</h3>-->
+                    <!--    <div class="margin_20"></div>-->
+                    <!--    <a class="twitter-timeline" data-height="360" data-theme="light" data-link-color="#DF62A5" href="https://twitter.com/CornwallCentre"></a> -->
+                    <!--    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>
