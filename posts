@@ -11,6 +11,8 @@
     </div>
     <div id="blog_container">
          <script id = "blog_banner_template" type="x-tmpl/mustache">
+         <div>
+         
          <img src="{{image_url}}"/>
             <div class="blog_banner_title">
                 <h1>  {{title}} <h1/>
