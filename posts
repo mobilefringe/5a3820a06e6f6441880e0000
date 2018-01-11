@@ -161,7 +161,9 @@ function renderPosts(container, template, collection){
         //get the tag that is capitalized
         $.each( val.tags , function( key, tag ) {
             console.log(tag);
-            if(tag[0] === tag[0].toUpperCase())
+            if(tag[0] === tag[0].toUpperCase()){
+                
+            }
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
