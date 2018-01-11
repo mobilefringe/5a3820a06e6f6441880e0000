@@ -1,5 +1,5 @@
 <div class="content_container">
-    <div class="blog_banner" id="blog_banner_container">
+    <div class="blog_banner text-center" id="blog_banner_container">
         <!--<img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1515692811302/Screen Shot 2018-01-11 at 12.46.36 PM.png" class="" alt="">-->
         <script id = "blog_banner_template" type="x-tmpl/mustache">
             <img src="{{image_url}}"/>
