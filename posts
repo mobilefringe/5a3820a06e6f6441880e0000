@@ -158,7 +158,7 @@ function renderPosts(container, template, collection){
     var counter = 1;
     Mustache.parse(template_html);   // optional, speeds up future uses
     
-    totalPosts = post.length;
+    totalPosts = collection.length;
     showingPosts = $('.sparkNowTile').length + interval;
     
     $.each( collection , function( key, val ) {
