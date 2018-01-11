@@ -217,8 +217,8 @@ Queen City Current has steadily built a strong brand in the online fashion and l
                         <!--</a>-->
                     </div>
                     <!--<hr class="horizontal_div show_phone">-->
-                    <div class="col-md-4">
-                        <h5> NEWSLETTER</h5>
+                    <div class="col-md-4" style="margin-top:78px;">
+                        <h4> NEWSLETTER</h4>
                         <hr class="horizontal_div">
                         <div class="position_rel">
                             <form action=//mobilefringe.createsend.com/t/d/s/ykouu/ method="post" id="subForm">
