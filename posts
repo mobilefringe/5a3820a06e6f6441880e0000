@@ -159,7 +159,7 @@ function renderPosts(container, template, collection){
         val.publish_date = published_on.format("MMM DD, YYYY");
         
         //get the tag that is capitalized
-        $.each( collection , function( key, val ) {
+        $.each( val.tags , function( key, val ) {
             
         }
         var rendered = Mustache.render(template_html,val);
