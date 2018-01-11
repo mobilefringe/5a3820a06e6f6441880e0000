@@ -48,7 +48,7 @@
 $(document).ready(function() {
     function renderPageData(){
         var blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
-        console.log(blog_posts[0]);
+        console.log(blog_posts);
         renderMainPost('#blog_banner_container','#blog_banner_template', blog_posts[0]);
         renderPosts('#blog_container','#blog_template', blog_posts);
 <!--        renderPostTileTemplate('#blog_tile_template', '#main-content', getBlogDataBySlug('cornwall-main').posts);-->
