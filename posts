@@ -30,7 +30,7 @@
                         <p> {{description_short}}</p>
                     </div>
                  </div>
-                 
+                 <hr>
                     
                  </script>
             </div>
