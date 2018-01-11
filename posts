@@ -27,7 +27,7 @@
     					    <div>
     					       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
     					       <h3>  {{title}} <h3/>
-    					       <p>{{publish_date}}</p>
+    					       <p class="blog_dates">{{publish_date}}</p>
     					       <p class="blog_short_desc"> {{description_short}}</p>
     					   </div>
     					</div>
