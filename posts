@@ -9,7 +9,7 @@ $(document).ready(function() {
     function renderPageData(){
         var blog_posts = getBlogDataBySlug('cornwall-main').posts;
         
-<!--        renderPostTileTemplate('#blog_tile_template', '#main-content', getBlogDataBySlug('cornwall-main').posts);-->
+// <!--        renderPostTileTemplate('#blog_tile_template', '#main-content', getBlogDataBySlug('cornwall-main').posts);-->
     }
     
     loadMallData(renderPageData);
