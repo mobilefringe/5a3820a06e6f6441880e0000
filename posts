@@ -34,7 +34,7 @@
                     
                  </script>
             </div>
-            <div id="blog_container" >
+            <div id="popular_blog_container" >
                  <script id = "blog_template" type="x-tmpl/mustache">
                  <div class="col-sm-4">
                  <img src="{{image_url}}"/>
