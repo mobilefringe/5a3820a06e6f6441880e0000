@@ -61,7 +61,10 @@
 		<div class="col-sm-4 newsletter_box">
 		</div>
 	</div>
-	
+	<div class="sparkNowMore">
+			<a href="javascript:void(0);" onclick="renderPosts('#blog_tile_template', '#main-content',getBlogDataBySlug('cornwall-main').posts);">SEE MORE</a>
+			<i class="fa fa-caret-down fa-lg"></i>
+		</div>
 </div>
 <div class="row blog_newsletter_banner">
 		    <div class="blog_img" style="background-image: url('http://via.placeholder.com/1920x350/000000/ffffff?text=+');">
