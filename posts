@@ -56,7 +56,7 @@ $(document).ready(function() {
     $(".blog_selector").click(function(){
         console.log("clicked!");
         $(".blog_selector").removeClass("active");
-        $(this).addClass("active")
+        $(this).addClass("active");
     })
     loadMallData(renderPageData);
     show_content();
