@@ -67,7 +67,7 @@ $(document).ready(function() {
         else {
             //sort by newest post
             blog_posts = blog_posts.sortBy(function(o){ return o.publish_date}).reverse();
-        renderPosts('#blog_container','#blog_template', blog_posts);
+            renderPosts('#blog_container','#blog_template', blog_posts);
         }
     })
     loadMallData(renderPageData);
