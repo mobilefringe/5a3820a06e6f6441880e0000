@@ -86,7 +86,7 @@ $(document).ready(function() {
         }
         else {
             //sort by newest post
-            $("#popular_blog_container").show();
+            $("#popular_blog_container").hide();
             $("#blog_container").hide();
         }
     })
