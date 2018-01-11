@@ -11,7 +11,7 @@
     </div>
     <div id="blog_container">
          <script id = "blog_banner_template" type="x-tmpl/mustache">
-         <script>
+         </script>
     </div>
 </div>
 
