@@ -203,7 +203,7 @@
                             </div>
                         </a>
                     </div>
-                    <hr class="horizontal_div show_phone">
+                    <!--<hr class="horizontal_div show_phone">-->
                     <div class="col-md-4">
                         <h3 class="footer_nav_title caps">Menu</h3>
                         <div class="margin_60 hidden_phone"></div>
