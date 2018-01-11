@@ -38,17 +38,22 @@
 			</div>
 			<div id="popular_blog_container" class="hidden_now" >
 				<script id = "popular_blog_template" type="x-tmpl/mustache">
-					<div class="col-sm-4">
-					    <img src="{{image_url}}"/>
-					</div>
-					<div class="col-sm-8">
-					    <div>
-					       <h1>  {{title}} <h1/>
-					       <p>{{publish_date}}</p>
-					       <p> {{description_short}}</p>
-					   </div>
-					</div>
+					<div class="row">
+    				    <div class="col-sm-4">
+    					    <img src="{{image_url}}"/>
+    					</div>
+    					
+    					<div class="col-sm-8">
+    					    <div>
+    					       <h1>  {{title}} <h1/>
+    					       <p>{{publish_date}}</p>
+    					       <p> {{description_short}}</p>
+    					   </div>
+    					</div>
+				    </div>
+					
 					<hr>
+					   
 					   
 				</script>
 			</div>
