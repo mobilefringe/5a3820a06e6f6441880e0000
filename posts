@@ -11,9 +11,6 @@
     </div>
     <div class="row blogs_container" >
         <div id="blog_container" class="col-sm-8">
-        
-        
-        
              <script id = "blog_template" type="x-tmpl/mustache">
              <div class="col-sm-4">
              <img src="{{image_url}}"/>
