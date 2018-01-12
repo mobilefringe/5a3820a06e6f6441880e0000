@@ -46,7 +46,7 @@ $(document).ready(function() {
         }
     });
         $('#load_more_posts_1').click(function(e){
-            var i = $('#num_loaded').val();
+            var i = $('#num_loaded_1').val();
             load_more(i);
             e.preventDefault();
         });
