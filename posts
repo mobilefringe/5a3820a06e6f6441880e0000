@@ -18,7 +18,7 @@
 			</div>
 			<div id="blog_container" >
 				<script id = "blog_template" type="x-tmpl-mustache">
-				    <div class="row blog_post"  id="show_{{counter}}">
+				    <div class="row blog_post hidden_now"  id="show_{{counter}}">
     				    <div class="col-sm-4">
     					    <img src="{{image_url}}"/>
     					</div>
