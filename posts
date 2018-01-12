@@ -79,7 +79,7 @@
     
 </div>
 <div class="content_container">
-    <div class="">
+    <div class="col-sm-8">
         <div id="latest_blog_container_2" class=" latest_blog_container">
     		<script id = "latest_blog_template_2" type="x-tmpl-mustache">
     		    <div class="row blog_post hidden_now"  id="show_{{counter}}">
