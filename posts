@@ -135,7 +135,7 @@
                     <input type="hidden" value="1" id="num_loaded_2" />
                     <p class="hidden_now" id ="all_loaded_2">No More Posts</p>
                     <p class="" id="loaded_posts">
-                        <a href="#" class="red" id="load_more_posts"><img src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/png/1490624975000/down.png" class="load_more_arrow" alt=""><span class="post_details_link">Load More</span></a>
+                        <a href="#" class="red" id="load_more_posts_2"><img src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/png/1490624975000/down.png" class="load_more_arrow" alt=""><span class="post_details_link">Load More</span></a>
                     </p>
                 </div>
             </div>
