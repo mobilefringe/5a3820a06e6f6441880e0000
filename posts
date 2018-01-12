@@ -10,7 +10,7 @@
 		</script>
 	</div>
 	<div class="row blogs_container" >
-	    <div class="blog_selector_bar">
+	    <div class="blog_selector_bar col-sm-8">
 			<span class="blog_selector">Popular</span>
 			<span class="blog_selector active">Latest</span>
 			<hr>
