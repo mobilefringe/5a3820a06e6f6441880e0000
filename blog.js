@@ -190,7 +190,21 @@ function renderPosts(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
-function load_more(num){
+function load_more_1(num){
+    var n = parseInt(num);
+    for(i = n; i < n + 3; i++){
+        var id = i.toString();
+        $('#show_' + id ).fadeIn();
+    }
+    var posts = getBlogDataBySlug('cornwall-main').posts;
+    var total_posts = posts.length;
+    if(i >= total_posts){
+        $('#loaded_posts').hide();
+        $('#all_loaded').show();
+    }
+    $('#num_loaded').val(i);
+}
+function load_more_2(num){
     var n = parseInt(num);
     for(i = n; i < n + 3; i++){
         var id = i.toString();
