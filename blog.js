@@ -24,8 +24,8 @@ $(document).ready(function() {
         renderPosts('#popular_blog_container_2','#popular_blog_template_2', blog_popular_posts_2);
         
         show_content();
-        load_more(1);
-        
+        load_more_1(1);
+        load_more_1(1);
         
         $(".blog_selector").click(function(){
         var current_choice =$(this).text();
