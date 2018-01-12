@@ -193,7 +193,7 @@ function renderPosts(container, template, collection){
 
 function load_more_1(num){
     var n = parseInt(num);
-    for(i = n; i < n + 3; i++){
+    for(i = n; i < n + 2; i++){
         var id = i.toString();
         $('#latest_show_' + id ).fadeIn();
     }
