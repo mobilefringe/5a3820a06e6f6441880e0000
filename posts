@@ -224,6 +224,7 @@ function renderPosts(container, template, collection){
         counter = counter + 1;
         // item_list.push(val);
     });
+    
     $(container).show();
     $(container).html(item_rendered.join(''));
     // checkSeeMoreButton();
