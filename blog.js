@@ -47,7 +47,7 @@ $(document).ready(function() {
     });
         $('#load_more_posts_1').click(function(e){
             var i = $('#num_loaded_1').val();
-            load_more(i);
+            load_more_1(i);
             e.preventDefault();
         });
         $('#load_more_posts_2').click(function(e){
