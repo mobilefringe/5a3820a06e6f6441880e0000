@@ -22,6 +22,7 @@ $(document).ready(function() {
         renderPosts('#latest_blog_container_2','#latest_blog_template_2', posts);
         
         var blog_popular_posts_2 = posts.sortBy(function(o){ return o.impression_count}).reverse();
+        var posts = blog_posts.splice(3);
         renderPosts('#popular_blog_container_2','#popular_blog_template_2', blog_popular_posts_2);
         
         show_content();
