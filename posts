@@ -143,7 +143,7 @@ $(document).ready(function() {
         console.log("first_3",first_3);
         renderPosts('#latest_blog_container_1','#latest_blog_template_1', first_3);
         
-        var blog_popular_posts = blog_posts.sortBy(function(o){ return o.impression_count}).reverse();
+        var 3_popular_posts = blog_posts.sortBy(function(o){ return o.impression_count}).reverse();
         renderPosts('#popular_blog_container','#popular_blog_template', blog_popular_posts);
         
         var posts = blog_posts.splice(1);
