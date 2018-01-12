@@ -106,7 +106,6 @@ $(document).ready(function() {
         load_more(1);
         
         
-        show_content();
         $(".blog_selector").click(function(){
         var current_choice =$(this).text();
         console.log("clicked!", current_choice);
