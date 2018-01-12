@@ -214,7 +214,7 @@ function load_more_2(num){
     var total_posts = posts.length;
     if(i >= total_posts){
         $('#loaded_posts_1').hide();
-        $('#all_loaded').show();
+        $('#all_loaded_2').show();
     }
     $('#num_loaded').val(i);
 }
