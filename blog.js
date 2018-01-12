@@ -208,12 +208,13 @@ function load_more_1(num){
 }
 function load_more_2(num){
     var n = parseInt(num);
-    for(i = n; i < n + 3; i++){
+    for(i = n; i < n + 2; i++){
         var id = i.toString();
         $('#pop_show_' + id ).fadeIn();
     }
     var blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.impression_count}).reverse();
     var posts = blog_posts.splice(3);
+    console.log(posts);
     var total_posts = posts.length;
     if(i >= total_posts){
         $('#loaded_posts_2').hide();
