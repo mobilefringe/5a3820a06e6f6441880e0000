@@ -57,7 +57,7 @@
         </div>
 		<div class="col-sm-4 newsletter_box">
 		    <div class="side_newsletter_subscription">
-		        
+		        <p class="caps">Subscribe to</p>
 		    </div>
 		</div>
 	</div>
