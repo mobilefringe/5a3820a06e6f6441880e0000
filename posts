@@ -83,7 +83,7 @@
         <div class="latest_blog_container">
             <div id="latest_blog_container_2" >
         		<script id = "latest_blog_template_2" type="x-tmpl-mustache">
-        		    <div class="row blog_post hidden_now"  id="show_{{counter}}">
+        		    <div class="row blog_post hidden_now"  id="lat_show_{{counter}}">
         			    <div class="col-sm-4">
         				    <img src="{{image_url}}"/>
         				</div>
