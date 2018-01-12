@@ -34,7 +34,6 @@
         				   </div>
         				</div>
         		    </div>
-        		    <hr>
         		</script>
         	</div>
         	<div id="popular_blog_container_1" class="hidden_now popular_blog_container" >
@@ -53,7 +52,6 @@
         				   </div>
         				</div>
         		    </div>
-        			<hr>
         		</script>
         	</div>
         </div>
@@ -96,7 +94,6 @@
         				       <p class="blog_short_desc"> {{description_short}}</p>
         				   </div>
         				</div>
-        				<hr>
         		    </div>
         		</script>
         	</div>
@@ -126,7 +123,6 @@
         				       <p class="blog_short_desc"> {{description_short}}</p>
         				   </div>
         				</div>
-        			    <hr>
         		    </div>
         		</script>
     	    </div>
