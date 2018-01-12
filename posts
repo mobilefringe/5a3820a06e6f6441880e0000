@@ -109,29 +109,7 @@ $(document).ready(function() {
         show_content();
         
     }
-    $(".blog_selector").click(function(){
-        var current_choice =$(this).text();
-        console.log("clicked!", current_choice);
-        
-        $(".blog_selector").removeClass("active");
-        $(this).addClass("active");
-        
-        if(current_choice == "Popular") {
-            //sort by highest impression count
-            $("#popular_blog_container").show();
-            $("#blog_container").hide();
-        }
-        else {
-            //sort by newest post
-            $("#popular_blog_container").hide();
-            $("#blog_container").show();
-        }
-    });
-    $('#load_more_posts').click(function(e){
-        var i = $('#num_loaded').val();
-        load_more(i);
-        e.preventDefault();
-    });
+    
     loadMallData(renderPageData);
     
 });
