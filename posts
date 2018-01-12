@@ -19,7 +19,7 @@
 			
 		</div>
 		<div id="latest_blog_container_1">
-    		<script id = "blog_template" type="x-tmpl-mustache">
+    		<script id = "latest_blog_template" type="x-tmpl-mustache">
     		    <div class="row blog_post hidden_now"  id="show_{{counter}}">
     			    <div class="col-sm-4">
     				    <img src="{{image_url}}"/>
