@@ -139,7 +139,7 @@ $(document).ready(function() {
         renderMainPost('#blog_banner_container','#blog_banner_template', blog_posts[0]);
         
         //three posts before subscription
-        var first_3 = blog_posts
+        var first_3 = blog_posts.splice(3);
         renderPosts('#latest_blog_container_1','latest_blog_template_1', blog_post);
         
         var posts = blog_posts.splice(1);
