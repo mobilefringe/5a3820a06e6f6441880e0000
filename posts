@@ -103,6 +103,8 @@ $(document).ready(function() {
         
         var blog_popular_posts = blog_posts.sortBy(function(o){ return o.impression_count}).reverse();
         renderPosts('#popular_blog_container','#popular_blog_template', blog_popular_posts);
+        
+        show_content();
         load_more(1);
         
         
