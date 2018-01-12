@@ -210,7 +210,7 @@ function load_more_2(num){
         var id = i.toString();
         $('#pop_show_' + id ).fadeIn();
     }
-    var posts = getBlogDataBySlug('cornwall-main').posts;
+    var posts = ggetBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
     var total_posts = posts.length;
     if(i >= total_posts){
         $('#loaded_posts_2').hide();
