@@ -113,7 +113,8 @@
                 <p class="hidden_now" id ="all_loaded_1">No More Posts</p>
                 <a href="#" class="red" id="load_more_posts_1"><p class="loaded_posts" id="loaded_posts_1">
                     <span class="post_details_link">More +</span>
-                </p></a>
+                    </p>
+                </a>
             </div>
         </div>
         <div class="hidden_now popular_blog_container">
