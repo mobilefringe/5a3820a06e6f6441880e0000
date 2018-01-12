@@ -91,9 +91,9 @@
 
 
 <script>
-var interval = 4;
-var totalPosts;
-var showingPosts;
+// var interval = 4;
+// var totalPosts;
+// var showingPosts;
 $(document).ready(function() {
     function renderPageData(){
         var blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
