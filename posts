@@ -126,6 +126,8 @@
         				       <p class="blog_short_desc"> {{description_short}}</p>
         				   </div>
         				</div>
+        				
+        			<hr>
         		    </div>
         		</script>
     	    </div>
