@@ -174,7 +174,6 @@ function renderPosts(container, template, collection){
     var counter = 1;
     Mustache.parse(template_html);   // optional, speeds up future uses
     
-    
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
             val.post_image = "//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/png/1507232968000/Group 10.png";
