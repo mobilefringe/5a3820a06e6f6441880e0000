@@ -216,5 +216,5 @@ function load_more_2(num){
         $('#loaded_posts_1').hide();
         $('#all_loaded_2').show();
     }
-    $('#num_loaded').val(i);
+    $('#num_loaded_2').val(i);
 }
