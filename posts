@@ -109,7 +109,7 @@
             </div>
         </div>
     </div>
-   <div class="hidden_now popular_blog_container">
+     <div class="hidden_now popular_blog_container">
        <div id="popular_blog_container_2" >
 		<script id = "popular_blog_template_2" type="x-tmpl/mustache">
 			<div class="row">
