@@ -57,7 +57,7 @@
     <!--MallMaverick SDK-->
     <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
     
-    <script src="/application.js" type="text/javascript"></script>
+    <script src="/blog.js" type="text/javascript"></script>
     <script src="/helper.js" type="text/javascript"></script>
     
     <script>
