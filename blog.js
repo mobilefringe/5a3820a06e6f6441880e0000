@@ -200,9 +200,9 @@ function load_more_1(num){
     var total_posts = posts.length;
     if(i >= total_posts){
         $('#loaded_posts_1').hide();
-        $('#all_loaded').show();
+        $('#all_loaded_1').show();
     }
-    $('#num_loaded').val(i);
+    $('#num_loaded_1').val(i);
 }
 function load_more_2(num){
     var n = parseInt(num);
