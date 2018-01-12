@@ -180,7 +180,7 @@ function renderPosts(container, template, collection){
         // item_list.push(val);
     });
     
-    $(container).show();
+    // $(container).show();
     $(container).html(item_rendered.join(''));
 }
 
