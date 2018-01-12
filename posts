@@ -107,7 +107,7 @@
 		    </div>
 		</script>
 	</div>
-	<div id="popular_blog_container_2" class="hidden_now" >
+	<div id="popular_blog_container_2" class="hidden_now popular_blog_container" >
 		<script id = "popular_blog_template_2" type="x-tmpl/mustache">
 			<div class="row">
 			    <div class="col-sm-4">
