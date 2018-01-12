@@ -11,11 +11,6 @@
 	</div>
 	<div class="row blogs_container" >
 		<div class="col-sm-8">
-			<div class="blog_selector_bar">
-				<span class="blog_selector">Popular</span>
-				<span class="blog_selector active">Latest</span>
-				<hr>
-			</div>
 			
 		
     		<div id="latest_blog_container_1" class="latest_blog_container">
