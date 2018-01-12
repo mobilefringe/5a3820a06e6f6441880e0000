@@ -79,9 +79,9 @@
     
 </div>
 <div class="content_container">
-    <div class="col-sm-8 >
+    <div class="col-sm-8 ">
         
-    </div>
+    
     <div class="latest_blog_container">
         <div id="latest_blog_container_2" >
     		<script id = "latest_blog_template_2" type="x-tmpl-mustache">
@@ -133,7 +133,7 @@
     		</script>
 	    </div>
    </div>
-	
+	</div>
 </div>
 
 <script>
