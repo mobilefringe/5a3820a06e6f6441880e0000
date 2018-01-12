@@ -15,6 +15,7 @@ $(document).ready(function() {
         console.log("pop_first_3",pop_first_3);
         renderPosts('#popular_blog_container_1','#popular_blog_template_1', pop_first_3);
         
+        //render all the rest of the posts 
         var posts = blog_posts.splice(1);
         // renderPosts('#posts_container', '#posts_template', posts);
         renderPosts('#blog_container','#blog_template', posts);
