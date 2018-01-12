@@ -45,7 +45,7 @@ $(document).ready(function() {
             $(".latest_blog_container").show();
         }
     });
-    $('#load_more_posts').click(function(e){
+    $('#load_more_posts_1').click(function(e){
         var i = $('#num_loaded').val();
         load_more(i);
         e.preventDefault();
