@@ -18,44 +18,44 @@
 			</div>
 			
 		
-		<div id="latest_blog_container_1">
-    		<script id = "latest_blog_template_1" type="x-tmpl-mustache">
-    		    <div class="row blog_post hidden_now"  id="show_{{counter}}">
-    			    <div class="col-sm-4">
-    				    <img src="{{image_url}}"/>
-    				</div>
-    				
-    				<div class="col-sm-8">
-    				    <div>
-    				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
-    				       <h3>  {{title}} <h3/>
-    				       <p class="blog_dates">{{publish_date}}</p>
-    				       <p class="blog_short_desc"> {{description_short}}</p>
-    				   </div>
-    				</div>
-    				<hr>
-    		    </div>
-    		</script>
-    	</div>
-    	<div id="popular_blog_container_1" class="hidden_now" >
-    		<script id = "popular_blog_template_2" type="x-tmpl/mustache">
-    			<div class="row">
-    			    <div class="col-sm-4">
-    				    <img src="{{image_url}}"/>
-    				</div>
-    				
-    				<div class="col-sm-8">
-    				    <div>
-    				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
-    				       <h3>  {{title}} <h3/>
-    				       <p class="blog_dates">{{publish_date}}</p>
-    				       <p class="blog_short_desc"> {{description_short}}</p>
-    				   </div>
-    				</div>
-    		    </div>
-    			<hr>
-    		</script>
-    	</div>
+    		<div id="latest_blog_container_1">
+        		<script id = "latest_blog_template_1" type="x-tmpl-mustache">
+        		    <div class="row blog_post hidden_now"  id="show_{{counter}}">
+        			    <div class="col-sm-4">
+        				    <img src="{{image_url}}"/>
+        				</div>
+        				
+        				<div class="col-sm-8">
+        				    <div>
+        				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
+        				       <h3>  {{title}} <h3/>
+        				       <p class="blog_dates">{{publish_date}}</p>
+        				       <p class="blog_short_desc"> {{description_short}}</p>
+        				   </div>
+        				</div>
+        				<hr>
+        		    </div>
+        		</script>
+        	</div>
+        	<div id="popular_blog_container_1" class="hidden_now" >
+        		<script id = "popular_blog_template_2" type="x-tmpl/mustache">
+        			<div class="row">
+        			    <div class="col-sm-4">
+        				    <img src="{{image_url}}"/>
+        				</div>
+        				
+        				<div class="col-sm-8">
+        				    <div>
+        				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
+        				       <h3>  {{title}} <h3/>
+        				       <p class="blog_dates">{{publish_date}}</p>
+        				       <p class="blog_short_desc"> {{description_short}}</p>
+        				   </div>
+        				</div>
+        		    </div>
+        			<hr>
+        		</script>
+        	</div>
 		<div class="col-sm-4 newsletter_box">
 		</div>
 	</div>
