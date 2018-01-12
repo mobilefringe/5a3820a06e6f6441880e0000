@@ -21,7 +21,7 @@ $(document).ready(function() {
         renderPosts('#latest_blog_container_2','#latest_blog_template_2', posts);
         
         var blog_popular_posts = blog_posts.sortBy(function(o){ return o.impression_count}).reverse();
-        renderPosts('#popular_blog_container','#popular_blog_template', blog_popular_posts);
+        renderPosts('#popular_blog_container_2','#popular_blog_template_2', blog_popular_posts);
         
         show_content();
         load_more(1);
