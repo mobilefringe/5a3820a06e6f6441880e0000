@@ -110,7 +110,25 @@
         </div>
     </div>
    <div class="hidden_now popular_blog_container">
-       
+       <div id="popular_blog_container_2" >
+		<script id = "popular_blog_template_2" type="x-tmpl/mustache">
+			<div class="row">
+			    <div class="col-sm-4">
+				    <img src="{{image_url}}"/>
+				</div>
+				
+				<div class="col-sm-8">
+				    <div>
+				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
+				       <h3>  {{title}} <h3/>
+				       <p class="blog_dates">{{publish_date}}</p>
+				       <p class="blog_short_desc"> {{description_short}}</p>
+				   </div>
+				</div>
+		    </div>
+			<hr>
+		</script>
+	</div>
    </div>
 	
 </div>
