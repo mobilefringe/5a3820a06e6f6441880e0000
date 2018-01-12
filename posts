@@ -80,59 +80,57 @@
 </div>
 <div class="content_container">
     <div class="col-sm-8 ">
-        
-    
-    <div class="latest_blog_container">
-        <div id="latest_blog_container_2" >
-    		<script id = "latest_blog_template_2" type="x-tmpl-mustache">
-    		    <div class="row blog_post hidden_now"  id="show_{{counter}}">
-    			    <div class="col-sm-4">
-    				    <img src="{{image_url}}"/>
-    				</div>
-    				
-    				<div class="col-sm-8">
-    				    <div>
-    				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
-    				       <h3>  {{title}} <h3/>
-    				       <p class="blog_dates">{{publish_date}}</p>
-    				       <p class="blog_short_desc"> {{description_short}}</p>
-    				   </div>
-    				</div>
-    				<hr>
-    		    </div>
-    		</script>
-    	</div>
-        <div class="row">
-            <div class="col-sm-12">
-                <input type="hidden" value="1" id="num_loaded" />
-                <p class="hidden_now" id ="all_loaded">No More Posts</p>
-                <p class="" id="loaded_posts">
-                    <a href="#" class="red" id="load_more_posts"><img src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/png/1490624975000/down.png" class="load_more_arrow" alt=""><span class="post_details_link">Load More</span></a>
-                </p>
+        <div class="latest_blog_container">
+            <div id="latest_blog_container_2" >
+        		<script id = "latest_blog_template_2" type="x-tmpl-mustache">
+        		    <div class="row blog_post hidden_now"  id="show_{{counter}}">
+        			    <div class="col-sm-4">
+        				    <img src="{{image_url}}"/>
+        				</div>
+        				
+        				<div class="col-sm-8">
+        				    <div>
+        				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
+        				       <h3>  {{title}} <h3/>
+        				       <p class="blog_dates">{{publish_date}}</p>
+        				       <p class="blog_short_desc"> {{description_short}}</p>
+        				   </div>
+        				</div>
+        				<hr>
+        		    </div>
+        		</script>
+        	</div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="hidden" value="1" id="num_loaded" />
+                    <p class="hidden_now" id ="all_loaded">No More Posts</p>
+                    <p class="" id="loaded_posts">
+                        <a href="#" class="red" id="load_more_posts"><img src="//codecloud.cdn.speedyrails.net/sites/5808c7e76e6f6414b30c0000/image/png/1490624975000/down.png" class="load_more_arrow" alt=""><span class="post_details_link">Load More</span></a>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="hidden_now popular_blog_container">
-       <div id="popular_blog_container_2" >
-    		<script id = "popular_blog_template_2" type="x-tmpl/mustache">
-    			<div class="row">
-    			    <div class="col-sm-4">
-    				    <img src="{{image_url}}"/>
-    				</div>
-    				
-    				<div class="col-sm-8">
-    				    <div>
-    				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
-    				       <h3>  {{title}} <h3/>
-    				       <p class="blog_dates">{{publish_date}}</p>
-    				       <p class="blog_short_desc"> {{description_short}}</p>
-    				   </div>
-    				</div>
-    		    </div>
-    			<hr>
-    		</script>
-	    </div>
-    </div>
+        <div class="hidden_now popular_blog_container">
+           <div id="popular_blog_container_2" >
+        		<script id = "popular_blog_template_2" type="x-tmpl/mustache">
+        			<div class="row">
+        			    <div class="col-sm-4">
+        				    <img src="{{image_url}}"/>
+        				</div>
+        				
+        				<div class="col-sm-8">
+        				    <div>
+        				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
+        				       <h3>  {{title}} <h3/>
+        				       <p class="blog_dates">{{publish_date}}</p>
+        				       <p class="blog_short_desc"> {{description_short}}</p>
+        				   </div>
+        				</div>
+        		    </div>
+        			<hr>
+        		</script>
+    	    </div>
+        </div>
     </div>
 </div>
 
