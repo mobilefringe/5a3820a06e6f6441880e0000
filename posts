@@ -140,7 +140,7 @@ $(document).ready(function() {
         
         //three posts before subscription
         var first_3 = blog_posts.splice(3);
-        console.log(first_3)
+        console.log(first_3);
         renderPosts('#latest_blog_container_1','latest_blog_template_1', blog_post);
         
         var posts = blog_posts.splice(1);
