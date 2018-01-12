@@ -98,7 +98,7 @@
 $(document).ready(function() {
     function renderPageData(){
         var blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
-        console.log(blog_posts);
+        // console.log(blog_posts);
         renderMainPost('#blog_banner_container','#blog_banner_template', blog_posts[0]);
         
         renderPosts();
