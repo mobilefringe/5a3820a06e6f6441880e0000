@@ -145,7 +145,7 @@ $(document).ready(function() {
         
         var posts = blog_posts.splice(1);
         // renderPosts('#posts_container', '#posts_template', posts);
-        // renderPosts('#blog_container','#blog_template', posts);
+        renderPosts('#blog_container','#blog_template', posts);
         
         var blog_popular_posts = blog_posts.sortBy(function(o){ return o.impression_count}).reverse();
         renderPosts('#popular_blog_container','#popular_blog_template', blog_popular_posts);
