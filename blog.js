@@ -51,7 +51,7 @@ $(document).ready(function() {
             e.preventDefault();
         });
         $('#load_more_posts_2').click(function(e){
-            var i = $('#num_loaded').val();
+            var i = $('#num_loaded_2').val();
             load_more(i);
             e.preventDefault();
         });
