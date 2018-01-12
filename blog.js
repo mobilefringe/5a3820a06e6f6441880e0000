@@ -50,6 +50,11 @@ $(document).ready(function() {
             load_more(i);
             e.preventDefault();
         });
+        $('#load_more_posts_1').click(function(e){
+        var i = $('#num_loaded').val();
+        load_more(i);
+        e.preventDefault();
+    });
     }
     
     loadMallData(renderPageData);
