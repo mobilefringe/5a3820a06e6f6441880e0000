@@ -57,32 +57,32 @@ $(document).ready(function() {
 function init() {
     $('<div class="loader_backdrop"><div class="loader">Loading...</div></div>').appendTo(document.body);
     
-    $('#menu-icon').click(function(){
-		$(this).toggleClass('open');
-		$('.nav_container').slideToggle();
-		$('body').toggleClass('no_scroll');
-	});
+//     $('#menu-icon').click(function(){
+// 		$(this).toggleClass('open');
+// 		$('.nav_container').slideToggle();
+// 		$('body').toggleClass('no_scroll');
+// 	});
 	
-    store_search();
+//     store_search();
     
-    get_instagram("", 5, 'standard_resolution', render_instagram); //Add social json
+//     get_instagram("", 5, 'standard_resolution', render_instagram); //Add social json
  
-    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    });
+//     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+//         event.preventDefault();
+//         $(this).ekkoLightbox();
+//     });
     
-    $(".alpha_list a").click(function(e) {
-        e.preventDefault();
-        var id = $(this).attr("href");
-        $('html, body').animate({
-            scrollTop: $(id).offset().top -25
-        }, 1500);
-    });
-    $('.locate_store').click(function(e){
-        e.preventDefault();
-        $('.stores_table').show()
-    });
+//     $(".alpha_list a").click(function(e) {
+//         e.preventDefault();
+//         var id = $(this).attr("href");
+//         $('html, body').animate({
+//             scrollTop: $(id).offset().top -25
+//         }, 1500);
+//     });
+//     $('.locate_store').click(function(e){
+//         e.preventDefault();
+//         $('.stores_table').show()
+//     });
     //dynamically changing copyright year
     var current_year = moment().year();
     $("#current_year").text(current_year);
