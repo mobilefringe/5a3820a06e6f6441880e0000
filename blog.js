@@ -214,7 +214,7 @@ function load_more_2(num){
     }
     var blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.impression_count}).reverse();
     var posts = blog_posts.splice(3);
-    console.log(posts);
+    console.log(posts[0]);
     var total_posts = posts.length;
     if(i >= total_posts){
         $('#loaded_posts_2').hide();
