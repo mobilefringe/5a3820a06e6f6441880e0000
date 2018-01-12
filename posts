@@ -227,7 +227,6 @@ function renderPosts(container, template, collection){
     
     $(container).show();
     $(container).html(item_rendered.join(''));
-    // checkSeeMoreButton();
 }
 
 function load_more(num){
