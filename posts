@@ -106,6 +106,7 @@ $(document).ready(function() {
         load_more(1);
             
         
+    show_content();
         
     }
     $(".blog_selector").click(function(){
