@@ -194,7 +194,7 @@ function load_more_1(num){
     var n = parseInt(num);
     for(i = n; i < n + 3; i++){
         var id = i.toString();
-        $('#show_' + id ).fadeIn();
+        $('#latest_show_' + id ).fadeIn();
     }
     var posts = getBlogDataBySlug('cornwall-main').posts;
     var total_posts = posts.length;
