@@ -26,7 +26,7 @@ $(document).ready(function() {
         
         show_content();
         load_more_1(1);
-        load_more_1(1);
+        load_more_2(1);
         
         $(".blog_selector").click(function(){
         var current_choice =$(this).text();
