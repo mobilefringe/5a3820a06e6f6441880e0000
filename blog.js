@@ -11,7 +11,7 @@ $(document).ready(function() {
         renderPosts('#latest_blog_container_1','#latest_blog_template_1', first_3);
         
         var blog_popular_posts = blog_posts.sortBy(function(o){ return o.impression_count}).reverse();
-        var first_3 = blog_popular_posts.splice(0,3);
+        var pop_first_3 = blog_popular_posts.splice(0,3);
         console.log("first_3",first_3);
         renderPosts('#popular_blog_container_1','#popular_blog_template_1', first_3);
         
