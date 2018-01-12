@@ -52,7 +52,7 @@ $(document).ready(function() {
         });
         $('#load_more_posts_2').click(function(e){
             var i = $('#num_loaded_2').val();
-            load_more(i);
+            load_more_2(i);
             e.preventDefault();
         });
     }
