@@ -103,7 +103,13 @@ $(document).ready(function() {
         
         var blog_popular_posts = blog_posts.sortBy(function(o){ return o.impression_count}).reverse();
         renderPosts('#popular_blog_container','#popular_blog_template', blog_popular_posts);
-        
+        load_more(1);
+            
+        $('#load_more_posts').click(function(e){
+            var i = $('#num_loaded').val();
+            load_more(i);
+            e.preventDefault();
+        });
         
     }
     $(".blog_selector").click(function(){
