@@ -101,7 +101,7 @@ $(document).ready(function() {
         // console.log(blog_posts);
         //main banner post
         renderMainPost('#blog_banner_container','#blog_banner_template', blog_posts[0]);
-        
+        //three posts before subscription
         renderPosts();
         
         var posts = blog_posts.splice(1);
