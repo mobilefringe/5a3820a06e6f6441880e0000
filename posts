@@ -59,7 +59,7 @@
 		    <div class="side_newsletter_subscription">
 		        <p class="caps">Subscribe to</p>
 		        <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1515794720080/Screen Shot 2018-01-12 at 5.05.11 PM.png" class="" alt="">
-		        
+		        <p>Stay updated on the latest news with our carefully curated newsletters. </p>
 		        <form action=//mobilefringe.createsend.com/t/d/s/ykouu/ method="post" id="newsletterBlogForm">
                     <label for="fieldEmail" style="display:none"></label>
                     <input id="fieldEmail" name="cm-tkyhii-tkyhii" class="form-control" type="email" value="" placeholder="Enter your email address" required/> 
