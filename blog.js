@@ -241,6 +241,8 @@ function renderPostDetails(container, template, collection, blog_posts){
                 val.prev_show = "display: none";
             }
         }
+        var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
+        val.publish_date = published_on.format("MMM DD, YYYY");
         
         if(val.tag != null && val.tag !== undefined) {
             val.main_tag = val.tag[0];
@@ -250,6 +252,7 @@ function renderPostDetails(container, template, collection, blog_posts){
         else {
             val.show_tag = "display:none"
         }
+        
         val.twitter_title = val.title + " via @shopHSC";
         
         var rendered = Mustache.render(template_html,val);
