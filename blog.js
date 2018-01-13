@@ -5,7 +5,7 @@
 
 function renderPostsPageData(){
     
-    //check if tag is attached to path
+    //check if tag is attached to pathslug
     
     var blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
     // console.log(blog_posts);
