@@ -84,7 +84,7 @@
                                     <li class="menu_item"><a href="/posts?fashion">Fashion</a></li>
                                     <li class="menu_item"><a href="/posts?beauty">Beauty</a></li>
                                     <li class="menu_item"><a href="/posts?homedecor">Home + Decor</a></li>
-                                    <li class="menu_item"><a href="">Streetstyle</a></li>
+                                    <li class="menu_item"><a href="/posts?steetstyle">Streetstyle</a></li>
                                     <li class="menu_item"><a href="">Community</a></li>
                                     <li class="menu_item"><a href="">Food</a></li>
                                     <li class="menu_item"><a href="">Video</a></li>
