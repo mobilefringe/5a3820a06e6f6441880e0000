@@ -62,7 +62,17 @@ $(document).ready(function() {
     loadMallData(renderPageData);
     
 });
+function renderPostDetailData(){
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        // var post = getPostDetailsBySlug(slug);
+        var post = getPublishedPostDetailsBySlug(slug);
+        console.log(post);
+        var blog_posts = getBlogDataBySlug('cornwall-main').posts.reverse();
 
+        renderPostDetails("#blog_banner_container", "#blog_banner_template", post, blog_posts);
+        
+    }
 function init() {
     $('<div class="loader_backdrop"><div class="loader">Loading...</div></div>').appendTo(document.body);
     
