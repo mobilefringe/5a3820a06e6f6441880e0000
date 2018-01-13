@@ -68,6 +68,7 @@ function renderPostDetailData(){
 
         renderPostDetails("#blog_banner_container", "#blog_banner_template", post, blog_posts);
         renderPostDetails("#current_blog_container", "#current_blog_template", post, blog_posts);
+        var popular_blogs = blog_posts.sortBy(function(o){ return o.impression_count}).reverse();
         renderPosts('#popular_blog_container_1','#popular_blog_template_1', blog_posts);
     }
 function init() {
