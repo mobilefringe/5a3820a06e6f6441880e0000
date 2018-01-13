@@ -70,31 +70,6 @@
 <body>
     <header>
         <div class="header">
-            <!--<div class="social_header">-->
-            <!--    <div class="content_container">-->
-            <!--        <div class="row">-->
-            <!--            <div class="col-md-6 pull-left hidden_phone">-->
-            <!--                <div class="hours_container">-->
-            <!--                    <span id="home_hours_container" class="">-->
-            <!--                        <script id="home_hours_template" type="x-tmpl-mustache/text">-->
-            <!--                            <span class="todays_hours">{% raw %} {{open}} {{hours}} {% endraw %}</span>-->
-            <!--                        </script>-->
-            <!--                    </span>-->
-            <!--                    <a class="view_holiday_hours" href="/hours">View Holiday Hours</a>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!--            <div class="col-md-6">-->
-            <!--                <div class="social_container pull-right">-->
-            <!--                    <a href="https://www.facebook.com/CornwallCentre" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>-->
-            <!--                    <a href="https://twitter.com/CornwallCentre" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>-->
-                                <!--<a href="" target="_blank"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>-->
-            <!--                    <a href="https://www.instagram.com/CornwallCentre" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>-->
-            <!--                    <a href="https://www.youtube.com/CornwallCentre" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!--        </div>-->
-            <!--    </div>-->
-            <!--</div>-->
             <div class="nav_header">
                 <div class="content_container position_rel">
                     <div class="logo_container col-sm-4">
@@ -113,33 +88,6 @@
                                     <li class="menu_item"><a href="">Community</a></li>
                                     <li class="menu_item"><a href="">Food</a></li>
                                     <li class="menu_item"><a href="">Video</a></li>
-                                    <!--<li class="menu_item">-->
-                                    <!--    <a href="#">Stores <i class="fa fa-angle-down" aria-hidden="true"></i></a>-->
-                                    <!--    <ul>-->
-                                    <!--        <li class="dropdown_item"><a href="/stores">Store Directory</a></li>-->
-                                    <!--        <li class="dropdown_item"><a href="/map">Centre Map</a></li>-->
-                                    <!--    </ul>    -->
-                                    <!--</li>-->
-                                    <!--<li class="menu_item"><a href="/dine">Dine</a></li>-->
-                                    <!--<li class="menu_item"><a href="/events">Events</a></li>-->
-                                    <!--<li class="menu_item"><a href="/promotions">Promos</a></li>-->
-                                    <!--<li class="menu_item">-->
-                                    <!--    <a href="#">Leasing <i class="fa fa-angle-down" aria-hidden="true"></i></a>-->
-                                    <!--    <ul>-->
-                                    <!--        <li class="dropdown_item"><a href="/leasing">Leasing</a></li>-->
-                                    <!--        <li class="dropdown_item"><a href="/photos">Photos</a></li>-->
-                                    <!--    </ul>        -->
-                                    <!--</li>-->
-                                    <!--<li class="menu_item">-->
-                                    <!--    <a href="#">Contact Us <i class="fa fa-angle-down" aria-hidden="true"></i></a>-->
-                                    <!--    <ul>-->
-                                    <!--        <li class="dropdown_item"><a href="/contact_us">Contact Us</a></li>-->
-                                    <!--        <li class="dropdown_item"><a href="/jobs">Jobs</a></li>-->
-                                    <!--        <li class="dropdown_item"><a href="/leasing">Leasing</a></li>-->
-                                    <!--        <li class="dropdown_item"><a href="/photos">Photos</a></li>-->
-                                    <!--    </ul> -->
-                                    <!--</li>-->
-                                    <!--<li class="menu_item"><a href="/posts">Blog</a></li>-->
                                 </ul>
                             </nav>
                         </div>
@@ -148,9 +96,7 @@
                         <div class="social_container pull-right">
                             <a href="https://www.facebook.com/CornwallCentre" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                             <a href="https://twitter.com/CornwallCentre" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <!--<a href="" target="_blank"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>-->
                             <a href="https://www.instagram.com/CornwallCentre" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            <!--<a href="https://www.youtube.com/CornwallCentre" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>-->
                             <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
                         </div>
                     </div>
@@ -160,17 +106,6 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <!--<div class="site_search pull-right">-->
-                    <!--    <label class="top_form_control no_margin">-->
-                    <!--        <input type="text" placeholder="Search Stores" id="site_search" class="hidden_now"/>-->
-                    <!--        <i id="search_icon" class="fa fa-search"></i>-->
-                    <!--        <i id="close_search" class="fa fa-times-circle"></i>-->
-                    <!--    </label>-->
-                    <!--    <div class="site_search_results" id="search_results_stores"></div>-->
-                    <!--    <div class="site_search_results" id="search_results_events"></div>-->
-                    <!--    <div class="site_search_results" id="search_results_promotions"></div>-->
-                    <!--</div>-->
-                    
                 </div>
             </div>
         </div>
