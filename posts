@@ -160,6 +160,8 @@
 
 <script>
     $(document).ready(function() {
+        init(e);
         loadMallData(renderPostsPageData);
+        show_content();
     });
 </script>
