@@ -241,11 +241,13 @@ function renderPostDetails(container, template, collection, blog_posts){
                 val.prev_show = "display: none";
             }
         }
+        
         if(val.tag != null && val.tag !== undefined) {
             val.main_tag = val.tag[0];
             // console.log("main tag", val.main_tag);
             val.show_tag = "display:block";
         }
+        
         else {
             val.show_tag = "display:none"
         }
