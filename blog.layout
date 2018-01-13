@@ -82,7 +82,7 @@
                             <nav id="primary_nav">
                                 <ul class="">
                                     <li class="menu_item"><a href="/posts?fashion">Fashion</a></li>
-                                    <li class="menu_item"><a href="">Beauty</a></li>
+                                    <li class="menu_item"><a href="/posts?beauty">Beauty</a></li>
                                     <li class="menu_item"><a href="">Home + Decor</a></li>
                                     <li class="menu_item"><a href="">Streetstyle</a></li>
                                     <li class="menu_item"><a href="">Community</a></li>
