@@ -71,9 +71,8 @@ function renderPostDetailData(){
         var popular_blogs = blog_posts.splice(0,5).sortBy(function(o){ return o.impression_count}).reverse();
         renderPosts('#popular_blog_container_1','#popular_blog_template_1', popular_blogs);
         
-        blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
+        // blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
         var posts = blog_posts.sortBy(function(o){ return o.publish_date}).reverse();
-        // renderPosts('#posts_container', '#posts_template', posts);
         renderPosts('#latest_blog_container_2','#latest_blog_template_2', posts);
     
         load_more_1(1);
