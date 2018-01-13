@@ -4,6 +4,65 @@ $(document).ready(function() {
     loadMallData(renderPostsPageData);
     
 });
+function renderPostsPageData(){
+        var blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
+        // console.log(blog_posts);
+        //main banner post
+        renderMainPost('#blog_banner_container','#blog_banner_template', blog_posts[0]);
+        
+        //three posts before subscription
+        var first_3 = blog_posts.splice(0,3);
+        console.log("first_3",first_3);
+        renderPosts('#latest_blog_container_1','#latest_blog_template_1', first_3);
+        
+        var blog_popular_posts = blog_posts.sortBy(function(o){ return o.impression_count}).reverse();
+        var pop_first_3 = blog_popular_posts.splice(0,3);
+        console.log("pop_first_3",pop_first_3);
+        renderPosts('#popular_blog_container_1','#popular_blog_template_1', pop_first_3);
+        
+        //render all the rest of the posts 
+        blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
+        var posts = blog_posts.splice(3);
+        // renderPosts('#posts_container', '#posts_template', posts);
+        renderPosts('#latest_blog_container_2','#latest_blog_template_2', posts);
+        
+        var blog_popular_posts_2 = posts.sortBy(function(o){ return o.impression_count}).reverse();
+        var posts = blog_popular_posts_2.splice(3);
+        renderPosts('#popular_blog_container_2','#popular_blog_template_2', posts);
+        
+        show_content();
+        load_more_1(1);
+        load_more_2(1);
+        
+        $(".blog_selector").click(function(){
+            var current_choice =$(this).text();
+            console.log("clicked!", current_choice);
+            
+            $(".blog_selector").removeClass("active");
+            $(this).addClass("active");
+            
+            if(current_choice == "Popular") {
+                //sort by highest impression count
+                $(".popular_blog_container").show();
+                $(".latest_blog_container").hide();
+            }
+            else {
+                //sort by newest post
+                $(".popular_blog_container").hide();
+                $(".latest_blog_container").show();
+            }
+        });
+        $('#load_more_posts_1').click(function(e){
+            var i = $('#num_loaded_1').val();
+            load_more_1(i);
+            e.preventDefault();
+        });
+        $('#load_more_posts_2').click(function(e){
+            var i = $('#num_loaded_2').val();
+            load_more_2(i);
+            e.preventDefault();
+        });
+    }
 function renderPostDetailData(){
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
