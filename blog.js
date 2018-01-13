@@ -30,23 +30,23 @@ $(document).ready(function() {
         load_more_2(1);
         
         $(".blog_selector").click(function(){
-        var current_choice =$(this).text();
-        console.log("clicked!", current_choice);
-        
-        $(".blog_selector").removeClass("active");
-        $(this).addClass("active");
-        
-        if(current_choice == "Popular") {
-            //sort by highest impression count
-            $(".popular_blog_container").show();
-            $(".latest_blog_container").hide();
-        }
-        else {
-            //sort by newest post
-            $(".popular_blog_container").hide();
-            $(".latest_blog_container").show();
-        }
-    });
+            var current_choice =$(this).text();
+            console.log("clicked!", current_choice);
+            
+            $(".blog_selector").removeClass("active");
+            $(this).addClass("active");
+            
+            if(current_choice == "Popular") {
+                //sort by highest impression count
+                $(".popular_blog_container").show();
+                $(".latest_blog_container").hide();
+            }
+            else {
+                //sort by newest post
+                $(".popular_blog_container").hide();
+                $(".latest_blog_container").show();
+            }
+        });
         $('#load_more_posts_1').click(function(e){
             var i = $('#num_loaded_1').val();
             load_more_1(i);
