@@ -70,6 +70,8 @@ function renderPostDetailData(){
         renderPostDetails("#current_blog_container", "#current_blog_template", post, blog_posts);
         var popular_blogs = blog_posts.splice(0,5).sortBy(function(o){ return o.impression_count}).reverse();
         renderPosts('#popular_blog_container_1','#popular_blog_template_1', popular_blogs);
+        
+        load_more_1(1);
     }
 function init() {
     $('<div class="loader_backdrop"><div class="loader">Loading...</div></div>').appendTo(document.body);
