@@ -247,7 +247,6 @@ function renderPostDetails(container, template, collection, blog_posts){
             // console.log("main tag", val.main_tag);
             val.show_tag = "display:block";
         }
-        
         else {
             val.show_tag = "display:none"
         }
