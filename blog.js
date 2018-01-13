@@ -72,6 +72,11 @@ function renderPostDetailData(){
         renderPosts('#popular_blog_container_1','#popular_blog_template_1', popular_blogs);
         
         load_more_1(1);
+        $('#load_more_posts_1').click(function(e){
+        var i = $('#num_loaded_1').val();
+        load_more_1(i);
+        e.preventDefault();
+    });
     }
 function init() {
     $('<div class="loader_backdrop"><div class="loader">Loading...</div></div>').appendTo(document.body);
