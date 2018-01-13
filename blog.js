@@ -6,7 +6,8 @@
 function renderPostsPageData(){
     
     //check if tag is attached to path
-    var pathArray = window.location.pathname.split( '/' );
+    var pathArray = window.location.pathname.split( '?' );
+    
     
     var blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
     // console.log(blog_posts);
