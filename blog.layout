@@ -86,7 +86,7 @@
                                     <li class="menu_item"><a href="/posts?homedecor">Home + Decor</a></li>
                                     <li class="menu_item"><a href="/posts?steetstyle">Streetstyle</a></li>
                                     <li class="menu_item"><a href="/posts?community">Community</a></li>
-                                    <li class="menu_item"><a href="">Food</a></li>
+                                    <li class="menu_item"><a href="/posts?food">Food</a></li>
                                     <li class="menu_item"><a href="">Video</a></li>
                                 </ul>
                             </nav>
