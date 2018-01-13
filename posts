@@ -27,7 +27,7 @@
         				</div>
         				
         				<div class="col-sm-8">
-        				    <div>
+        				    <div class="dets_div">
         				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
         				       <a href="/posts/{{slug}}"><h3>  {{title}} <h3/><a/>
         				       <p class="blog_dates">{{publish_date}}</p>
@@ -47,7 +47,7 @@
         				</div>
         				
         				<div class="col-sm-8">
-        				    <div>
+        				    <div class="dets_div">
         				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
         				       <a href="/posts/{{slug}}"><h3>  {{title}} <h3/><a/>
         				       <p class="blog_dates">{{publish_date}}</p>
@@ -104,7 +104,7 @@
         				</div>
         				
         				<div class="col-sm-8">
-        				    <div>
+        				    <div class="dets_div">
         				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
         				       <a href="/posts/{{slug}}"><h3>  {{title}} <h3/><a/>
         				       <p class="blog_dates">{{publish_date}}</p>
