@@ -59,7 +59,7 @@ $(document).ready(function() {
         });
     }
     
-    loadMallData(renderPageData);
+    loadMallData(renderPostsPageData);
     
 });
 function renderPostDetailData(){
