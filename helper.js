@@ -5,6 +5,7 @@ function init() {
 		$(this).toggleClass('open');
 		$('.nav_container').slideToggle();
 		$('body').toggleClass('no_scroll');
+		
 	});
 	
     store_search();
