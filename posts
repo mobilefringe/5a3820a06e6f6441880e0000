@@ -16,7 +16,7 @@
 			<hr>
 		</div>
 			
-		<div class="col-sm-9">
+		<div class="col-sm-9 col-xs-12">
 			<div id="latest_blog_container_1" class="latest_blog_container">
         		<script id = "latest_blog_template_1" type="x-tmpl-mustache">
         		    <div class="row blog_post" >
