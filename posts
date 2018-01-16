@@ -58,7 +58,7 @@
         		</script>
         	</div>
         </div>
-		<div class="col-sm-3 newsletter_box">
+		<div class="col-sm-3 newsletter_box hidden_phone">
 		    <div class="side_newsletter_subscription">
 		        <p class="caps subscribe">Subscribe to</p>
 		        <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1515794720080/Screen Shot 2018-01-12 at 5.05.11 PM.png" class="" alt="">
