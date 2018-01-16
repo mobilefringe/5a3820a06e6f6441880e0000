@@ -107,7 +107,17 @@
                         <span></span>
                     </div>
                     <div class="mobile_menu_container show_phone">
-                        
+                        <nav id="primary_nav">
+                                <ul class="">
+                                    <li class="menu_item"><a href="/posts?fashion">Fashion</a></li>
+                                    <li class="menu_item"><a href="/posts?beauty">Beauty</a></li>
+                                    <li class="menu_item"><a href="/posts?homedecor">Home + Decor</a></li>
+                                    <li class="menu_item"><a href="/posts?steetstyle">Streetstyle</a></li>
+                                    <li class="menu_item"><a href="/posts?community">Community</a></li>
+                                    <li class="menu_item"><a href="/posts?food">Food</a></li>
+                                    <li class="menu_item"><a href="/posts?video">Video</a></li>
+                                </ul>
+                            </nav>
                     </div>
                 </div>
             </div>
