@@ -62,7 +62,7 @@ function show_content() {
 }
 
 var default_image = {
-    "image_url" : "//codecloud.cdn.speedyrails.net/ ", //Add default image
+    "image_url" : "//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1513700491203/cornwall_logo.png ", //Add default image
 }
 
 function get_instagram(url, total, size, callback){
