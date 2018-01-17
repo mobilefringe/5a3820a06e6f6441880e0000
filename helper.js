@@ -201,10 +201,10 @@ function store_search() {
         $('#search_icon').show();
         $("#site_search").hide();
     });
-    $("#site_search").focusout(function() {
-        console.log("not focused");
-        $("#site_search").hide();
-    })
+    // $("#site_search").focusout(function() {
+    //     console.log("not focused");
+    //     $("#site_search").hide();
+    // })
     $('#site_search').keyup(function(){
         if ($('#site_search').val() == ""){
             $('#search_results_stores').html('');
