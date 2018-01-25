@@ -279,7 +279,7 @@
         	
         	<!-- JS JQuery ================ --> 
     		<script src="//codecloud.cdn.speedyrails.net/sites/5512e0606e6f64112d000000/a4f210f3e9502396b14baeff5101625d/bootstrap.min.js"></script>
-    		<script src="/blog.js"></script>
+    		<script src="/blog_ptc.js"></script>
     		<script>
     		    var current_year = moment().year();
                 $("#current_year").text(current_year)
