@@ -158,7 +158,7 @@
                                         <li class="dropdown_item"><a href="/leasing">Leasing</a></li>
                                         <!--<li class="dropdown_item"><a href="/pages/cornwall-mall-info">Mall Info</a></li>-->
                                         <li class="dropdown_item"><a href="/pages/cornwall-community-wifi">Community Relations</a></li>
-                                        <li class="dropdown_item"><a href="/pages/ccornwall-security">Security</a></li>
+                                        <!--<li class="dropdown_item"><a href="/pages/ccornwall-security">Security</a></li>-->
                                         <!--<li class="dropdown_item"><a href="/pages/cornwall-parking-at-cornwall-centre">Parking Info</a></li>-->
                                     </ul> 
                                 </li>
