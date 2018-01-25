@@ -46,12 +46,12 @@ var interval = 4;
 var totalPosts;
 var showingPosts;
 function renderPageData(){
-        var pathArray = window.location.pathname.split( '/' );
-        var keyword = pathArray[pathArray.length-1];
-        keyword = keyword.replace("%20"," ");
-        $(".sparkNowTitle").text(keyword.substr(0,1).toUpperCase()+keyword.substr(1));
-        renderPostTileTemplate('#blog_tile_template', '#main-content',getPostsByKeyword(keyword));
-    }
+    var pathArray = window.location.pathname.split( '/' );
+    var keyword = pathArray[pathArray.length-1];
+    keyword = keyword.replace("%20"," ");
+    $(".sparkNowTitle").text(keyword.substr(0,1).toUpperCase()+keyword.substr(1));
+    renderPostTileTemplate('#blog_tile_template', '#main-content',getPostsByKeyword(keyword));
+}
     
 function checkSeeMoreButton(){
     if(totalPosts > showingPosts){
