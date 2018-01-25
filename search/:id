@@ -42,7 +42,7 @@ $(document).ready(function() {
         var pathArray = window.location.pathname.split( '/' );
         var keyword = pathArray[pathArray.length-1];
         keyword = keyword.replace("%20"," ");
-        $(".sparkNowTitle").text(keyword.substr(0,1).toUpperCase()+keyword.substr(1););
+        $(".sparkNowTitle").text(keyword.substr(0,1).toUpperCase()+keyword.substr(1));
         renderPostTileTemplate('#blog_tile_template', '#main-content',getPostsByKeyword(keyword));
     }
     
