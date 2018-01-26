@@ -114,7 +114,7 @@
         
         <div class="width_50">
             <div class="home_promos">
-                <h2 class="details_title caps"><img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1516996181610/Screen Shot 2018-01-26 at 2.49.36 PM.png" class="" alt="" style="height: 30px;">Blog</h2>
+                <h2 class="details_title caps"><img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1516996181610/Screen Shot 2018-01-26 at 2.49.36 PM.png" class="" alt="" style="height: 30px;">&nbsp;Blog</h2>
                 <div id="home_blog_container" class="dine_container margin_20">
                     <script id="home_blog_template" type="x-tmpl-mustache/text">
                         <div class="margin_30">
