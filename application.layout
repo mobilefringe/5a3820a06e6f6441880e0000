@@ -203,7 +203,7 @@
                             <div class="footer_btn">
                                 <div class="footer_btn_text caps">Go to Directories</div>
                                 <div class="footer_btn_icon">
-                                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    <i class="fa fa-map-o" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </a>
