@@ -193,8 +193,8 @@
                         <div id="home_reg_hours_container">
                             <script id="home_reg_hours_template" type="x-tmpl-mustache/text">
                                 <div class="hours_div">
-                                    <div class="day">{{day}}:</div>
-                                    <div class="time">{{h}}</div>
+                                    <div class="day">{% raw %}{{day}}{% endraw %}:</div>
+                                    <div class="time">{% raw %}{{h}}{% endraw %}</div>
                                 </div>
                             </script>
                         </div>
