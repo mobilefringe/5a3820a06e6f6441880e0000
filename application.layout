@@ -173,23 +173,31 @@
                     <div class="col-md-4 footer_center">
                         <h3 class="footer_nav_title caps">Mall Hours</h3>
                         <div class="margin_60 hidden_phone"></div>
-                        <div class="footer_address">
-                            <p class="caps">Twin Pines Mall</p>
-                            <p class="">216 Chrislea Road<br>Vaughan, ON L4L 8S5</p>
-                        </div>
-                        <div class="footer_logo">
-                            <a href="//www.mallmaverick.com" target="_blank">
-                                <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1513700491203/cornwall_logo.png" alt="Bentall Kennedy Logo">
-                            </a>
-                        </div>
-                        <a href="/">
-                            <div class="footer_btn">
-                                <div class="footer_btn_text caps">Enter Our Contest</div>
-                                <div class="footer_btn_icon">
-                                    <i class="fa fa-trophy" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </a>
+                        <!--<div class="footer_address">-->
+                        <!--    <p class="caps">Twin Pines Mall</p>-->
+                        <!--    <p class="">216 Chrislea Road<br>Vaughan, ON L4L 8S5</p>-->
+                        <!--</div>-->
+                        <!--<div class="footer_logo">-->
+                        <!--    <a href="//www.mallmaverick.com" target="_blank">-->
+                        <!--        <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1513700491203/cornwall_logo.png" alt="Bentall Kennedy Logo">-->
+                        <!--    </a>-->
+                        <!--</div>-->
+                        <!--<a href="/">-->
+                        <!--    <div class="footer_btn">-->
+                        <!--        <div class="footer_btn_text caps">Enter Our Contest</div>-->
+                        <!--        <div class="footer_btn_icon">-->
+                        <!--            <i class="fa fa-trophy" aria-hidden="true"></i>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--</a>-->
+                        <div id="reg_hours_container">
+                <script id="reg_hours_template" type="x-tmpl-mustache/text">
+                    <div class="hours_div">
+                        <div class="day">{{day}}:</div>
+                        <div class="time">{{h}}</div>
+                    </div>
+                </script>
+            </div>
                     </div>
                     <hr class="horizontal_div show_phone">
                     <div class="col-md-4">
