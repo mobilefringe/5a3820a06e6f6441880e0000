@@ -427,7 +427,7 @@ function renderLogoScroll(container, template, collection){
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
         console.log("default_image",val.store_front_url.indexOf('missing.png'));
-        if(val.store_front_url != null || val.store_front_url.indexOf('missing.png') > -1){
+        if(val.store_front_url != null &&S val.store_front_url.indexOf('missing.png') > -1){
             val.store_logo = getImageURL(val.store_front_url);
         } else {
             val.store_logo = default_image;
