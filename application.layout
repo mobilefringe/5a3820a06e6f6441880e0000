@@ -191,7 +191,7 @@
                         <!--    </div>-->
                         <!--</a>-->
                         <div id="home_reg_hours_container">
-                            <script id="reg_hours_template" type="x-tmpl-mustache/text">
+                            <script id="home_reg_hours_template" type="x-tmpl-mustache/text">
                                 <div class="hours_div">
                                     <div class="day">{{day}}:</div>
                                     <div class="time">{{h}}</div>
