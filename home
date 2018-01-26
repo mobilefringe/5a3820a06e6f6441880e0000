@@ -148,7 +148,7 @@
     </div> 
 </div>
 <div class="home_subscription">
-    
+    <h1>Sign up for our e-newsletter</h1>
 </div>
 <script>
     $(document).ready(function(e) {
