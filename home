@@ -191,7 +191,7 @@
             // LOGO SCROLL //
             var stores = getStoresList();
             renderLogoScroll('#logo_container','#logo_template', stores);
-            console.log(stores);
+
             show_content();
             
             $('.flexslider').flexslider({
