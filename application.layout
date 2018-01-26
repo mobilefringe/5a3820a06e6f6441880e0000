@@ -191,13 +191,13 @@
                         <!--    </div>-->
                         <!--</a>-->
                         <div id="reg_hours_container">
-                <script id="reg_hours_template" type="x-tmpl-mustache/text">
-                    <div class="hours_div">
-                        <div class="day">{{day}}:</div>
-                        <div class="time">{{h}}</div>
-                    </div>
-                </script>
-            </div>
+                            <script id="reg_hours_template" type="x-tmpl-mustache/text">
+                                <div class="hours_div">
+                                    <div class="day">{{day}}:</div>
+                                    <div class="time">{{h}}</div>
+                                </div>
+                            </script>
+                        </div>
                     </div>
                     <hr class="horizontal_div show_phone">
                     <div class="col-md-4">
