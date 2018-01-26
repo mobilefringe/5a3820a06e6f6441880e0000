@@ -84,7 +84,7 @@
                             <div class="hours_container">
                                 <span id="home_hours_container" class="">
                                     <script id="home_hours_template" type="x-tmpl-mustache/text">
-                                        <span class="hours_dot"></span><span class="todays_hours">{% raw %} {{open}} {{hours}} {% endraw %}</span>
+                                        <span class="hours_dot"></span><span class="todays_hours">{% raw %} {{oopenpen}} {{hours}} {% endraw %}</span>
                                     </script>
                                 </span>
                                 <!--<a class="view_holiday_hours" href="/hours">View Holiday Hours</a>-->
