@@ -142,7 +142,6 @@
             <div id="logo_container" class="logo_slides" u="slides">
                 <script id="logo_template" type="x-tmpl-mustache/text">
                     <div><img u="image" alt="amazon" src="{{store_logo}}" /></div>
-                    {{store_logo}}
                 </script>
             </div>
         </div>
