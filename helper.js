@@ -32,6 +32,9 @@ function init() {
     var current_year = moment().year();
     $("#current_year").text(current_year);
 }
+function render_instagram(data){
+    $('#instafeed').html(data)
+}
 
 function show_content() {
     $("#content").css('visibility','visible').hide().fadeIn('slow');
