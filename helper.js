@@ -31,7 +31,9 @@ function init() {
     //dynamically changing copyright year
     var current_year = moment().year();
     $("#current_year").text(current_year);
+    get_instagram("//northside.mallmaverick.com/api/v2/northside/social.json", 9, 'thumbnail', render_instagram)
 }
+
 function render_instagram(data){
     $('#instafeed').html(data)
 }
