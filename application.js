@@ -431,7 +431,7 @@ function renderLogoScroll(container, template, collection){
             val.store_logo = getImageURL(val.store_front_url);
         } else {
             val.store_logo = default_image;
-            console.log("default_image",default_image);
+            console.log("default_image 2",default_image);
         }
         var repo_rendered = Mustache.render(template_html,val);
         item_rendered.push(repo_rendered);
