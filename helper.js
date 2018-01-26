@@ -10,7 +10,7 @@ function init() {
 	
     store_search();
     
-    get_instagram("", 5, 'standard_resolution', render_instagram); //Add social json
+    // get_instagram("", 5, 'standard_resolution', render_instagram); //Add social json
  
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         event.preventDefault();
