@@ -84,6 +84,7 @@ function get_instagram(url, total, size, callback){
                 feed_obj.image = v.images[size].url
                 feed_obj.link = v.link
                 if (i < total){
+                    console.log(i)
                     var ig_rendered =  Mustache.render(html,feed_obj);
                     item_rendered.push(ig_rendered.trim());
                 }
