@@ -71,6 +71,7 @@ var default_image = {
 }
 
 function get_instagram(url, total, size, callback){
+    console.log(total)
     var html = '<div class="insta_container"><a target="_blank" href="{{{link}}}"><img src="{{{image}}}" alt="{{caption}}"/></a></div>'
     var item_rendered = [];
     Mustache.parse(html); 
@@ -84,7 +85,7 @@ function get_instagram(url, total, size, callback){
                 feed_obj.image = v.images[size].url
                 feed_obj.link = v.link
                 if (i < total){
-                    console.log(i)
+                    console.log(i);
                     var ig_rendered =  Mustache.render(html,feed_obj);
                     item_rendered.push(ig_rendered.trim());
                 }
