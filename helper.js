@@ -34,9 +34,9 @@ function init() {
     get_instagram("//northside.mallmaverick.com/api/v2/northside/social.json", 9, 'thumbnail', render_instagram)
 }
 
-function render_instagram(data){
-    $('#instafeed').html(data)
-}
+// function render_instagram(data){
+//     $('#instafeed').html(data)
+// }
 
 function show_content() {
     $("#content").css('visibility','visible').hide().fadeIn('slow');
