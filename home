@@ -131,9 +131,9 @@
             <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1513635428533/blog_placeholder.png" class="" alt="">
         </div>
     </div>
-    <div class="instafeed_container">
-        <div id="instafeed"></div> 
-    </div>
+    <!--<div class="instafeed_container">-->
+    <!--    <div id="instafeed"></div> -->
+    <!--</div>-->
 </div>
 <div class="feature_container feature_container_logo">
     <div class="logo_scroll">
