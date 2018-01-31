@@ -159,7 +159,7 @@ Queen City Current has steadily built a strong brand in the online fashion and l
                         <h4> NEWSLETTER</h4>
                         <hr class="horizontal_div">
                         <div class="position_rel">
-                            <form action="//mobilefringe.createsend.com/t/d/s/fjdtyy/" method="post" id="newsletterForm">
+                            <form action="//mobilefringe.createsend.com/t/d/s/fjdtyy/" method="post" id="newsletterForm" onsubmit="return false">
                                 <label for="fieldEmail" style="display:none"></label>
                                 <input id="fieldEmail" name="cm-fjdtyy-fjdtyy" class="form-control" type="email" value="" placeholder="Enter your email for weekly updates" required/> 
                                 <button class="contact_btn" data-i18n="general.submit"><i class="fa fa-chevron-right"></i></button>
