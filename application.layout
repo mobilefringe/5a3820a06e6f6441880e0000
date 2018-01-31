@@ -203,7 +203,8 @@
                             <div class="footer_btn">
                                 <div class="footer_btn_text caps">Go to Directories</div>
                                 <div class="footer_btn_icon">
-                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                    <!--<i class="fa fa-map-o" aria-hidden="true"></i>-->
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517342211000/directoryicon.png" class="" alt="">
                                 </div>
                             </div>
                         </a>
