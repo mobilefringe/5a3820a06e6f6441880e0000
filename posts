@@ -1,105 +1,167 @@
-
-<!-- begin #page - the container for everything but header -->
-<div id="page">	
-	<!--notice how sliders are outside the this main content div-->
-	<div class="sparkNow">
-		<div class="container clearfix">	
-			<!-- begin equalHeights columns 3 -->
-			<h3 class="short_headline sparkNowTitle"><span>All Posts</span></h3>
-                <div class="row-fluid equalHero equalHeights" id="main-content">
-				         <center> <img alt="loading" style="width:100px; height:100px;" src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/gif/1488389451000/loading.gif"></center>
-				</div>
-                    <script id="blog_tile_template" type="x-tmpl-mustache">
-            			<div class="span6 sparkNowTile">
-            				<div class="sparkNowTileTop" style="background: url({{image_url}}) no-repeat center center">
-            				    {{#tag_first}}
-            				        <a href="/posts/{{slug}}" class="sparkNowTileTag">{{.}}</a>
-                                {{/tag_first}}
-            					<a href="/posts/{{slug}}" class="sparkNowTileImg">
-            					</a>
-            				</div>
-            				<div class="sparkNowTileTitle">
-            				    <a href="/posts/{{slug}}"><h3>{{ title }}</h3></a>
-            				    {{#video_link}}
-            				        <img src="//kodekloud.s3.amazonaws.com/sites/5512e0606e6f64112d000000/29a93cc9dd3b7f858a31366f54bbc07b/video_icon.png" class="" alt="">
-            				    {{/video_link}}
-            				</div>
-            				<a class="sparkNowTileRead" href="/posts/{{slug}}">READ <i class="fa fa-caret-right fa-lg"></i></a>
-            			</div>
-				    </script>
-	   		<div class="sparkNowMore">
-				<a href="javascript:void(0);" onclick="renderPostTileTemplate('#blog_tile_template', '#main-content',getBlogDataBySlug('cornwall-main').posts);">SEE MORE	<i class="fa fa-caret-down fa-lg"></i></a>
+<div class="content_container">
+	<div class="blog_banner text-center position_rel" id="blog_banner_container">
+		<!--<img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1515692811302/Screen Shot 2018-01-11 at 12.46.36 PM.png" class="" alt="">-->
+		<script id = "blog_banner_template" type="x-tmpl-mustache">
+			<img src="{{image_url}}"/>
+			<div class="blog_banner_title">
+			    <h1>  {{title}} <h1/>
+			    <p>{{publish_date}}</p>
 			</div>
+		</script>
+	</div>
+	<div class="row blogs_container" >
+	    <div class="blog_selector_bar col-sm-9">
+			<span class="blog_selector">Popular</span>
+			<span class="blog_selector active">Latest</span>
+			<hr>
+		</div>
+			
+		<div class="col-sm-9 col-xs-12">
+			<div id="latest_blog_container_1" class="latest_blog_container">
+        		<script id = "latest_blog_template_1" type="x-tmpl-mustache">
+        		    <div class="row blog_post" >
+        			    <div class="col-sm-4">
+        				    <a href="/posts/{{slug}}">
+        				        <img src="{{image_url}}"/>
+        				    </a>
+        				</div>
+        				
+        				<div class="col-sm-8">
+        				    <div class="dets_div">
+        				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
+        				       <a href="/posts/{{slug}}"><h3>  {{title}} <h3/><a/>
+        				       <p class="blog_dates">{{publish_date}}</p>
+        				       <p class="blog_short_desc"> {{description_short}}</p>
+        				   </div>
+        				</div>
+        		    </div>
+        		</script>
+        	</div>
+        	<div id="popular_blog_container_1" class="hidden_now popular_blog_container" >
+        		<script id = "popular_blog_template_1" type="x-tmpl/mustache">
+        			<div class="row blog_post">
+        			    <div class="col-sm-4">
+        				    <a href="/posts/{{slug}}">
+        				        <img src="{{image_url}}"/>
+        				    </a>
+        				</div>
+        				
+        				<div class="col-sm-8">
+        				    <div class="dets_div">
+        				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
+        				       <a href="/posts/{{slug}}"><h3>  {{title}} <h3/><a/>
+        				       <p class="blog_dates">{{publish_date}}</p>
+        				       <p class="blog_short_desc"> {{description_short}}</p>
+        				   </div>
+        				</div>
+        		    </div>
+        		</script>
+        	</div>
+        </div>
+		<div class="col-sm-3 newsletter_box hidden_phone">
+		    <div class="side_newsletter_subscription">
+		        <p class="caps subscribe">Subscribe to</p>
+		        <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1515794720080/Screen Shot 2018-01-12 at 5.05.11 PM.png" class="" alt="">
+		        <p class="text-center stay_updated">Stay updated on the latest news with our carefully curated newsletters. </p>
+		        <form action=//mobilefringe.createsend.com/t/d/s/ykouu/ method="post" id="sideNewsletterBlogForm">
+                    <label for="fieldEmail" style="display:none"></label>
+                    <input id="fieldEmail" name="cm-tkyhii-tkyhii" class="form-control" type="email" value="" placeholder="Enter your email address" required/> 
+                    <button class="contact_btn" data-i18n="general.submit">Sign Up</button>
+                    
+                    <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
+                </form>
+		    </div>
 		</div>
 	</div>
 </div>
-
-
+<div class="row blog_newsletter_banner">
+    <div class="blog_img" style="background-image: url('http://via.placeholder.com/1920x350/000000/ffffff?text=+');">
+        <div class="subscribeBlog">
+            <p class="caps">Your Weekly Dose of</p>
+            <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1515709428865/Screen Shot 2018-01-11 at 5.23.41 PM.png" class="" alt="">
+        <form action=//mobilefringe.createsend.com/t/d/s/ykouu/ method="post" id="newsletterBlogForm">
+            <label for="fieldEmail" style="display:none"></label>
+            <input id="fieldEmail" name="cm-tkyhii-tkyhii" class="form-control" type="email" value="" placeholder="Enter your email address" required/> 
+            <button class="contact_btn" data-i18n="general.submit">Sign Up</button>
+            
+            <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
+        </form>
+        </div>
+        
+    </div>
+    
+</div>
+<div class="content_container bottom_blogs">
+    <div class="col-sm-8 ">
+        <div class="latest_blog_container">
+            <div id="latest_blog_container_2" >
+        		<script id = "latest_blog_template_2" type="x-tmpl-mustache">
+        		    <div class="row blog_post hidden_now"  id="latest_show_{{counter}}">
+        			    <div class="col-sm-4">
+        			        <a href="/posts/{{slug}}">
+        				        <img src="{{image_url}}"/>
+        				    </a>
+        				</div>
+        				
+        				<div class="col-sm-8">
+        				    <div class="dets_div">
+        				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
+        				       <a href="/posts/{{slug}}"><h3>  {{title}} <h3/><a/>
+        				       <p class="blog_dates">{{publish_date}}</p>
+        				       <p class="blog_short_desc"> {{description_short}}</p>
+        				   </div>
+        				</div>
+        		    </div>
+        		</script>
+        	</div>
+            <div class="row load_more">
+                <input type="hidden" value="1" id="num_loaded_1" />
+                <p class="hidden_now" id ="all_loaded_1">No More Posts</p>
+                <a href="#" class="red" id="load_more_posts_1">
+                    <p class="loaded_posts" id="loaded_posts_1">
+                        <span class="post_details_link">More +</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="hidden_now popular_blog_container">
+           <div id="popular_blog_container_2" >
+        		<script id = "popular_blog_template_2" type="x-tmpl/mustache">
+        			<div class="row  blog_post hidden_now"  id="pop_show_{{counter}}">
+        			    <div class="col-sm-4">
+        				    <a href="/posts/{{slug}}">
+        				        <img src="{{image_url}}"/>
+        				    </a>
+        				</div>
+        				
+        				<div class="col-sm-8">
+        				    <div class="dets_div">
+        				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
+        				       <a href="/posts/{{slug}}"><h3>  {{title}} <h3/><a/>
+        				       <p class="blog_dates">{{publish_date}}</p>
+        				       <p class="blog_short_desc"> {{description_short}}</p>
+        				   </div>
+        				</div>
+        		    </div>
+        		</script>
+    	    </div>
+    	    <div class="row load_more">
+                <input type="hidden" value="1" id="num_loaded_2" />
+                <p class="hidden_now" id ="all_loaded_2">No More Posts</p>
+                <a href="#" class="red" id="load_more_posts_2">
+                    <p class="loaded_posts" id="loaded_posts_2">
+                        <span class="post_details_link">More +</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
-$(document).ready(function() {
-    function renderPageData(){
-        renderPostTileTemplate('#blog_tile_template', '#main-content', getBlogDataBySlug('cornwall-main').posts);
-    }
-    
-    loadMallData(renderPageData);
-});
-var interval = 4;
-var totalPosts;
-var showingPosts;
-
-function checkSeeMoreButton(){
-    if(totalPosts > showingPosts){
-        $('.sparkNowMore').fadeIn();
-    }else{
-        $('.sparkNowMore').fadeOut();
-    }
-}
-
-function renderPostTileTemplate(blog_template, blog_block, post){
-
-    var item_list = [];
-    var item_rendered = [];
-    var blog_template_html = $(blog_template).html();
-    Mustache.parse(blog_template_html);   // optional, speeds up future uses
-    
-    totalPosts = post.length;
-    showingPosts = $('.sparkNowTile').length + interval;
-
-
-    $.each( post , function( key, val ) {
-        item_list.push(val);
+    $(document).ready(function(e) {
+        init(e);
+        loadMallData(renderPostsPageData);
+        show_content();
     });
-
-    $.each( item_list , function(key,val){
-        if(val.tag !== null && val.tag.length != 0){
-            val.tag_first = val.tag[0];
-        }
-    });
-    item_list.sort(function(a, b){
-        if(a.publish_date > b.publish_date) return -1;
-        if(a.publish_date < b.publish_date) return 1;
-        return 0;
-    });
-
-    $.each( item_list , function( index, val ) {
-        if (index >= showingPosts) {return false;};
-        
-        var blog_rendered = Mustache.render(blog_template_html,val);
-        item_rendered.push(blog_rendered);
-    });
-    $(blog_block).html(item_rendered.join(''));
-    checkSeeMoreButton();
-}
-
 </script>
-
-
-
-
-<style>
-    .sparkNow{
-        margin-top:3%;
-        margin-bottom:3%;
-    }
-</style>
