@@ -74,7 +74,7 @@
                 <p class="home_see_all"><a href="/posts">See all news articles </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>
             </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 text-center">
             <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1513635428533/blog_placeholder.png" class="" alt="">
         </div>
     </div>
