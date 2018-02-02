@@ -330,7 +330,7 @@
     //     });
             
         show_content();
-        $(window).resize();
+        // $(window).resize();
         $("#zoom_image").click();
     });
 
