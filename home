@@ -161,7 +161,7 @@
             // }
             renderPromotions('#home_promo_container','#home_promo_template', published_promos);
             var blog_posts = getBlogByName("main").sortBy(function(o){return o.publish_date;}).reverse().slice(0, 4);
-            blog_posts[0].latest_post = "NEW POST!";
+            blog_posts[0].latest_post = "/ NEW POST!";
             renderPosts('#home_blog_container','#home_blog_template', blog_posts);
             renderPosts('#home_mblog_container','#home_mblog_template', blog_posts);
             console.log(blog_posts);
