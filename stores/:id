@@ -296,7 +296,15 @@
 			zoom_OUT_TO_FIT: "YES",
 			container: 'zoom_container_directory'
 		});
-
+        var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+    		var store_details = getStoreDetailsBySlug(slug);
+    	    var store_x_coordinate = store_details.x_coordinate;
+    	    var store_y_coordinate = store_details.y_coordinate;
+    		var pin_id = store_details.id; 
+    		var store_name = store_details.name;
+    		add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
+    		
         $('.map_pin_a').click(function(e){
             console.log("in map_pin_a");
             e.preventDefault();
