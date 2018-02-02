@@ -6,7 +6,7 @@
                     <a href="{{url}}" {{css}} onclick="{{noLink}}">
                         <div class="banner_img" style="background-image: url({{image_url}});"
                     </a>
-                </li>
+                </li>w
             </script>
         </ul>
     </div>
@@ -17,17 +17,17 @@
         <div class="flex_container">
             <div class="width_30">
                 <a href="/stores">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517433211000/directory.png" class="" alt="">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517587637000/directory.png" class="" alt="">
                 </a>
             </div>
             <div class="width_30">
                 <a href="/promotions">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517433211000/tag.png" class="" alt="">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517587637000/tag.png" class="" alt="">
                 </a>
             </div>
             <div class="width_30">
                 <a href="/hours">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517433211000/hours.png" class="" alt="">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517587637000/hours.png" class="" alt="">
                 </a>
             </div>
         </div>
@@ -36,7 +36,7 @@
 <div class="content_container">
     <div class="promo_blog_container">
         <div class="col-sm-6 text-center">
-            <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/jpeg/1517586602820/promo_placeholder.jpg" class="" alt="">
+            <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1513635417498/promo_placeholder.png" class="" alt="">
         </div>
         <div class="col-sm-6">
             <div class="home_promos">
@@ -49,8 +49,7 @@
                             </div>
                             
                             <h2 class="home_promo_name"> {{name}} </h2>
-                            <p class="home_promo_dates"> {{dates }} <span style="color:#ff5455;"> {{days_left}}</span></p>
-                            <p class="home_promo_desc">{{description_short}}</p>
+                            <p class="home_promo_dates"> {{dates }} <span style="font-style: italic;color:red;"> {{days_left}}</span></p>
                             <a class="home_read_more caps" href="/stores/{{slug}}"><p>Read More</p></a>
                         </div>
                     </script>
@@ -76,7 +75,7 @@
             </div>
         </div>
         <div class="col-sm-6 text-center">
-            <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/jpeg/1517586613228/blog_placeholder.jpg" class="" alt="">
+            <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1513635428533/blog_placeholder.png" class="" alt="">
         </div>
         <div class="col-sm-6 show_phone">
             <div class="home_promos">
