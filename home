@@ -50,7 +50,7 @@
                             
                             <h2 class="home_promo_name"> {{name}} </h2>
                             <p class="home_promo_dates"> {{dates }} <span style="color:#ff5455;"> {{days_left}}</span></p>
-                            <p class="home_promo_dates">{{description_short}}</p>
+                            <p class="home_promo_desc">{{description_short}}</p>
                             <a class="home_read_more caps" href="/stores/{{slug}}"><p>Read More</p></a>
                         </div>
                     </script>
