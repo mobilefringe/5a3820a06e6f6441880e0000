@@ -62,12 +62,12 @@
     <div class="promo_blog_container">
         <div class="col-sm-6 hidden_phone">
             <div class="home_promos">
-                <h2 class="details_title caps"><img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517342534000/crowniconbrown-01.png" class="" alt="" style="height: 20px;margin-bottom: 7px;">&nbsp;&nbsp;&nbsp;Blog</h2>
+                <h2 class="details_title caps"><img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517342534000/crowniconbrown-01.png" class="" alt="" style="height: 30px;margin-bottom: 10px;">&nbsp;&nbsp;Blog</h2>
                 <div id="home_blog_container" class="dine_container margin_20">
                     <script id="home_blog_template" type="x-tmpl-mustache/text">
                         <div class="margin_30">
                             <h2 class="home_promo_name"> {{title}} </h2>
-                            <p class="home_promo_dates"> {{publish_date}} <span style="color:#ff5455;"> {{latest_post}}</span></p>
+                            <p class="home_promo_dates"> {{publish_date}}</p>
                             <a class="home_read_more caps" href="/posts/{{slug}}"><p>Read More</p></a>
                         </div>
                     </script>
@@ -160,8 +160,7 @@
             //     renderPromotions("#promo_container","#promo_template", published_promos);
             // }
             renderPromotions('#home_promo_container','#home_promo_template', published_promos);
-            var blog_posts = getBlogByName("main").sortBy(function(o){return o.publish_date;}).reverse().slice(0, 4);
-            blog_posts[0].latest_post = "/ NEW POST!";
+            var blog_posts = getBlogByName("main").sortBy(function(o){return o.publish_date;}).reverse().slice(0, 4);;
             renderPosts('#home_blog_container','#home_blog_template', blog_posts);
             renderPosts('#home_mblog_container','#home_mblog_template', blog_posts);
             console.log(blog_posts);
