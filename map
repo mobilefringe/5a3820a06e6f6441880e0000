@@ -137,7 +137,7 @@
     //         });
     //         console.log("stores", stores);
     //         init_map(reg);
-            show_content();
+            // show_content();
         }
         loadMallDataCached(renderAll); 
     });
