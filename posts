@@ -39,7 +39,7 @@
         				        <p class="blog_short_desc"> {{description_short}}</p>
         				        <a href="/posts/{{slug}}">
 				                    <p>Read More</p>
-				               </a>
+				                </a>
         				   </div>
         				</div>
         		    </div>
