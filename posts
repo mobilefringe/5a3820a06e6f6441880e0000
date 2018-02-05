@@ -1,17 +1,16 @@
 <div class="content_container">
     <div>
-    
-	<div class="blog_banner text-center position_rel" id="blog_banner_container">
-		<!--<img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1515692811302/Screen Shot 2018-01-11 at 12.46.36 PM.png" class="" alt="">-->
-		<script id = "blog_banner_template" type="x-tmpl-mustache">
-		    <div class="col-sm-6"><img src="{{image_url}}"/></div>
-		    <div class="col-sm-6"><img src="{{second_image_url}}"/></div>
-			<div class="blog_banner_title">
-			    <h1>  {{title}} <h1/>
-			    <p>{{publish_date}}</p>
-			</div>
-		</script>
-	</div>    
+        <div class="blog_banner text-center position_rel" id="blog_banner_container">
+    		<!--<img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1515692811302/Screen Shot 2018-01-11 at 12.46.36 PM.png" class="" alt="">-->
+    		<script id = "blog_banner_template" type="x-tmpl-mustache">
+    		    <div class="col-sm-6"><img src="{{image_url}}"/></div>
+    		    <div class="col-sm-6"><img src="{{second_image_url}}"/></div>
+    			<div class="blog_banner_title">
+    			    <h1>  {{title}} <h1/>
+    			    <p>{{publish_date}}</p>
+    			</div>
+    		</script>
+    	</div>    
     </div>
 	<div class="row blogs_container" >
 	    <div class="blog_selector_bar col-sm-9">
