@@ -38,7 +38,7 @@
         				       <p class="blog_dates">{{publish_date}}</p>
         				       <p class="blog_short_desc"> {{description_short}}</p>
         				       <a href="/posts/{{slug}}">
-				                    <p>Read More</p>
+				                <p>Read More</p>
 				               </a>
         				   </div>
         				</div>
