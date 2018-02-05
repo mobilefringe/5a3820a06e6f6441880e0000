@@ -7,7 +7,9 @@
     		    <div class="col-sm-6 no_padding"><img src="{{second_image_url}}"/></div>
     			<div class="blog_banner_title">
     			    <h1>  {{title}} <h1/>
-    			    <p>{{publish_date}}</p>
+    			    <a href="/posts/{{slug}}">
+				        <p>Read More</p>
+				    </a>
     			</div>
     		</script>
     	</div>    
