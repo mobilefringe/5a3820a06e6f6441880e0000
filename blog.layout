@@ -123,6 +123,9 @@
                 </ul>
             </nav>
         </div>
+        <div>
+            <input/>
+        </div>
     </header>
     <section id="content">
         {{yield}}
