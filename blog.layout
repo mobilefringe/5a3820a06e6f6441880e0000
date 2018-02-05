@@ -124,7 +124,7 @@
             </nav>
         </div>
         <div>
-            <input/>
+            <input type="text/>
         </div>
     </header>
     <section id="content">
