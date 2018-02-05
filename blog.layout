@@ -123,8 +123,19 @@
                 </ul>
             </nav>
         </div>
-        <div>
-            <input type="text"/>
+        <div style="
+    width: 100%;
+    text-align: center;
+    border: none;
+">
+            <input type="text" style="
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    border: none;
+    border-bottom: 1px solid #9e846b;
+"/>
         </div>
     </header>
     <section id="content">
