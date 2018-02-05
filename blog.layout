@@ -128,7 +128,7 @@
     text-align: center;
     border: none;
 ">
-            <input type="text" style="
+            <input type="text" placeholder="Search..." style="
     width: 90%;
     height: 50px;
     text-align: center;
