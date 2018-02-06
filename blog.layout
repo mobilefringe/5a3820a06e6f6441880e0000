@@ -129,12 +129,7 @@
     border: none;
 ">
 <div class="col-xs-10">
-    
-</div>
-<div class="col-xs-2">
-    
-</div>
-            <input type="text" placeholder="Search..." style="
+    <input type="text" placeholder="Search..." style="
     width: 90%;
     height: 50px;
     text-align: center;
@@ -142,7 +137,12 @@
     border: none;
     border-bottom: 1px solid #9e846b;
 "/>
-<button>Search</button>
+</div>
+<div class="col-xs-2">
+    <button>Search</button>
+</div>
+            
+
         </div>
     </header>
     <section id="content">
