@@ -128,7 +128,7 @@
                 <input type="text" placeholder="Search..."/>
             </div>
             <div class="col-xs-2 no_padding">
-                <a class="search_btn">Search</a>
+                <a class="search_btn" href="/search">Search</a>
             </div>
         </div>
     </header>
