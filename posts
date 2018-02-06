@@ -69,7 +69,7 @@
         		</script>
         	</div>
         	<div id="no_posts" class="hidden_now ">
-        	    <h4></h4>
+        	    <h4>Sorry, no Posts.</h4>
         	</div>
         </div>
 		<div class="col-sm-3 newsletter_box hidden_phone">
