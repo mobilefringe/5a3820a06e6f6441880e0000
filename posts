@@ -68,7 +68,7 @@
         		    </div>
         		</script>
         	</div>
-        	<div id="no_posts" class="hidden_now popular_blog_container">
+        	<div id="no_posts" class="hidden_now ">
         	    
         	</div>
         </div>
