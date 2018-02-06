@@ -16,8 +16,8 @@
     </div>
 	<div class="row blogs_container" >
 	    <div class="blog_selector_bar col-sm-9">
-			<span class="col-xs-6 blog_selector active">Latest</span>
-			<span class="col-xs-6 blog_selector">Popular</span>
+			<span class="col-xs-6 col-sm-3 blog_selector active">Latest</span>
+			<span class="col-xs-6 col-sm-3 blog_selector">Popular</span>
 			<hr>
 		</div>
 			
