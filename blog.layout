@@ -125,7 +125,7 @@
         </div>
         <div class="row search_bar">
             <div class="col-xs-10 no_padding">
-                <input type="text" placeholder="Search..."/>
+                <input id= "search_string" type="text" placeholder="Search..."/>
             </div>
             <div class="col-xs-2 no_padding">
                 <div class="search_btn"><a href="/posts?search">Search</a></div>
