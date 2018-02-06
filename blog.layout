@@ -82,12 +82,12 @@
                             <nav id="primary_nav">
                                 <ul class="">
                                     <li class="menu_item"><a href="/posts?tag=fashion">Fashion</a></li>
-                                    <li class="menu_item"><a href="/posts?beauty">Beauty</a></li>
-                                    <li class="menu_item"><a href="/posts?homedecor">Home + Decor</a></li>
-                                    <li class="menu_item"><a href="/posts?steetstyle">Streetstyle</a></li>
-                                    <li class="menu_item"><a href="/posts?community">Community</a></li>
-                                    <li class="menu_item"><a href="/posts?food">Food</a></li>
-                                    <li class="menu_item"><a href="/posts?video">Video</a></li>
+                                    <li class="menu_item"><a href="/posts?tag=beauty">Beauty</a></li>
+                                    <li class="menu_item"><a href="/posts?tag=homedecor">Home + Decor</a></li>
+                                    <li class="menu_item"><a href="/posts?tag=steetstyle">Streetstyle</a></li>
+                                    <li class="menu_item"><a href="/posts?tag=community">Community</a></li>
+                                    <li class="menu_item"><a href="/posts?tag=food">Food</a></li>
+                                    <li class="menu_item"><a href="/posts?tag=video">Video</a></li>
                                 </ul>
                             </nav>
                         </div>
