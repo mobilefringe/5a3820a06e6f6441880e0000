@@ -123,26 +123,13 @@
                 </ul>
             </nav>
         </div>
-        <div class="row search_bar" style="
-    width: 100%;
-    text-align: center;
-    border: none;
-">
-<div class="col-xs-10">
-    <input type="text" placeholder="Search..." style="
-    width: 90%;
-    height: 50px;
-    text-align: center;
-    margin: auto;
-    border: none;
-    border-bottom: 1px solid #9e846b;
-"/>
-</div>
-<div class="col-xs-2">
-    <button>Search</button>
-</div>
-            
-
+        <div class="row search_bar">
+            <div class="col-xs-10 no_padding">
+                <input type="text" placeholder="Search..."/>
+            </div>
+            <div class="col-xs-2 no_padding">
+                <button>Search</button>
+            </div>
         </div>
     </header>
     <section id="content">
