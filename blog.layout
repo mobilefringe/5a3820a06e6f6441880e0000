@@ -81,7 +81,7 @@
                         <div class="nav_container pull-right">
                             <nav id="primary_nav">
                                 <ul class="">
-                                    <li class="menu_item"><a href="/posts?fashion">Fashion</a></li>
+                                    <li class="menu_item"><a href="/posts?tag=fashion">Fashion</a></li>
                                     <li class="menu_item"><a href="/posts?beauty">Beauty</a></li>
                                     <li class="menu_item"><a href="/posts?homedecor">Home + Decor</a></li>
                                     <li class="menu_item"><a href="/posts?steetstyle">Streetstyle</a></li>
