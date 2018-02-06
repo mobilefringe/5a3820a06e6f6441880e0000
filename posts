@@ -68,6 +68,7 @@
         		    </div>
         		</script>
         	</div>
+        	<div id="popular_blog_container_1" class="hidden_now popular_blog_container" > </div>
         </div>
 		<div class="col-sm-3 newsletter_box hidden_phone">
 		    <div class="side_newsletter_subscription">
