@@ -128,7 +128,7 @@
                 <input id= "search_string" type="text" placeholder="Search..."/>
             </div>
             <div class="col-xs-2 no_padding">
-                <div class="search_btn">Search</div>
+                <div class="search_btn" onclick="searchFunction()">Search</div>
             </div>
         </div>
     </header>
