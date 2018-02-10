@@ -221,7 +221,7 @@
                         </a>
                     </div>
                     <hr class="horizontal_div show_phone">
-                    <div class="col-md-4">
+                    <div class="col-md-4" style="    overflow: hidden;">
                         <h3 class="footer_nav_title caps"  style="padding-left:30px;">Menu</h3>
                         <div class="margin_30 hidden_phone"></div>
                         <ul class="footer_menu footer_menu_left">
