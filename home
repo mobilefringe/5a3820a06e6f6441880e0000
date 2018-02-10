@@ -84,9 +84,9 @@
         </div>
         <div id="blog_feature_container" class="col-sm-6 text-center">
             <script id="blog_feature_template" type="x-tmpl-mustache/text">
-                <div class="width_50">
+                <a href="{{url}}" class="">
                     <img src="{{image_url}}" alt="Promotional Image">
-                </div>
+                </a>
             </script>
         </div>
         <div class="col-sm-6 text-center">
