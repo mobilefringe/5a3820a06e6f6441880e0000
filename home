@@ -150,8 +150,8 @@
             var giftcard_image = all_feature_items.slice(0);
             var blog_image = all_feature_items.slice(1);
             renderGeneral('#feature_container','#feature_template', three_items);
-            renderGeneral('#single_feature_container','#single_feature_template', giftcard_image);
-            renderGeneral('#single_feature_container','#single_feature_template', blog_image);
+            renderGeneral('#giftcard_feature_container','#giftcard_feature_template', giftcard_image);
+            renderGeneral('#blog_feature_container','#blog_feature_template', blog_image);
 
             
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
