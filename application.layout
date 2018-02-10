@@ -97,6 +97,14 @@
                                 <!--<a href="" target="_blank"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>-->
                                 <a href="https://www.instagram.com/CornwallCentre" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                 <a href="https://www.youtube.com/CornwallCentre" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                <label class="top_form_control no_margin">
+                                    <input type="text" placeholder="Search Stores" id="site_search" />
+                                    <i id="search_icon" class="fa fa-search"></i>
+                                    <i id="close_search" class="fa fa-times-circle"></i>
+                                </label>
+                                <div class="site_search_results" id="search_results_stores"></div>
+                                <div class="site_search_results" id="search_results_events"></div>
+                                <div class="site_search_results" id="search_results_promotions"></div>
                             </div>
                             <div class="site_search hidden_phone">
                                 <label class="top_form_control no_margin">
