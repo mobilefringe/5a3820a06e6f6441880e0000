@@ -75,7 +75,7 @@
 		    <div class="side_newsletter_subscription">
 		        <p class="caps subscribe">Subscribe to</p>
 		        <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1518304880396/QCC logo white_gold_box.png" class="" alt="">
-		        <p class="text-center stay_updated">Stay updated on the latest news with our carefully curated newsletters. </p>
+		        <p class="text-center stay_updated">Get a weekly dose of style and beauty insipiration </p>
 		        <form class="blogNewsletterForm" method="post" id="sideNewsletterBlogForm">
                     <label for="fieldEmail" style="display:none"></label>
                     <input id="fieldEmail" name="cm-fjdtyy-fjdtyy" class="form-control" type="email" value="" placeholder="Enter your email address" required/> 
