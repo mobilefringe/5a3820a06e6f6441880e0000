@@ -151,7 +151,7 @@
             renderGeneral('#feature_container','#feature_template', three_items);
             renderGeneral('#single_feature_container','#single_feature_template', single_item);
 
-            /
+            
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
             var published_promos = [];
             $.each(promotions, function(key, val){
