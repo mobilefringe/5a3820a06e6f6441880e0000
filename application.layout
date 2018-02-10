@@ -114,9 +114,9 @@
                                     <i id="search_icon" class="fa fa-search"></i>
                                     <i id="close_search" class="fa fa-times-circle"></i>
                                 </label>
-                                <div class="site_search_results" id="search_results_stores"></div>
-                                <div class="site_search_results" id="search_results_events"></div>
-                                <div class="site_search_results" id="search_results_promotions"></div>
+                                <div class="site_search_results search_results_stores" id="search_results_stores"></div>
+                                <div class="site_search_results search_results_events" id="search_results_events"></div>
+                                <div class="site_search_results search_results_promotions" id="search_results_promotions"></div>
                             </div>
                         </div>
                     </div>
