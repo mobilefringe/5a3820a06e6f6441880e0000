@@ -98,7 +98,7 @@
                                 <a href="https://www.instagram.com/CornwallCentre" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                 <a href="https://www.youtube.com/CornwallCentre" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                             </div>
-                            <div class="site_search">
+                            <div class="site_search hidden_phone">
                                 <label class="top_form_control no_margin">
                                     <input type="text" placeholder="Search Stores" id="site_search" />
                                     <i id="search_icon" class="fa fa-search"></i>
