@@ -37,7 +37,7 @@
     <div class="promo_blog_container">
         <div id="giftcard_feature_container">
             <script id="giftcard_feature_template" type="x-tmpl-mustache/text">
-                <div class="col-sm-6 text-center">
+                <div class="">
                     <img src="{{image_url}}" alt="Promotional Image">
                 </div>
             </script>
