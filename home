@@ -77,11 +77,11 @@
                         <div class="margin_30">
                             <h2 class="home_promo_name"> {{title}} </h2>
                             <p class="home_promo_dates"> {{publish_date}} <span style="color:#ff5455;"> {{latest_post}}</span></p>
-                            <a class="home_read_more caps" href="/posts/{{slug}}"><p>Read More</p></a>
+                            <a class="home_read_more caps" href="/blog/{{slug}}"><p>Read More</p></a>
                         </div>
                     </script>
                 </div>
-                <!--<p class="home_see_all"><a href="/posts">See all news articles </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>-->
+                <!--<p class="home_see_all"><a href="/blog">See all news articles </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>-->
             </div>
         </div>
         <!--<div id="blog_feature_container" class="col-sm-6 text-center">-->
@@ -92,7 +92,7 @@
         <!--    </script>-->
         <!--</div>-->
         <div class="col-sm-6 text-center">
-            <a href="/posts">
+            <a href="/pots">
                 <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/jpeg/1517589188000/blog_placeholder.jpg" class="" alt="">
             </a>
         </div>
@@ -104,11 +104,11 @@
                         <div class="margin_30">
                             <h2 class="home_promo_name"> {{title}} </h2>
                             <p class="home_promo_dates"> {{publish_date}} <span style="color:#ff5455;"> {{latest_post}}</span></p>
-                            <a class="home_read_more caps" href="/posts/{{slug}}"><p>Read More</p></a>
+                            <a class="home_read_more caps" href="/blog/{{slug}}"><p>Read More</p></a>
                         </div>
                     </script>
                 </div>
-                <!--<p class="home_see_all"><a href="/posts">See all news articles </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>-->
+                <!--<p class="home_see_all"><a href="/blog">See all news articles </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>-->
             </div>
         </div>
     </div>
