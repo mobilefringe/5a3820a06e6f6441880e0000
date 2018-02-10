@@ -35,7 +35,7 @@
                 <script id="holiday_hours_template" type="x-tmpl-mustache/text">
                     <div class="holiday_hours_div">
                         <div class="day col-sm-8"> {{holiday_name}} ({{formatted_date}}) </div>
-                        <div class="time c0l-sm-4"> {{h}}  </div>
+                        <div class="time col-sm-4"> {{h}}  </div>
                     </div>
                 </script>
             </div>
