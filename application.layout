@@ -227,9 +227,9 @@
                         <ul class="footer_menu footer_menu_left">
                             <li><a href="/map">Map</a></li>
                             <li><a href="/contact_us">Contact Us</a></li>
+                            <li><a href="/jobs">Jobs</a></li>
                         </ul>
                         <ul class="footer_menu footer_menu_right">
-                            <li><a href="/jobs">Jobs</a></li>
                             <li><a href="/events">Events</a></li>
                             <li><a href="/leasing">Leasing</a></li>
                             <li><a href="/leasing">Downloadable Directory Brochure</a></li>
