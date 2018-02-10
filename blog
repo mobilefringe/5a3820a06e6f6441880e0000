@@ -18,7 +18,6 @@
 	    <div class="blog_selector_bar col-sm-9">
 			<span class="col-xs-6 col-sm-3 blog_selector active">Latest</span>
 			<span class="col-xs-6 col-sm-3 blog_selector">Popular</span>
-			<hr style="margin-top: 33px;">
 		</div>
 			
 		<div class="col-sm-9 col-xs-12">
