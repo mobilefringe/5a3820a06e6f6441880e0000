@@ -73,7 +73,7 @@
             <div class="nav_header">
                 <div class="content_container position_rel">
                     <div class="logo_container col-sm-4 col-xs-8">
-                        <a href="/posts">
+                        <a href="/blog">
                             <img class="logo" src="///codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1515625609834/Screen Shot 2018-01-10 at 6.06.40 PM.png">
                         </a>
                     </div>
@@ -81,13 +81,13 @@
                         <div class="nav_container pull-right">
                             <nav id="primary_nav">
                                 <ul class="">
-                                    <li class="menu_item"><a href="/posts?tag=fashion">Fashion</a></li>
-                                    <li class="menu_item"><a href="/posts?tag=beauty">Beauty</a></li>
-                                    <li class="menu_item"><a href="/posts?tag=homedecor">Home + Decor</a></li>
-                                    <li class="menu_item"><a href="/posts?tag=steetstyle">Streetstyle</a></li>
-                                    <li class="menu_item"><a href="/posts?tag=community">Community</a></li>
-                                    <li class="menu_item"><a href="/posts?tag=food">Food</a></li>
-                                    <li class="menu_item"><a href="/posts?tag=video">Video</a></li>
+                                    <li class="menu_item"><a href="/blog?tag=fashion">Fashion</a></li>
+                                    <li class="menu_item"><a href="/blog?tag=beauty">Beauty</a></li>
+                                    <li class="menu_item"><a href="/blog?tag=homedecor">Home + Decor</a></li>
+                                    <li class="menu_item"><a href="/blog?tag=steetstyle">Streetstyle</a></li>
+                                    <li class="menu_item"><a href="/blog?tag=community">Community</a></li>
+                                    <li class="menu_item"><a href="/blog?tag=food">Food</a></li>
+                                    <li class="menu_item"><a href="/blog?tag=video">Video</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -113,13 +113,13 @@
         <div class="mobile_menu_container hidden_now">
             <nav id="primary_nav">
                 <ul class="">
-                    <li class="menu_item"><a href="/posts?tag=fashion">Fashion</a></li>
-                    <li class="menu_item"><a href="/posts?tag=beauty">Beauty</a></li>
-                    <li class="menu_item"><a href="/posts?tag=homedecor">Home + Decor</a></li>
-                    <li class="menu_item"><a href="/posts?tag=steetstyle">Streetstyle</a></li>
-                    <li class="menu_item"><a href="/posts?tag=community">Community</a></li>
-                    <li class="menu_item"><a href="/posts?tag=food">Food</a></li>
-                    <li class="menu_item"><a href="/posts?tag=video">Video</a></li>
+                    <li class="menu_item"><a href="/blog?tag=fashion">Fashion</a></li>
+                    <li class="menu_item"><a href="/blog?tag=beauty">Beauty</a></li>
+                    <li class="menu_item"><a href="/blog?tag=homedecor">Home + Decor</a></li>
+                    <li class="menu_item"><a href="/blog?tag=steetstyle">Streetstyle</a></li>
+                    <li class="menu_item"><a href="/blog?tag=community">Community</a></li>
+                    <li class="menu_item"><a href="/blog?tag=food">Food</a></li>
+                    <li class="menu_item"><a href="/blog?tag=video">Video</a></li>
                 </ul>
             </nav>
         </div>
