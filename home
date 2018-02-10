@@ -147,7 +147,7 @@
             
             var all_feature_items = getFeatureList();
             var three_items = all_feature_items.slice(0, 3);
-            var giftcard_ = all_feature_items.slice(3, 5);
+            var giftcard = all_feature_items.slice(3, 5);
             renderGeneral('#feature_container','#feature_template', three_items);
             renderGeneral('#single_feature_container','#single_feature_template', single_item);
 
