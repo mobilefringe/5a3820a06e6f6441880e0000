@@ -74,7 +74,7 @@
 		<div class="col-sm-3 newsletter_box hidden_phone">
 		    <div class="side_newsletter_subscription">
 		        <p class="caps subscribe">Subscribe to</p>
-		        <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1515794720080/Screen Shot 2018-01-12 at 5.05.11 PM.png" class="" alt="">
+		        <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1518304880396/QCC logo white_gold_box.png" class="" alt="">
 		        <p class="text-center stay_updated">Stay updated on the latest news with our carefully curated newsletters. </p>
 		        <form class="blogNewsletterForm" method="post" id="sideNewsletterBlogForm">
                     <label for="fieldEmail" style="display:none"></label>
