@@ -146,7 +146,7 @@
             renderBanner('#banner_template','#home_banner', banners);
             
             var all_feature_items = getFeatureList();
-            var three_items = all_feature_items.slice(0, 3);
+            // var three_items = all_feature_items.slice(0, 3);
             var giftcard_image = all_feature_items[0];
             var blog_image = all_feature_items[1];
             console.log("giftcard_image", giftcard_image, "blog_image", blog_image);
