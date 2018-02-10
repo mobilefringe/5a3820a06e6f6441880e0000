@@ -42,9 +42,9 @@
                 </div>
             </script>
         </div>
-        <div class="col-sm-6 text-center">
-            <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/jpeg/1517588677000/promo_placeholder.jpg" class="" alt="">
-        </div>
+        <!--<div class="col-sm-6 text-center">-->
+        <!--    <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/jpeg/1517588677000/promo_placeholder.jpg" class="" alt="">-->
+        <!--</div>-->
         <div class="col-sm-6">
             <div class="home_promos">
                 <h2 class="details_title caps">Promos</h2>
