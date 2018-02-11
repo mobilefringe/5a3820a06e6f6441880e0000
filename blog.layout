@@ -100,7 +100,7 @@
                             <span id="header_search"><i class="fa fa-search" aria-hidden="true"></i></span>
                         </div>
                     </div>
-                    <span id="header_search"><i class="fa fa-search" aria-hidden="true"></i></span>
+                    <span id="header_search" class="show_phone"><i class="fa fa-search" aria-hidden="true"></i></span>
                     <div id="menu-icon">
                         <span></span>
                         <span></span>
