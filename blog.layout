@@ -164,7 +164,7 @@ Visit us for hair and makeup video tutorials, styling advice and how-to, fashion
                     </div>
                     <!--<hr class="horizontal_div show_phone">-->
                     <div class="col-md-4" style="margin-top:68px;">
-                        <h4> SUBSCRIBE</h4>
+                        <h4 style="letter-spacing: 2px;"> SUBSCRIBE</h4>
                         <hr class="horizontal_div">
                         <div class="position_rel">
                             <form class="blogNewsletterForm" method="post" id="newsletterForm">
