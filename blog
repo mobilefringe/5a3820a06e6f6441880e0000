@@ -16,9 +16,9 @@
     </div>
 	<div class="row blogs_container" >
 	    <div class="blog_selector_bar col-sm-9 extra_right_padding">
-	        <div>
-			<span class="col-xs-6 col-sm-3 blog_selector active">Latest</span>
-			<span class="col-xs-6 col-sm-3 blog_selector">Popular</span>
+	        <div class="inner_select_bar_div">
+    			<span class="col-xs-6 col-sm-3 blog_selector active">Latest</span>
+    			<span class="col-xs-6 col-sm-3 blog_selector">Popular</span>
 			</div>
 		</div>
 			
