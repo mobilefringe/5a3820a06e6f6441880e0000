@@ -15,12 +15,12 @@
     	</div>    
     </div>
 	<div class="row blogs_container" >
-	    <div class="blog_selector_bar col-sm-9 extra_rigt_padding">
+	    <div class="blog_selector_bar col-sm-9 extra_right_padding">
 			<span class="col-xs-6 col-sm-3 blog_selector active">Latest</span>
 			<span class="col-xs-6 col-sm-3 blog_selector">Popular</span>
 		</div>
 			
-		<div class="col-sm-9 col-xs-12">
+		<div class="col-sm-9 col-xs-12 extra_right_padding">
 			<div id="latest_blog_container_1" class="latest_blog_container">
         		<script id = "latest_blog_template_1" type="x-tmpl-mustache">
         		    <div class="row blog_post" >
