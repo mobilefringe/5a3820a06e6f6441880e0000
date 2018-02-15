@@ -93,15 +93,15 @@
                                     <!--<span id="header_search" class="header_search"><i class="fa fa-search" aria-hidden="true"></i></span>-->
                                 </div>
                                 <div class="site_search hidden_phone">
-                                <label class="top_form_control no_margin">
-                                    <input type="text" placeholder="Search Stores" id="site_search" class="site_search"/>
-                                    <i id="search_icon" class="fa fa-search search_icon"></i>
-                                    <i id="close_search" class="fa fa-times-circle close_search"></i>
-                                </label>
-                                <div class="site_search_results search_results_stores" id="search_results_stores"></div>
-                                <div class="site_search_results search_results_events" id="search_results_events"></div>
-                                <div class="site_search_results search_results_promotions" id="search_results_promotions"></div>
-                            </div>
+                                    <label class="top_form_control no_margin">
+                                        <input type="text" placeholder="Search Stores" id="site_search" class="site_search"/>
+                                        <i id="search_icon" class="fa fa-search search_icon"></i>
+                                        <i id="close_search" class="fa fa-times-circle close_search"></i>
+                                    </label>
+                                    <div class="site_search_results search_results_stores" id="search_results_stores"></div>
+                                    <div class="site_search_results search_results_events" id="search_results_events"></div>
+                                    <div class="site_search_results search_results_promotions" id="search_results_promotions"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
