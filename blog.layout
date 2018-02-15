@@ -137,16 +137,16 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="nav_header_social_container col-sm-2 hidden_phone">
-                        <div class="social_container pull-right">
-                            <a href="https://www.facebook.com/CornwallCentre" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="https://twitter.com/CornwallCentre" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="https://www.instagram.com/CornwallCentre" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            <span id="header_search" class="header_search"><i class="fa fa-search" aria-hidden="true"></i></span>
-                        </div>
-                    </div>
-                    <div id="header_search" class="show_phone header_search"><i class="fa fa-search" aria-hidden="true"></i>
-                    </div>
+                    <!--<div class="nav_header_social_container col-sm-2 hidden_phone">-->
+                    <!--    <div class="social_container pull-right">-->
+                    <!--        <a href="https://www.facebook.com/CornwallCentre" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>-->
+                    <!--        <a href="https://twitter.com/CornwallCentre" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>-->
+                    <!--        <a href="https://www.instagram.com/CornwallCentre" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>-->
+                    <!--        <span id="header_search" class="header_search"><i class="fa fa-search" aria-hidden="true"></i></span>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <!--<div id="header_search" class="show_phone header_search"><i class="fa fa-search" aria-hidden="true"></i>-->
+                    <!--</div>-->
                     <!--<span </span>-->
                     <div id="menu-icon">
                         <span></span>
