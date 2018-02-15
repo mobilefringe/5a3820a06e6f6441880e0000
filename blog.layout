@@ -93,7 +93,7 @@
                                     <!--<span id="header_search" class="header_search"><i class="fa fa-search" aria-hidden="true"></i></span>-->
                                     <div class="site_search show_phone">
                                         <label class="top_form_control no_margin">
-                                            <input type="text" placeholder="Search Stores" id="site_search" class="site_search_m" onkeypress="javascript: if(event.keyCode == 13) searchFunctionMobile()"/>
+                                            <input type="text" placeholder="Search Stores" id="site_search" class="site_search_m" onclick="searchFunction()" onkeypress="javascript: if(event.keyCode == 13) searchFunctionMobile()"/>
                                             <i id="search_icon" class="fa fa-search search_icon"></i>
                                             <i id="close_search" class="fa fa-times-circle close_search"></i>
                                         </label>
