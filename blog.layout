@@ -127,6 +127,11 @@
                             </nav>
                         </div>
                     </div>
+                    <div class="logo_container">
+                        <a href="/">
+                            <img class="logo" src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517341893000/logo.png"/>
+                        </a>
+                    </div>
                     <!--<div class="nav_header_social_container col-sm-2 hidden_phone">-->
                     <!--    <div class="social_container pull-right">-->
                     <!--        <a href="https://www.facebook.com/CornwallCentre" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>-->
