@@ -198,7 +198,7 @@
             social = mallDataJSON.social;
             console.log(social);
             var youtube = social.youtube;
-            renderPosts('#youtube_container','#youtube_template', youtube);
+            renderGeneral('#youtube_container','#youtube_template', youtube);
         });
         show_content();
     });
