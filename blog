@@ -187,13 +187,13 @@
         init(e);
         loadMallData(renderPostsPageData);
         
-        $.getJSON(url).done(function(data){
-                mallData = JSON.stringify(data);
-                var mallDataJSON = JSON.parse(mallData);
-                log('done fetching mallData from: ' + url);
-                // return mallDataJSON.leasing_units;
-                leasing_units = mallDataJSON.leasing_units;
-                console.log(leasing_units);
+        $.getJSON('//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/application/json/1519336448100/social.json').done(function(data){
+            mallData = JSON.stringify(data);
+            var mallDataJSON = JSON.parse(mallData);
+            log('done fetching mallData from: ' + url);
+            // return mallDataJSON.leasing_units;
+            leasing_units = mallDataJSON.leasing_units;
+            console.log(leasing_units);
         });
         show_content();
     });
