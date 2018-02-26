@@ -186,6 +186,6 @@
     $(document).ready(function(e) {
         init(e);
         loadMallData(renderPostsPageData);
-         show_content();
+        show_content();
     });
 </script>
