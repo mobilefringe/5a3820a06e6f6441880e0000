@@ -193,7 +193,7 @@
             log('done fetching mallData from: ' + url);
             // return mallDataJSON.leasing_units;
             social = mallDataJSON.social;
-            console.log(leasing_units);
+            console.log(social);
         });
         show_content();
     });
