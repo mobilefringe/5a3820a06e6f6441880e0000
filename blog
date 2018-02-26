@@ -186,8 +186,8 @@
     $(document).ready(function(e) {
         init(e);
         loadMallData(renderPostsPageData);
-        
-        $.getJSON('//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/application/json/1519336448100/social.json').done(function(data){
+        url = '//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/application/json/1519336448100/social.json';
+        $.getJSON(url).done(function(data){
             mallData = JSON.stringify(data);
             var mallDataJSON = JSON.parse(mallData);
             log('done fetching mallData from: ' + url);
