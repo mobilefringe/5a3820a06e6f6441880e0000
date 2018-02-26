@@ -194,7 +194,7 @@
             // return mallDataJSON.leasing_units;
             social = mallDataJSON.social;
             console.log(social);
-            var youtube = social.youtubel
+            var youtube = social.youtube;
         });
         show_content();
     });
