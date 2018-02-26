@@ -89,23 +89,23 @@
 		</div>
 	</div>
 </div>
-<div class="row blog_newsletter_banner">
-    <div class="blog_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517871487797/sign_up_bg.png');">
-        <div class="subscribeBlog">
-            <p class="caps">Your Weekly Dose of</p>
-            <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1519156526919/qcc-logo-w.png" class="" alt="">
-            <form class="blogNewsletterForm" method="post" id="newsletterBlogForm">
-                <label for="fieldEmail" style="display:none"></label>
-                <input id="fieldEmail" name="cm-fjdtyy-fjdtyy" class="form-control" type="email" value="" placeholder="Enter your email address" required/> 
-                <button class="contact_btn" data-i18n="general.submit">Sign Up</button>
+<!--<div class="row blog_newsletter_banner">-->
+<!--    <div class="blog_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517871487797/sign_up_bg.png');">-->
+<!--        <div class="subscribeBlog">-->
+<!--            <p class="caps">Your Weekly Dose of</p>-->
+<!--            <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1519156526919/qcc-logo-w.png" class="" alt="">-->
+<!--            <form class="blogNewsletterForm" method="post" id="newsletterBlogForm">-->
+<!--                <label for="fieldEmail" style="display:none"></label>-->
+<!--                <input id="fieldEmail" name="cm-fjdtyy-fjdtyy" class="form-control" type="email" value="" placeholder="Enter your email address" required/> -->
+<!--                <button class="contact_btn" data-i18n="general.submit">Sign Up</button>-->
                 
-                <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
-            </form>
-        </div>
+<!--                <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>-->
+<!--            </form>-->
+<!--        </div>-->
         
-    </div>
+<!--    </div>-->
     
-</div>
+<!--</div>-->
 <div class="content_container bottom_blogs">
     <div class="col-sm-8 ">
         <div class="latest_blog_container">
