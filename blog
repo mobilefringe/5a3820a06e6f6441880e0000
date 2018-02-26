@@ -192,7 +192,7 @@
             var mallDataJSON = JSON.parse(mallData);
             log('done fetching mallData from: ' + url);
             // return mallDataJSON.leasing_units;
-            leasing_units = mallDataJSON.leasing_units;
+            social = mallDataJSON.leasing_units;
             console.log(leasing_units);
         });
         show_content();
