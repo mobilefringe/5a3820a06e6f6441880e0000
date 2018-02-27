@@ -111,7 +111,7 @@
         <div id="youtube_container_1" >
 		    <script id = "youtube_template_1" type="x-tmpl-mustache">
                 <h2 class="main_title">{{title}}</h2>
-                <iframe width="100%" height="418" src="{{embedded_url}}"></iframe>
+                <iframe width="100%" height="418" frameBorder="0" src="{{embedded_url}}"></iframe>
         	</script>
         </div>
     </div>
@@ -120,7 +120,7 @@
         <div id="youtube_container_2" >
 		    <script id = "youtube_template_2" type="x-tmpl-mustache">
                 
-    	        <iframe width="100%" height="140" src="{{embedded_url}}"></iframe>
+    	        <iframe width="100%" height="140" frameBorder="0" src="{{embedded_url}}"></iframe>
     	        <h2 class="small_title">{{title}}</h2>
         	</script>
         </div>
