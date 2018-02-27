@@ -122,7 +122,7 @@
                 
     	       <!-- <iframe width="100%" height="140" frameBorder="0" src="{{embedded_url}}"></iframe> -->
     	       <a href="{{link}}" target="_blank">
-    	            <div class="video_img" style="background-image: url('picture');">
+    	            <div class="video_img" style="background-image: url('{{picture}}');">
     	            </div>
     	            <img src="{{picture}}">
     	            <h2 class="small_title">{{title}}</h2>
