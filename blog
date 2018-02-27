@@ -222,6 +222,7 @@
             var youtube = social.youtube;
             renderYoutube('#youtube_container_1','#youtube_template_1', youtube.splice(0,1));
             renderYoutube('#youtube_container_2','#youtube_template_2', youtube.splice(1,2));
+            $("#main_youtube_video").mute();
         });
     });
 </script>
