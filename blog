@@ -124,6 +124,7 @@
     	       <a href="{{link}}">
     	        <img src="{{picture}}">
     	        <h2 class="small_title">{{title}}</h2>
+    	       </a>
         	</script>
         </div>
     </div>
