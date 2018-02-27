@@ -106,7 +106,7 @@
 <!--    </div>-->
     
 <!--</div>-->
-<div>
+<div class="content_container">
     <div id="youtube_container" >
 		<script id = "youtube_template" type="x-tmpl-mustache">
 		    <div>
