@@ -214,7 +214,7 @@
             social = mallDataJSON.social;
             console.log(social);
             var youtube = social.youtube.splice(0,3);
-            renderYoutube('#youtube_container','#youtube_template', youtube);
+            renderYoutube('#youtube_container_1','#youtube_template_1', youtube);
         });
         show_content();
     });
