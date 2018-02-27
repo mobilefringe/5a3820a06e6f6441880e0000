@@ -120,7 +120,7 @@
         <div id="youtube_container_2" >
 		    <script id = "youtube_template_2" type="x-tmpl-mustache">
                 
-    	       // <iframe width="100%" height="140" frameBorder="0" src="{{embedded_url}}"></iframe>
+    	       <!-- <iframe width="100%" height="140" frameBorder="0" src="{{embedded_url}}"></iframe> -->
     	       <img src="{{picture}}>
     	        <h2 class="small_title">{{title}}</h2>
         	</script>
