@@ -116,7 +116,9 @@
         </div>
     </div>
     <div class="col-sm-3">
-        <a href="https://www.youtube.com/user/CornwallCentre" target="_blank"><h3 class="caps see_all_video">See ALL Video <i class="fa fa-long-arrow-right"></i></h3></a>
+        <a href="https://www.youtube.com/user/CornwallCentre" target="_blank">
+            <h3 class="caps see_all_video">See ALL Video <i class="fa fa-long-arrow-right"></i></h3>
+        </a>
         <div id="youtube_container_2" >
 		    <script id = "youtube_template_2" type="x-tmpl-mustache">
                 
