@@ -213,7 +213,8 @@
             // return mallDataJSON.leasing_units;
             social = mallDataJSON.social;
             console.log(social);
-            var youtube = social.youtube.splice(0,3);
+            var youtube = social.youtube;
+            renderYoutube('#youtube_container_1','#youtube_template_1', youtube);
             renderYoutube('#youtube_container_1','#youtube_template_1', youtube);
         });
         show_content();
