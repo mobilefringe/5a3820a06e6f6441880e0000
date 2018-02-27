@@ -122,6 +122,7 @@
                 
     	       <!-- <iframe width="100%" height="140" frameBorder="0" src="{{embedded_url}}"></iframe> -->
     	       <a href="{{link}}" target="_blank">
+    	            <div class="blog_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517871487797/sign_up_bg.png');">
     	            <img src="{{picture}}">
     	            <h2 class="small_title">{{title}}</h2>
     	       </a>
