@@ -123,6 +123,7 @@
     	       <!-- <iframe width="100%" height="140" frameBorder="0" src="{{embedded_url}}"></iframe> <img src="{{picture}}">-->
     	       <a href="{{link}}" target="_blank">
     	            <div class="video_img" style="background-image: url('{{picture}}');">
+    	            <i class="fa fa-play-circle">
     	            </div>
     	            
     	            <h2 class="small_title">{{title}}</h2>
