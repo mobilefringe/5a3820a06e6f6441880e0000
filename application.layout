@@ -82,7 +82,7 @@
         }).then(function() {
           // Executes an API request, and returns a Promise.
           // The method name `language.translations.list` comes from the API discovery.
-          return gapi.client.language.translations.list({
+          return gapi.client.analyticsreporting.reports.batchGet({
             q: 'hello world',
             source: 'en',
             target: 'de',
