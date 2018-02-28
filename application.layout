@@ -280,32 +280,49 @@
         </div>
     </footer>
     
-    <script src="https://apis.google.com/js/api.js"></script>
-    <script>
-    function start() {
-      // 2. Initialize the JavaScript client library.
-      gapi.client.init({
-        'apiKey': 'AIzaSyB1oDiTTJmmz4XAkyf7o9k4C6s1T_VxrT4',
-        // Your API key will be automatically added to the Discovery Document URLs.
-        'discoveryDocs': ['https://people.googleapis.com/$discovery/rest'],
-        // clientId and scope are optional if auth is not required.
-        // 'clientId': '795742646003-ps7c5ii64biln4upqvfk3itf21tu6q94.apps.googleusercontent.com',
-        // 'scope': 'profile',
-      }).then(function() {
-        // 3. Initialize and make the API request.
-        return gapi.client.people.people.get({
-          'resourceName': 'people/me',
-          'requestMask.includeField': 'person.names'
-        });
-      }).then(function(response) {
-        console.log(response.result);
-      }, function(reason) {
-        console.log('Error: ' + reason.result.error.message);
-      });
-    };
-    // 1. Load the JavaScript client library.
-    gapi.load('client', start);
-    </script>
+    <!-- The API response will be printed here. -->
+<textarea cols="80" rows="20" id="query-output"></textarea>
+
+<script>
+  // Replace with your view ID.
+  var VIEW_ID = '<REPLACE_WITH_VIEW_ID>';
+
+  // Query the API and print the results to the page.
+  function queryReports() {
+    gapi.client.request({
+      path: '/v4/reports:batchGet',
+      root: 'https://analyticsreporting.googleapis.com/',
+      method: 'POST',
+      body: {
+        reportRequests: [
+          {
+            viewId: VIEW_ID,
+            dateRanges: [
+              {
+                startDate: '7daysAgo',
+                endDate: 'today'
+              }
+            ],
+            metrics: [
+              {
+                expression: 'ga:sessions'
+              }
+            ]
+          }
+        ]
+      }
+    }).then(displayResults, console.error.bind(console));
+  }
+
+  function displayResults(response) {
+    var formattedJson = JSON.stringify(response.result, null, 2);
+    document.getElementById('query-output').value = formattedJson;
+  }
+</script>
+
+<!-- Load the JavaScript API client and Sign-in library. -->
+<script src="https://apis.google.com/js/client:platform.js"></script>
+
 </body>
 
 </html>
