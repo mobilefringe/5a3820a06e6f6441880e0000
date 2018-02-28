@@ -83,9 +83,29 @@
           // Executes an API request, and returns a Promise.
           // The method name `language.translations.list` comes from the API discovery.
           return gapi.client.analyticsreporting.reports.batchGet({
-            q: 'hello world',
-            source: 'en',
-            target: 'de',
+            "reportRequests":
+                [
+                {
+                "dimensions":
+                [
+                
+                ]
+                "metrics":
+                [
+                
+                ]
+                "viewId":"
+                77894332
+                "
+                "segments":
+                [
+                
+                ]
+                
+                }
+                
+                
+                ]
           });
         }).then(function(response) {
           console.log(response.result.data.translations[0].translatedText);
