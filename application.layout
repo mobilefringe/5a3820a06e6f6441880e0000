@@ -15,7 +15,7 @@
     <meta property="og:title" content="{{meta_title}}">
     <meta property="og:description" content="{{meta_description}}">
     <meta property="og:image" content="{{meta_image}}">
-    <meta name="google-signin-client_id" content="<795742646003-ps7c5ii64biln4upqvfk3itf21tu6q94.apps.googleusercontent.com>">
+    <meta name="google-signin-client_id" content="795742646003-ps7c5ii64biln4upqvfk3itf21tu6q94.apps.googleusercontent.com">
     <meta name="google-signin-scope" content="https://www.googleapis.com/auth/analytics.readonly">
    
    <script>
