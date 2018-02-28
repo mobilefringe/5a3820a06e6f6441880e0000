@@ -281,7 +281,7 @@
             </div>
         </div>
     </footer>
-    
+    <p class="g-signin2" data-onsuccess="queryReports"></p>
     <!-- The API response will be printed here. -->
 <textarea cols="80" rows="20" id="query-output"></textarea>
 
