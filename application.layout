@@ -285,7 +285,7 @@
 
 <script>
   // Replace with your view ID.
-  var VIEW_ID = '<REPLACE_WITH_VIEW_ID>';
+  var VIEW_ID = '77894332';
 
   // Query the API and print the results to the page.
   function queryReports() {
