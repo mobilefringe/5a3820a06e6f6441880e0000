@@ -290,7 +290,7 @@
         'discoveryDocs': ['https://people.googleapis.com/$discovery/rest'],
         // clientId and scope are optional if auth is not required.
         // 'clientId': '795742646003-ps7c5ii64biln4upqvfk3itf21tu6q94.apps.googleusercontent.com',
-        'scope': 'profile',
+        // 'scope': 'profile',
       }).then(function() {
         // 3. Initialize and make the API request.
         return gapi.client.people.people.get({
