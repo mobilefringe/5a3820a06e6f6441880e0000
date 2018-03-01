@@ -343,15 +343,15 @@
 		var pin_id = store_details.id; 
 		var store_name = store_details.name;
 		add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
-    	$("#anchor_id").click(function(e){
-                e.preventDefault();
-                $('#zoom_image').smoothZoom('focusTo',{
-        			x: store_x_coordinate,
-        			y: store_y_coordinate,
-        			zoom: 120,
-        			speed: 5
-        		});
-            });	
+    // 	$("#anchor_id").click(function(e){
+    //             e.preventDefault();
+    //             $('#zoom_image').smoothZoom('focusTo',{
+    //     			x: store_x_coordinate,
+    //     			y: store_y_coordinate,
+    //     			zoom: 120,
+    //     			speed: 5
+    //     		});
+    //         });	
 	})
 	
     function add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name){
