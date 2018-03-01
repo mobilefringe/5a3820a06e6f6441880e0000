@@ -107,7 +107,7 @@
     
 <!--</div>-->
 <div class="content_container youtube_container">
-    <div class="col-sm-9 no_padding_left">
+    <div class="col-sm-9 no_padding_left bottom_border_grey">
         <div id="youtube_container_1" >
 		    <script id = "youtube_template_1" type="x-tmpl-mustache">
                  <a href="{{link}}" target="_blank"><h2 class="main_title">{{title}}</h2></a>
