@@ -295,6 +295,8 @@
 			zoom_OUT_TO_FIT: "YES",
 			container: 'zoom_container_store'
 		});
+		$("#zoom_image").on('load',this.mapready);
+		
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
 		var store_details = getStoreDetailsBySlug(slug);
