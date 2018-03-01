@@ -118,6 +118,13 @@
                                 <div class="site_search_results search_results_events" id="search_results_events"></div>
                                 <div class="site_search_results search_results_promotions" id="search_results_promotions"></div>
                             </div>
+                            <div id="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                    
                         </div>
                     </div>
                 </div>
@@ -129,12 +136,7 @@
                             <img class="logo" src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517341893000/logo.png"/>
                         </a>
                     </div>
-                    <div id="menu-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                    
                     
                     <div class="nav_container pull-right">
                         <nav id="primary_nav">
@@ -270,7 +272,7 @@
                 <div class="row">
                     <div class="col-md-10 offset-md-2">
                         <a href="/">
-                            <img class="show_phone logo" src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517341905000/logosmall.png"/>
+                            <img class="show_phone logo" src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517434372411/cornwalllogoWhite@2x (1).png"/>
                         </a>
                             
                         <p>&copy; <span id="current_year"></span> Cornwall Centre. All rights reserved. <a href="/pages/cornwall-privacy-policy">Privacy Policy</a> | <a href="">Terms & Conditions</a>. Powered by <a href="http://www.mallmaverick.com/" target="_blank">Mall Maverick</a></p>
