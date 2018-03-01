@@ -30,6 +30,7 @@
 		min-width:795px;
 		min-height: 1230px;
 		max-width: none;
+	    z-index: 1!important;
 		
 	}
    .zoom_container .landmarks{
