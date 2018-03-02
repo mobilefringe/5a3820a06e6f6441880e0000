@@ -4,7 +4,7 @@
             <script id="banner_template" type="x-tmpl-mustache/text">
                 <li>
                     <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                        <div class="banner_img" style="background-image: url(//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/jpeg/1519934839224/QCC_post_image_proportions.jpg);"
+                        <div class="banner_img" style="background-image: url(//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/jpeg/1520028789061/banner1.jpg);"
                     </a>
                 </li>
             </script>
