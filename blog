@@ -1,0 +1,228 @@
+<div class="content_container">
+    <div class="position_rel">
+        <div class="blog_banner text-center" id="blog_banner_container">
+    		<!--<img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1515692811302/Screen Shot 2018-01-11 at 12.46.36 PM.png" class="" alt="">-->
+    		<script id = "blog_banner_template" type="x-tmpl-mustache">
+    		    <div class="col-sm-6 no_padding"><img src="{{image_url}}"/></div>
+    		    <div class="col-sm-6 no_padding hidden_phone"><img src="{{second_image_url}}"/></div>
+    			<div class="blog_banner_title">
+    			    <h1>  {{title}} <h1/>
+    			    <a href="/blog/{{slug}}">
+				        <p>Read More</p>
+				    </a>
+    			</div>
+    		</script>
+    	</div>    
+    </div>
+	<div class="row blogs_container" >
+	    <div class="blog_selector_bar col-sm-9 extra_right_padding">
+	        <div class="inner_select_bar_div">
+    			<span class="col-xs-6 col-sm-3 blog_selector active">Latest</span>
+    			<span class="col-xs-6 col-sm-3 blog_selector">Popular</span>
+			</div>
+		</div>
+			
+		<div class="col-sm-9 col-xs-12 extra_right_padding">
+			<div id="latest_blog_container_1" class="latest_blog_container">
+        		<script id = "latest_blog_template_1" type="x-tmpl-mustache">
+        		    <div class="row blog_post" >
+        			    <div class="col-sm-4">
+        				    <a href="/blog/{{slug}}">
+        				        <img src="{{image_url}}"/>
+        				    </a>
+        				</div>
+        				
+        				<div class="col-sm-8">
+        				    <div class="dets_div">
+        				        <a href="/blog?tag={{main_tag}}"><span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span></a>
+        				        <a href="/blog/{{slug}}"><h3>  {{title}} <h3/><a/>
+        				        <p class="blog_dates">{{publish_date}}</p>
+        				        <p class="blog_short_desc"> {{description_short}}</p>
+        				        <a href="/blog/{{slug}}">
+				                    <p class="read_more caps">Read More <i class="fa fa-long-arrow-right"></i></p>
+				                </a>
+        				   </div>
+        				</div>
+        		    </div>
+        		</script>
+        	</div>
+        	<div id="popular_blog_container_1" class="hidden_now popular_blog_container" >
+        		<script id = "popular_blog_template_1" type="x-tmpl/mustache">
+        			<div class="row blog_post">
+        			    <div class="col-sm-4">
+        				    <a href="/blog/{{slug}}">
+        				        <img src="{{image_url}}"/>
+        				    </a>
+        				</div>
+        				
+        				<div class="col-sm-8">
+        				    <div class="dets_div">
+        				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
+        				       <a href="/blog/{{slug}}"><h3>  {{title}} <h3/><a/>
+        				       <p class="blog_dates">{{publish_date}}</p>
+        				       <p class="blog_short_desc"> {{description_short}}</p>
+        				       <a href="/blog/{{slug}}">
+				                    <p class="read_more caps">Read More <i class="fa fa-long-arrow-right"></i></p>
+				                </a>
+        				   </div>
+        				</div>
+        		    </div>
+        		</script>
+        	</div>
+        	<div id="no_posts" class="hidden_now ">
+        	    <h4>Sorry, no Posts.</h4>
+        	</div>
+        </div>
+		<div class="col-sm-3 newsletter_box hidden_phone">
+		    <div class="side_newsletter_subscription">
+		        <p class="caps subscribe">Subscribe to</p>
+		        <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1519156526919/qcc-logo-w.png" class="" alt="">
+		        <p class="text-center stay_updated">Get a weekly dose of style and beauty insipiration. </p>
+		        <form class="blogNewsletterForm" method="post" id="sideNewsletterBlogForm">
+                    <label for="fieldEmail" style="display:none"></label>
+                    <input id="fieldEmail" name="cm-fjdtyy-fjdtyy" class="form-control" type="email" value="" placeholder="Enter your email" required/> 
+                    <button class="contact_btn" data-i18n="general.submit">Sign Up</button>
+                    
+                    <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
+                </form>
+		    </div>
+		</div>
+	</div>
+</div>
+<!--<div class="row blog_newsletter_banner">-->
+<!--    <div class="blog_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1517871487797/sign_up_bg.png');">-->
+<!--        <div class="subscribeBlog">-->
+<!--            <p class="caps">Your Weekly Dose of</p>-->
+<!--            <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1519156526919/qcc-logo-w.png" class="" alt="">-->
+<!--            <form class="blogNewsletterForm" method="post" id="newsletterBlogForm">-->
+<!--                <label for="fieldEmail" style="display:none"></label>-->
+<!--                <input id="fieldEmail" name="cm-fjdtyy-fjdtyy" class="form-control" type="email" value="" placeholder="Enter your email address" required/> -->
+<!--                <button class="contact_btn" data-i18n="general.submit">Sign Up</button>-->
+                
+<!--                <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>-->
+<!--            </form>-->
+<!--        </div>-->
+        
+<!--    </div>-->
+    
+<!--</div>-->
+<div class="content_container youtube_container">
+    <div class="col-sm-9 no_padding_left">
+        <div id="youtube_container_1" >
+		    <script id = "youtube_template_1" type="x-tmpl-mustache">
+                 <a href="{{link}}" target="_blank"><h2 class="main_title">{{title}}</h2></a>
+                <iframe width="100%" height="418" frameBorder="0" src="{{embedded_url}}" id="main_youtube_video" class="hidden_phone"></iframe>
+                <iframe width="100%" height="300" frameBorder="0" src="{{embedded_url}}" id="main_youtube_video" class="show_phone"></iframe>
+        	</script>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <a href="https://www.youtube.com/user/CornwallCentre" target="_blank">
+            <h3 class="caps see_all_video">See ALL Video <i class="fa fa-long-arrow-right"></i></h3>
+        </a>
+        <div id="youtube_container_2" >
+		    <script id = "youtube_template_2" type="x-tmpl-mustache">
+                
+    	       <!-- <iframe width="100%" height="140" frameBorder="0" src="{{embedded_url}}"></iframe> <img src="{{picture}}">-->
+    	       <a href="{{link}}" target="_blank">
+    	            <div class="video_img" style="background-image: url('{{picture}}');">
+    	            <i class="fa fa-play-circle fa-3x"></i>
+    	            </div>
+    	            
+    	            <h2 class="small_title">{{title}}</h2>
+    	       </a>
+        	</script>
+        </div>
+    </div>
+</div>
+<div class="content_container bottom_blogs">
+    <div class="col-sm-9 no_padding_left">
+        <div class="latest_blog_container">
+            <div id="latest_blog_container_2" >
+        		<script id = "latest_blog_template_2" type="x-tmpl-mustache">
+        		    <div class="row blog_post hidden_now"  id="latest_show_{{counter}}">
+        			    <div class="col-sm-4">
+        			        <a href="/blog/{{slug}}">
+        				        <img src="{{image_url}}"/>
+        				    </a>
+        				</div>
+        				
+        				<div class="col-sm-8">
+        				    <div class="dets_div">
+        				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
+        				       <a href="/blog/{{slug}}"><h3>  {{title}} <h3/><a/>
+        				       <p class="blog_dates">{{publish_date}}</p>
+        				       <p class="blog_short_desc"> {{description_short}}</p>
+        				       <a href="/blog/{{slug}}">
+				                    <p class="read_more caps">Read More <i class="fa fa-long-arrow-right"></i></p>
+				                </a>
+        				   </div>
+        				</div>
+        		    </div>
+        		</script>
+        	</div>
+            <div class="row load_more">
+                <input type="hidden" value="1" id="num_loaded_1" />
+                <p class="hidden_now" id ="all_loaded_1">No More Posts</p>
+                <a href="#" class="red" id="load_more_posts_1">
+                    <p class="loaded_posts" id="loaded_posts_1">
+                        <span class="post_details_link">More +</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="hidden_now popular_blog_container">
+           <div id="popular_blog_container_2" >
+        		<script id = "popular_blog_template_2" type="x-tmpl/mustache">
+        			<div class="row  blog_post hidden_now"  id="pop_show_{{counter}}">
+        			    <div class="col-sm-4">
+        				    <a href="/blog/{{slug}}">
+        				        <img src="{{image_url}}"/>
+        				    </a>
+        				</div>
+        				
+        				<div class="col-sm-8">
+        				    <div class="dets_div">
+        				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
+        				       <a href="/blog/{{slug}}"><h3>  {{title}} <h3/><a/>
+        				       <p class="blog_dates">{{publish_date}}</p>
+        				       <p class="blog_short_desc"> {{description_short}}</p>
+        				       <a href="/blog/{{slug}}">
+				                    <p class="read_more caps">Read More <i class="fa fa-long-arrow-right"></i></p>
+				                </a>
+        				   </div>
+        				</div>
+        		    </div>
+        		</script>
+    	    </div>
+    	    <div class="row load_more">
+                <input type="hidden" value="1" id="num_loaded_2" />
+                <p class="hidden_now" id ="all_loaded_2">No More Posts</p>
+                <a href="#" class="red" id="load_more_posts_2">
+                    <p class="loaded_posts" id="loaded_posts_2">
+                        <span class="post_details_link">More +</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        loadMallData(renderPostsPageData);
+        url = 'http://cornwallcentre.mallmaverickdevelopment.com/api/v4/cornwall/social.json';
+        $.getJSON(url).done(function(data){
+            mallData = JSON.stringify(data);
+            var mallDataJSON = JSON.parse(mallData);
+            log('done fetching mallData from: ' + url);
+            // return mallDataJSON.leasing_units;
+            social = mallDataJSON.social;
+            console.log(social);
+            var youtube = social.youtube;
+            renderYoutube('#youtube_container_1','#youtube_template_1', youtube.splice(0,1));
+            renderYoutube('#youtube_container_2','#youtube_template_2', youtube.splice(1,2));
+        });
+    });
+</script>
