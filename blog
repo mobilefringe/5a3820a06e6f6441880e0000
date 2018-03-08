@@ -212,7 +212,7 @@
     $(document).ready(function(e) {
         init(e);
         loadMallData(renderPostsPageData);
-        url = 'http://cornwallcentre.mallmaverickdevelopment.com/api/v4/cornwall/social.json';
+        url = '//cornwallcentre.mallmaverickdevelopment.com/api/v4/cornwall/social.json';
         $.getJSON(url).done(function(data){
             mallData = JSON.stringify(data);
             var mallDataJSON = JSON.parse(mallData);
