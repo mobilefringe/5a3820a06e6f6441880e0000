@@ -1442,7 +1442,7 @@ a {
         height: $store_box_height;
     }
     .store_initial_container {
-        height : calc(#{$store_box_height} - 3px); // $store_box_height;
+        height : $store_box_height; calc(#{$store_box_height} - 3px);
         margin-bottom: 60px;
         p {
             line-height: $store_box_height;
