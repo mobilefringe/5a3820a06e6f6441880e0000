@@ -1,0 +1,212 @@
+<!--<div class="home_banner">   -->
+<!--    <div class="flexslider">-->
+<!--        <ul class="slides" id="home_banner">-->
+<!--            <script id="banner_template" type="x-tmpl-mustache/text">-->
+<!--                <li>-->
+<!--                    <a href="{{url}}" {{css}} onclick="{{noLink}}">-->
+<!--                        <div class="banner_img" style="background-image: url(//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/jpeg/1520028789061/banner1.jpg);"-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </script>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="feature_container">
+    <div class="content_container">
+        <div class="flex_container">
+            <div class="width_30">
+                <a href="/stores">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1517940249000/directory.png" class="" alt="">
+                </a>
+            </div>
+            <div class="width_30">
+                <a href="/promotions">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1517940260000/tag.png" class="" alt="">
+                </a>
+            </div>
+            <div class="width_30">
+                <a href="/hours">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1517940241000/hours.png" class="" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container">
+    <div class="promo_blog_container">
+        <!--<div id="giftcard_feature_container" class="col-sm-6 text-center">-->
+        <!--    <script id="giftcard_feature_template" type="x-tmpl-mustache/text">-->
+        <!--        <a href="{{url}}" class="">-->
+        <!--            <img src="{{image_url}}" alt="Promotional Image">-->
+        <!--        </a>-->
+        <!--    </script>-->
+        <!--</div>-->
+        <div class="col-sm-6 text-center">
+            <a href="/pages/cornwall-gift-cards">
+                <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/jpeg/1519934725572/promo_placeholder2.jpg" class="" alt="">
+            </a>
+        </div>
+        <div class="col-sm-6">
+            <div class="home_promos">
+                <h2 class="details_title caps">Promos</h2>
+                <div id="home_promo_container" class="dine_container margin_20">
+                    <script id="home_promo_template" type="x-tmpl-mustache/text">
+                        <div class="margin_30">
+                            <div class="" style="position:relative;display: inline-block;">
+                                <h3 class="home_store_name"> {{store_name}} </h3>
+                            </div>
+                            
+                            <h2 class="home_promo_name"> {{name}} </h2>
+                            <p class="home_promo_dates"> {{dates }} <span style="color:#ff5455;"> {{days_left}}</span></p>
+                            <p class="home_promo_desc">{{description_short}}</p>
+                            <a class="home_read_more caps" href="/stores/{{slug}}"><p>Read More</p></a>
+                        </div>
+                    </script>
+                </div>
+                <p class="home_see_all"><a href="/promotions">See all sales & promotions </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+            </div>
+        </div>
+    </div>
+    <div class="promo_blog_container">
+        <div class="col-sm-6 hidden_phone">
+            <div class="home_promos">
+                <h2 class="details_title caps"><img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1517342534000/crowniconbrown-01.png" class="" alt="" style="height: 20px;margin-bottom: 7px;">&nbsp;&nbsp;&nbsp;Blog</h2>
+                <div id="home_blog_container" class="dine_container margin_20">
+                    <script id="home_blog_template" type="x-tmpl-mustache/text">
+                        <div class="margin_30">
+                            <h2 class="home_promo_name"> {{title}} </h2>
+                            <p class="home_promo_dates"> {{publish_date}} <span style="color:#ff5455;"> {{latest_post}}</span></p>
+                            <a class="home_read_more caps" href="/blog/{{slug}}"><p>Read More</p></a>
+                        </div>
+                    </script>
+                </div>
+                <!--<p class="home_see_all"><a href="/blog">See all news articles </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>-->
+            </div>
+        </div>
+        <!--<div id="blog_feature_container" class="col-sm-6 text-center">-->
+        <!--    <script id="blog_feature_template" type="x-tmpl-mustache/text">-->
+        <!--        <a href="{{url}}" class="">-->
+        <!--            <img src="{{image_url}}" alt="Promotional Image">-->
+        <!--        </a>-->
+        <!--    </script>-->
+        <!--</div>-->
+        <div class="col-sm-6 text-center">
+            <a href="/blog" target="_blank">
+                <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/jpeg/1519934748875/blog_placeholder2.jpg" class="" alt="">
+            </a>
+        </div>
+        <div class="col-sm-6 show_phone">
+            <div class="home_promos">
+                <h2 class="details_title caps"><img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1517342534000/crowniconbrown-01.png" class="" alt="" style="height: 30px;margin-bottom: 10px;">&nbsp;&nbsp;Blog</h2>
+                <div id="home_mblog_container" class="dine_container margin_20">
+                    <script id="home_mblog_template" type="x-tmpl-mustache/text">
+                        <div class="margin_30">
+                            <h2 class="home_promo_name"> {{title}} </h2>
+                            <p class="home_promo_dates"> {{publish_date}} <span style="color:#ff5455;"> {{latest_post}}</span></p>
+                            <a class="home_read_more caps" href="/blog/{{slug}}"><p>Read More</p></a>
+                        </div>
+                    </script>
+                </div>
+                <!--<p class="home_see_all"><a href="/blog">See all news articles </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="feature_container feature_container_logo">
+    <div class="logo_scroll">
+        <div id="slider_container">
+            <!-- Slides Container -->
+            <div id="logo_container" class="logo_slides" u="slides">
+                <script id="logo_template" type="x-tmpl-mustache/text">
+                    <div><img u="image" alt="amazon" src="{{store_logo}}" /></div>
+                </script>
+            </div>
+        </div>
+    </div> 
+</div>
+<div class="home_subscription">
+    <div class="subscribeBlog content_container">
+         <h1>Sign up for our e-newsletter</h1> 
+        <form action="//mobilefringe.createsend.com/t/d/s/ykouu/" method="post" id="newsletterBlogForm">
+            <label for="fieldEmail" style="display:none"></label>
+            <div>
+                <input id="fieldEmail" name="cm-tkyhii-tkyhii" class="form-control" type="email" value="" placeholder="Email address" required/> 
+                <button class="contact_btn" data-i18n="general.submit">Sign Up</button>
+            </div>
+            
+            
+            <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
+        </form>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            // renderPopup();
+            
+            var banners = getBanners();
+            renderBanner('#banner_template','#home_banner', banners);
+            
+            var all_feature_items = getFeatureList();
+            // var three_items = all_feature_items.slice(0, 3);
+            var giftcard_image = all_feature_items[0];
+            var blog_image = all_feature_items[1];
+            // console.log("giftcard_image", giftcard_image, "blog_image", blog_image);
+            // renderGeneral('#feature_container','#feature_template', three_items);
+            renderSingleItem('#giftcard_feature_container','#giftcard_feature_template', giftcard_image);
+            renderSingleItem('#blog_feature_container','#blog_feature_template', blog_image);
+
+            
+            var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
+            var published_promos = [];
+            $.each(promotions, function(key, val){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_promos.push(val);
+                }
+            });
+            // if(published_promos.length > 0){
+            //     renderPromotions("#promo_container","#promo_template", published_promos);
+            // }
+            renderPromotions('#home_promo_container','#home_promo_template', published_promos);
+            var blog_posts = getBlogByName("main").sortBy(function(o){return o.publish_date;}).reverse().slice(0, 4);
+            blog_posts[0].latest_post = "/ NEW POST!";
+            renderPosts('#home_blog_container','#home_blog_template', blog_posts);
+            renderPosts('#home_mblog_container','#home_mblog_template', blog_posts);
+            console.log(blog_posts);
+            // LOGO SCROLL //
+            var stores = getStoresList();
+            renderLogoScroll('#logo_container','#logo_template', stores);
+
+            show_content();
+            
+            $('.flexslider').flexslider({
+                animation: "slide",
+            });
+            
+            var logo_options = {
+                $AutoPlay: true,
+                $AutoPlaySteps: 1,                                 
+                $AutoPlayInterval: 0,                            
+                $PauseOnHover: 4,                               
+                $ArrowKeyNavigation: true,   			            
+                $SlideEasing: $JssorEasing$.$EaseLinear,          
+                $SlideDuration: 3000,                                
+                $MinDragOffsetToSlide: 20,                          
+                $SlideWidth: 160,                                                                  
+                $SlideSpacing: 50, 					                
+                $DisplayPieces: 15,                                 
+                $ParkingPosition: 0,                              
+                $UISearchMode: 1,                                  
+                $PlayOrientation: 1,                                
+                $DragOrientation: 1                               
+            };
+
+            var logo_slider = new $JssorSlider$("slider_container", logo_options);
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
