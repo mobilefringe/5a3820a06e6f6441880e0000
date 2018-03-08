@@ -3,7 +3,7 @@
         <ul class="slides" id="home_banner">
             <li>
                 <a href="/blog">
-                    <div class="banner_img" style="background-image: url('');"></div>
+                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/jpeg/1520542564672/11453_COR_website_banner_blog_image.jpg');"></div>
                 </a>
             </li>
         </ul>
