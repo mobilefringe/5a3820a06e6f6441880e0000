@@ -234,7 +234,7 @@
                         <ul class="footer_menu footer_menu_right">
                             <li><a href="/events">Events</a></li>
                             <li><a href="/leasing">Leasing</a></li>
-                            <li class="hidden_phone"><a href="//www.mallmaverick.com/system/site_images/photos/000/037/440/original/PDF_Directory_-_Nov_2017_-_06-12-17.pdf?1520547444">Downloadable Directory Brochure</a></li>
+                            <li class="hidden_phone"><a href="//www.mallmaverick.com/system/site_images/photos/000/037/440/original/PDF_Directory_-_Nov_2017_-_06-12-17.pdf">Downloadable Directory Brochure</a></li>
                             <li class="show_phone"><a href="">Directory Brochure</a></li>
                         </ul>  
                         <div class="margin_30 hidden_phone"></div>
