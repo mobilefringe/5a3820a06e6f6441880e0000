@@ -3,7 +3,7 @@
         <ul class="slides" id="home_banner">
             <li>
                 <a href="/blog">
-                    <div class="banner_img" style="background-image: url('');">/div></div>
+                    <div class="banner_img" style="background-image: url('');"></div>
                 </a>
             </li>
         </ul>
