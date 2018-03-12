@@ -131,7 +131,7 @@
             if(store_list.length > 0){
                 renderStoreList('#store_list_container','#store_list_template', store_list, "stores");
             }
-            renderStoreList('#store_list_container','#store_list_template', store_list, "stores");
+            
             
             show_content();
             show_cat_stores();
