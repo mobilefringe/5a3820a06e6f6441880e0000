@@ -118,6 +118,9 @@
             var store_list = getStoresList();
             renderStoreList('#store_list_container','#store_list_template', store_list, "stores");
             
+            show_content();
+            show_cat_stores();
+            
             var window_width = $( window ).width();
             if (window_width > 769) {
                 $(".store_logo_container").hover(function() {
@@ -128,8 +131,6 @@
                     $(".store_hover", this).hide();
                 });
             }
-            show_content();
-            show_cat_stores();
         }
         loadMallData(renderAll); 
     })
