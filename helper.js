@@ -404,7 +404,7 @@ function truncateWords(str, no_words) {
 
 function getAssetURL(id){
     var store_id = id;
-    var store_assets = "https://thegateway.mallmaverick.com/api/v4/thegateway/stores/" + store_id + "/store_files.json"
+    var store_assets = "https://cornwall.mallmaverick.com/api/v4/cornwall/stores/" + store_id + "/store_files.json"
     var store_front_image_url = "";    
     $.ajax({
         url: store_assets,
