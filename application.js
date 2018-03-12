@@ -116,7 +116,7 @@ function renderSingleItem(container, template, val){
     var template_html = $(template).html();
     Mustache.parse(template_html); 
     // $.each( collection , function( key, val ) {
-        console.log("renderGeneral",val)
+        // console.log("renderGeneral",val)
         var repo_rendered = Mustache.render(template_html,val);
         item_rendered.push(repo_rendered);
     // });
@@ -603,6 +603,13 @@ function renderStoreList(container, template, collection, type){
             if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
                 val.store_front_url_abs = default_image.image_url;
             } 
+            if(val.assets != undefined){
+                var hover_url = getAssetURL(val.id);
+                val.hover_img = getImageURL(hover_url);
+            
+            } else {
+                val.hover_img = val.store_front_url_abs;
+            }
         }
         
         if(val.categories != null){
