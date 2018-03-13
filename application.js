@@ -465,15 +465,7 @@ function renderJobDetails(container, template, collection){
             val.store_name = mall_name;
             // val.image_url = default_image;
         }
-        if(val.job_image_url_abs.indexOf('missing.png') > -1){
-            // val.store_image_url = default_image.image_url;
-            val.show_image= "display:none;"
-            
-        }
-        else {
-            val.image_url = val.job_image_url_abs;
-            val.show_image= "display:block;"
-        }
+        
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
