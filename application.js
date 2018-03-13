@@ -170,6 +170,18 @@ function renderHomeHours(container, template, collection){
         if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
             var open_time = moment(val.open_time).tz(getPropertyTimeZone());
             var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+            if(open_time.format("mm") == "00") {
+                new_open =  open_time.format("ha");
+            }
+            else {
+                new_open =  open_time.format("h:mma");
+            }
+            if(close_time.format("mm") == "00") {
+                new_close =  close_time.format("ha");
+            }
+            else {
+                new_close =  close_time.format("h:mma");
+            }
             val.open = "Today's Hours :";
             val.hours = open_time.format("h a") + " - " + close_time.format("h a");
             val.open_now = "Open Now"
