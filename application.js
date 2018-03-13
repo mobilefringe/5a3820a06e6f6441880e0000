@@ -592,7 +592,13 @@ function renderPromoDetails(container, template, collection){
                 val.image_url = val.promo_image_url_abs;
             }
         }
-        val.image_url = val.promo_image_url_abs;
+        if(store_details.store_front_url_abs.indexOf('missing.png') > 0){
+            val.store_image_url = default_image.image_url;
+        }
+        else {
+            val.image_url = val.promo_image_url_abs;
+        }
+        
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
