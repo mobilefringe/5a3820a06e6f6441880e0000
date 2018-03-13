@@ -600,6 +600,7 @@ function renderPromoDetails(container, template, collection){
         }
         else {
             val.image_url = val.promo_image_url_abs;
+            val.show_image= "display:block;"
         }
         
         var show_date = moment(val.show_on_web_date);
