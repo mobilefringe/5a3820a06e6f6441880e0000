@@ -595,8 +595,8 @@ function renderPromoDetails(container, template, collection){
         
         if(val.promo_image_url_abs.indexOf('missing.png') > -1){
             // val.store_image_url = default_image.image_url;
-            $(".promo_details_img").hide();
-            console.log("val.promo_image_url_abs", val.promo_image_url_abs,val.promo_image_url_abs.indexOf('missing.png') > 0);
+            val.show_image= "display:none;"
+            
         }
         else {
             val.image_url = val.promo_image_url_abs;
