@@ -593,7 +593,7 @@ function renderPromoDetails(container, template, collection){
             }
         }
         console.log("val.promo_image_url_abs", val.promo_image_url_abs,);
-        if(val.promo_image_url_abs.indexOf('missing.png') == -1){
+        if(val.promo_image_url_abs.indexOf('missing.png') > -1){
             // val.store_image_url = default_image.image_url;
             $(".promo_details_img").hide();
         }
