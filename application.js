@@ -465,7 +465,7 @@ function renderJobDetails(container, template, collection){
             val.store_name = mall_name;
             // val.image_url = default_image;
         }
-        
+        // val.show_image= "display:none;"
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
