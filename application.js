@@ -92,9 +92,9 @@ function renderEventDetails(container, template, collection){
     $.each( item_list , function( key, val ) {
         val.image_url = val.event_image_url_abs;
         val.logo  = default_image.image_url;
-        if(val.image_url.indexOf('missing.png') > 0){
-            val.image_url  = val.logo;
-        }
+        // if(val.image_url.indexOf('missing.png') > 0){
+        //     val.image_url  = val.logo;
+        // }
         // val.store_logo_bg = "store_logo_bg";
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
