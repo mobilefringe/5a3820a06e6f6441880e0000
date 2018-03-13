@@ -409,7 +409,7 @@ function getAssetURL(id){
     $.ajax({
         url: store_assets,
         dataType: 'json',
-        async: false,
+        // async: false,
         success: function(data) {
             if(data.store_files.length > 0){
                 store_front_image_url = data.store_files[0].url;
