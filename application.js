@@ -465,7 +465,7 @@ function renderJobDetails(container, template, collection){
             val.store_name = mall_name;
             // val.image_url = default_image;
         }
-        if(val.promo_image_url_abs.indexOf('missing.png') > -1){
+        if(val.job_image_url_abs.indexOf('missing.png') > -1){
             // val.store_image_url = default_image.image_url;
             val.show_image= "display:none;"
             
