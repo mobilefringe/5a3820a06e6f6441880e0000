@@ -171,7 +171,7 @@ function renderHomeHours(container, template, collection){
             var open_time = moment(val.open_time).tz(getPropertyTimeZone());
             var close_time = moment(val.close_time).tz(getPropertyTimeZone());
             var new_open = "";
-                var new_close = "";
+            var new_close = "";
             if(open_time.format("mm") == "00") {
                 new_open =  open_time.format("ha");
             }
@@ -185,7 +185,7 @@ function renderHomeHours(container, template, collection){
                 new_close =  close_time.format("h:mma");
             }
             val.open = "Today's Hours :";
-            val.hours = open_time.format("h a") + " - " + close_time.format("h a");
+            val.hours =  new_open + " - " + new_close;
             val.open_now = "Open Now"
             val.open_color = "#6dd304"
         } else {
