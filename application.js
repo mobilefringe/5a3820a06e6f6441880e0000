@@ -593,7 +593,7 @@ function renderPromoDetails(container, template, collection){
             }
         }
         if(val.promo_image_url_abs.indexOf('missing.png') > 0){
-            val.store_image_url = default_image.image_url;
+            // val.store_image_url = default_image.image_url;
         }
         else {
             val.image_url = val.promo_image_url_abs;
