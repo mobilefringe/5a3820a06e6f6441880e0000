@@ -517,6 +517,7 @@ function renderPromotions(container, template, collection){
             val.store_name = mall_name;
             if(val.promo_image_url_abs.indexOf('missing.png') > 0){
                 val.image_url = default_image.image_url;
+                val.store_logo_bg = "store_logo_bg";
             } else {
                 val.image_url = val.promo_image_url_abs;
             }
