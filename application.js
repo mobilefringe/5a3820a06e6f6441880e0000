@@ -509,6 +509,7 @@ function renderPromotions(container, template, collection){
             val.store_name = store_details.name;
             if(val.promo_image_url_abs.indexOf('missing.png') > 0){
                 val.image_url = store_details.store_front_url_abs;
+                val.store_logo_bg = "store_logo_bg";
             } else {
                 val.image_url = val.promo_image_url_abs;
             }
