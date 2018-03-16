@@ -52,7 +52,7 @@ function renderPostsPageData(){
             tag_name = tag_name.replace("%20"," ");
             console.log("tag_name",tag_name);
         
-            // var blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
+            // var blog_posts = getBlogDataBySlug('cornwall-queen-city').posts.sortBy(function(o){ return o.publish_date}).reverse();
             renderSearchPosts('#latest_blog_container_1','#latest_blog_template_1', blog_posts, tag_name);
             $('.inner_select_bar_div').prepend('<span class="col-xs-6 col-sm-3 blog_selector active">'+tag_name+'</span>')
         }
@@ -91,7 +91,7 @@ function renderPostDetailData(){
     
     
     
-    var blog_posts = getBlogDataBySlug('cornwall-main').posts.reverse();
+    var blog_posts = getBlogDataBySlug('cornwall-queen-city').posts.reverse();
     var post_banners = [];
     if(post[0].additional_images.length > 0) {
         $.each( post[0].additional_images , function( key, val ) {
@@ -112,14 +112,14 @@ function renderPostDetailData(){
     var popular_blogs = blog_posts.splice(0,5).sortBy(function(o){ return o.impression_count}).reverse();
     renderPosts('#popular_blog_container_1','#popular_blog_template_1', popular_blogs);
     
-    var posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
+    var posts = getBlogDataBySlug('cornwall-queen-city').posts.sortBy(function(o){ return o.publish_date}).reverse();
     renderPosts('#latest_blog_container_2','#latest_blog_template_2', posts);
     
     // console.log(post, post[0].main_tag);
     
     //load related posts by tag
     var current_tag = post[0].tag;
-    var filtered_posts = getBlogDataBySlug('cornwall-main').posts.filter(function(o){
+    var filtered_posts = getBlogDataBySlug('cornwall-queen-city').posts.filter(function(o){
         if(current_tag != null && o.tag !==null){
             for( var i = 0; i < current_tag.length ; i++ ) {
                return o.tag.indexOf(current_tag[i]) === -1;
@@ -521,7 +521,7 @@ function load_more_1(num){
         var id = i.toString();
         $('#latest_show_' + id ).fadeIn();
     }
-    var blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
+    var blog_posts = getBlogDataBySlug('cornwall-queen-city').posts.sortBy(function(o){ return o.publish_date}).reverse();
     var posts = blog_posts.splice(3);
     var total_posts = posts.length;
     if(i >= total_posts){
@@ -536,7 +536,7 @@ function load_more_2(num){
         var id = i.toString();
         $('#pop_show_' + id ).fadeIn();
     }
-    var blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.impression_count}).reverse();
+    var blog_posts = getBlogDataBySlug('cornwall-queen-city').posts.sortBy(function(o){ return o.impression_count}).reverse();
     var posts = blog_posts.splice(3);
     console.log(posts[0]);
     var total_posts = posts.length;
@@ -551,7 +551,7 @@ function compareArrays(arr1, arr2) {
 }
 
 function regularPostList () {
-    var blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
+    var blog_posts = getBlogDataBySlug('cornwall-queen-city').posts.sortBy(function(o){ return o.publish_date}).reverse();
     //three posts before subscription
     var first_3 = blog_posts.splice(0,3);
     console.log("first_3",first_3);
@@ -563,11 +563,11 @@ function regularPostList () {
     renderPosts('#popular_blog_container_1','#popular_blog_template_1', pop_first_3);
     
     //render all the rest of the posts 
-    blog_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
+    blog_posts = getBlogDataBySlug('cornwall-queen-city').posts.sortBy(function(o){ return o.publish_date}).reverse();
     var posts = blog_posts.splice(3);
     // renderPosts('#posts_container', '#posts_template', posts);
     renderPosts('#latest_blog_container_2','#latest_blog_template_2', posts);
-    // latest_posts = getBlogDataBySlug('cornwall-main').posts.sortBy(function(o){ return o.publish_date}).reverse();
+    // latest_posts = getBlogDataBySlug('cornwall-queen-city').posts.sortBy(function(o){ return o.publish_date}).reverse();
     // // var posts = blog_posts.splice(5);
     // // renderPosts('#posts_container', '#posts_template', posts);
     // console.log("posts",latest_posts);
