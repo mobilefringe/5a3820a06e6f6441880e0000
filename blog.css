@@ -881,6 +881,7 @@ img{
 p#all_loaded_1 {
     margin-left: 25px;
     margin-top: 10px;
+    display:none!important;
 }
 .youtube_container {
     color: $primary;
