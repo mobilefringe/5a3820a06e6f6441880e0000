@@ -46,18 +46,18 @@
 </div>
 <div class="content_container">
     <div class="promo_blog_container">
-        <!--<div id="giftcard_feature_container" class="col-sm-6 text-center">-->
-        <!--    <script id="giftcard_feature_template" type="x-tmpl-mustache/text">-->
-        <!--        <a href="{{url}}" class="">-->
-        <!--            <img src="{{image_url}}" alt="Promotional Image">-->
-        <!--        </a>-->
-        <!--    </script>-->
-        <!--</div>-->
-        <div class="col-sm-6 text-center">
-            <a href="/pages/cornwall-gift-cards">
-                <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/jpeg/1519934725572/promo_placeholder2.jpg" class="" alt="">
-            </a>
+        <div id="giftcard_feature_container" class="col-sm-6 text-center">
+            <script id="giftcard_feature_template" type="x-tmpl-mustache/text">
+                <a href="{{url}}" class="">
+                    <img src="{{image_url}}" alt="Promotional Image">
+                </a>
+            </script>
         </div>
+        <!--<div class="col-sm-6 text-center">-->
+        <!--    <a href="/pages/cornwall-gift-cards">-->
+        <!--        <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/jpeg/1519934725572/promo_placeholder2.jpg" class="" alt="">-->
+        <!--    </a>-->
+        <!--</div>-->
         <div class="col-sm-6">
             <div class="home_promos">
                 <h2 class="details_title caps">Promos</h2>
@@ -95,18 +95,18 @@
                 <!--<p class="home_see_all"><a href="/blog">See all news articles </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>-->
             </div>
         </div>
-        <!--<div id="blog_feature_container" class="col-sm-6 text-center">-->
-        <!--    <script id="blog_feature_template" type="x-tmpl-mustache/text">-->
-        <!--        <a href="{{url}}" class="">-->
-        <!--            <img src="{{image_url}}" alt="Promotional Image">-->
-        <!--        </a>-->
-        <!--    </script>-->
-        <!--</div>-->
-        <div class="col-sm-6 text-center">
-            <a href="/blog" target="_blank">
-                <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/jpeg/1519934748875/blog_placeholder2.jpg" class="" alt="">
-            </a>
+        <div id="blog_feature_container" class="col-sm-6 text-center">
+            <script id="blog_feature_template" type="x-tmpl-mustache/text">
+                <a href="{{url}}" class="">
+                    <img src="{{image_url}}" alt="Promotional Image">
+                </a>
+            </script>
         </div>
+        <!--<div class="col-sm-6 text-center">-->
+        <!--    <a href="/blog" target="_blank">-->
+        <!--        <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/jpeg/1519934748875/blog_placeholder2.jpg" class="" alt="">-->
+        <!--    </a>-->
+        <!--</div>-->
         <div class="col-sm-6 show_phone">
             <div class="home_promos">
                 <h2 class="details_title caps"><img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1517342534000/crowniconbrown-01.png" class="" alt="" style="height: 30px;margin-bottom: 10px;">&nbsp;&nbsp;Blog</h2>
@@ -161,7 +161,8 @@
             // renderBanner('#banner_template','#home_banner', banners);
             
             var all_feature_items = getFeatureList();
-            // var three_items = all_feature_items.slice(0, 3);
+            var three_items = all_feature_items.slice(0, 3);
+            console.log('three_items'.three_items)''
             var giftcard_image = all_feature_items[0];
             var blog_image = all_feature_items[1];
             // console.log("giftcard_image", giftcard_image, "blog_image", blog_image);
