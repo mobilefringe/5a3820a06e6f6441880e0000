@@ -230,14 +230,7 @@
             var logo_slider = new $JssorSlider$("slider_container", logo_options);
             
             $('#subForm').submit(function (e) {
-                data = {"g-recaptcha-response": $('#subForm .g-recaptcha-response').val()}
-                $.post("https://cornwall.mallmaverick.com/verify_captcha", data, function(response){
-                    if(response.success == false){
-                        grecaptcha.reset(widgetId1);
-                        alert("Please validate captcha");
-                        return false;
-                    }
-                })
+                
                 if ($("#agree_terms").prop("checked") != true){
                     alert("Please agree to the term and conditions.");
                     $("#agree_terms").focus();
