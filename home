@@ -156,7 +156,7 @@
             </div>
             
             
-            <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
+            <!--<span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>-->
         </form>
     </div>
 </div>
