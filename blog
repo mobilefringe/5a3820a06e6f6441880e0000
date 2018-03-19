@@ -226,8 +226,8 @@
             var main_video = youtube.splice(0,1);
             var next_two_video = youtube.splice(1,2);
             console.log("youtube", main_video, next_two_video);
-            renderYoutube('#youtube_container_1','#youtube_template_1', youtube.splice(0,1));
-            renderYoutube('#youtube_container_2','#youtube_template_2', youtube.splice(1,2));
+            renderYoutube('#youtube_container_1','#youtube_template_1',main_video);
+            renderYoutube('#youtube_container_2','#youtube_template_2', next_two_video);
         });
     });
 </script>
