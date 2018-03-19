@@ -226,7 +226,6 @@
             var next_two_video = [youtube[1], youtube[2]];
             renderYoutube('#youtube_container_1','#youtube_template_1',main_video);
             renderYoutube('#youtube_container_2','#youtube_template_2', next_two_video);
-        });erYoutube('#youtube_container_2','#youtube_template_2', youtube.splice(1,2));
         });
     });
 </script>
