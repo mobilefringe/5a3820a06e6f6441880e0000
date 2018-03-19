@@ -152,7 +152,7 @@
             <label for="fieldEmail" style="display:none"></label>
             <div>
                 <input id="fieldEmail" name="cm-ykouu-ykouu" class="form-control" type="email" value="" placeholder="Email address" required/> 
-                <a class="contact_btn" href="/newsletter?email=" id="newsletterSignupBtn">Sign Up</a>
+                <button class="contact_btn" data-i18n="general.submit">Sign Up</button>
             </div>
             
             
