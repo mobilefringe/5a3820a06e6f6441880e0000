@@ -47,7 +47,7 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            
+            //add in email from
             var query = window.location.search;
             if(query !== "") {
                 
