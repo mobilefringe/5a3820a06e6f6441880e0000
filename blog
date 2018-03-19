@@ -212,7 +212,7 @@
     $(document).ready(function(e) {
         init(e);
         loadMallData(renderPostsPageData);
-        url = '//cornwallcentre.mallmaverick.com/api/v4/cornwall/social.json'; 
+        url = '//cornwall.mallmaverick.com/api/v4/cornwall/social.json'; 
         // '//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/application/json/1519336448100/social.json';
         // http://cornwallcentre.mallmaverickdevelopment.com/api/v4/cornwall/social.json
         $.getJSON(url).done(function(data){
