@@ -54,7 +54,7 @@
                 var search_part = query.split('?')[1];
                 var search_tag = search_part.split('=')[1];
                 console.log("search_part",search_tag);
-                if(search_tag == "search"){
+                if(search_tag == "email"){
                     
                 }
             }
