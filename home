@@ -148,11 +148,11 @@
 <div class="home_subscription">
     <div class="subscribeBlog content_container">
          <h1>Sign up for our e-newsletter</h1> 
-        <form  id="newsletterBlogForm">
+        <form id="newsletterBlogForm">
             <label for="fieldEmail" style="display:none"></label>
             <div>
                 <input id="fieldEmail" name="cm-ykouu-ykouu" class="form-control" type="email" value="" placeholder="Email address" required/> 
-                <a class="contact_btn" href="/newsletter?email=">Sign Up</a>
+                <a class="contact_btn" href="/newsletter?email=" id="newsletterSignupBtn">Sign Up</a>
             </div>
             
             
