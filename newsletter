@@ -47,6 +47,19 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
+            
+            var query = window.location.search;
+            if(query !== "") {
+                
+                var search_part = query.split('?')[1];
+                var search_tag = search_part.split('=')[1];
+                console.log("search_part",search_tag);
+                if(search_tag == "search"){
+                    
+                }
+            }
+            
+            
             $.validate();
             $('#subForm').submit(function (e) {
                 data = {"g-recaptcha-response": $('#subForm .g-recaptcha-response').val()}
