@@ -228,7 +228,7 @@
             var logo_slider = new $JssorSlider$("slider_container", logo_options);
             
             $("#newsletterSignupBtn").click(function(){
-                
+                console.log("newsletterSignupBtn")
             })
         }
         loadMallDataCached(renderAll); 
