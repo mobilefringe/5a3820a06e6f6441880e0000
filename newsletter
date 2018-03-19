@@ -53,7 +53,6 @@
                 
                 var search_part = query.split('?')[1];
                 var search_tag = search_part.split('=')[1];
-                console.log("search_part",search_tag);
                 $("#fieldEmail").val(search_tag);
             }
             
