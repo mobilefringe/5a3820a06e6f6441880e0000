@@ -26,20 +26,29 @@
 <div class="feature_container">
     <div class="content_container">
         <div class="flex_container">
-            <div class="width_30">
-                <a href="/stores">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1517940249000/directory.png" class="" alt="">
-                </a>
-            </div>
-            <div class="width_30">
-                <a href="/promotions">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1517940260000/tag.png" class="" alt="">
-                </a>
-            </div>
-            <div class="width_30">
-                <a href="/hours">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1517940241000/hours.png" class="" alt="">
-                </a>
+            <!--<div class="width_30">-->
+            <!--    <a href="/stores">-->
+            <!--        <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1517940249000/directory.png" class="" alt="">-->
+            <!--    </a>-->
+            <!--</div>-->
+            <!--<div class="width_30">-->
+            <!--    <a href="/promotions">-->
+            <!--        <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1517940260000/tag.png" class="" alt="">-->
+            <!--    </a>-->
+            <!--</div>-->
+            <!--<div class="width_30">-->
+            <!--    <a href="/hours">-->
+            <!--        <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1517940241000/hours.png" class="" alt="">-->
+            <!--    </a>-->
+            <!--</div>-->
+            <div id="feature_container">
+                <script id="feature_template" type="x-tmpl-mustache/text">
+                    <div class="width_30">
+                        <a href="{{url}}">
+                            <img src="{{image_url}}" alt="{{name}}"/>
+                        </a>
+                    </div>
+                </script>
             </div>
         </div>
     </div>
@@ -163,7 +172,7 @@
             var all_feature_items = getFeatureList();
             var three_items = all_feature_items.slice(0, 3);
             console.log('three_items',three_items);
-            
+             renderGeneral('#feature_container','#feature_template', three_items);
             var giftcard_image = all_feature_items[3];
             var blog_image = all_feature_items[4];
             // console.log("giftcard_image", giftcard_image, "blog_image", blog_image);
