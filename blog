@@ -221,12 +221,10 @@
             log('done fetching social data from: ' + url);
             // return mallDataJSON.leasing_units;
             social = mallDataJSON.social;
-            console.log(social);
             var youtube = social.youtube.sortBy(function(o){ return o.created_at_epoch}).reverse();
             // created_at
             var main_video = [youtube[0]];
             var next_two_video = [youtube[1], youtube[2]];
-            console.log("youtube", main_video, next_two_video);
             renderYoutube('#youtube_container_1','#youtube_template_1',main_video);
             renderYoutube('#youtube_container_2','#youtube_template_2', next_two_video);
         });
