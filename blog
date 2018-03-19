@@ -218,7 +218,7 @@
         $.getJSON(url).done(function(data){
             mallData = JSON.stringify(data);
             var mallDataJSON = JSON.parse(mallData);
-            log('done fetching mallData from: ' + url);
+            log('done fetching social data from: ' + url);
             // return mallDataJSON.leasing_units;
             social = mallDataJSON.social;
             console.log(social);
