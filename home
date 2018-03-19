@@ -231,6 +231,7 @@
                 e.preventDefault();
                 console.log("newsletterSignupBtn", $("#fieldEmail").val());
                 // $
+                
             })
         }
         loadMallDataCached(renderAll); 
