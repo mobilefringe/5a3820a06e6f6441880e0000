@@ -36,7 +36,7 @@
         				    <div class="dets_div">
         				        <a href="/blog?tag={{main_tag}}"><span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span></a>
         				        <a href="/blog/{{slug}}"><h3>  {{title}} <h3/><a/>
-        				        <p class="blog_dates">{{publish_date}}</p>
+        				        <p class="blog_dates">{{published_date}}</p>
         				        <p class="blog_short_desc"> {{description_short}}</p>
         				        <a href="/blog/{{slug}}">
 				                    <p class="read_more caps">Read More <i class="fa fa-long-arrow-right"></i></p>
@@ -59,7 +59,7 @@
         				    <div class="dets_div">
         				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
         				       <a href="/blog/{{slug}}"><h3>  {{title}} <h3/><a/>
-        				       <p class="blog_dates">{{publish_date}}</p>
+        				       <p class="blog_dates">{{published_date}}</p>
         				       <p class="blog_short_desc"> {{description_short}}</p>
         				       <a href="/blog/{{slug}}">
 				                    <p class="read_more caps">Read More <i class="fa fa-long-arrow-right"></i></p>
@@ -151,7 +151,7 @@
         				    <div class="dets_div">
         				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
         				       <a href="/blog/{{slug}}"><h3>  {{title}} <h3/><a/>
-        				       <p class="blog_dates">{{publish_date}}</p>
+        				       <p class="blog_dates">{{published_date}}</p>
         				       <p class="blog_short_desc"> {{description_short}}</p>
         				       <a href="/blog/{{slug}}">
 				                    <p class="read_more caps">Read More <i class="fa fa-long-arrow-right"></i></p>
@@ -185,7 +185,7 @@
         				    <div class="dets_div">
         				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
         				       <a href="/blog/{{slug}}"><h3>  {{title}} <h3/><a/>
-        				       <p class="blog_dates">{{publish_date}}</p>
+        				       <p class="blog_dates">{{published_date}}</p>
         				       <p class="blog_short_desc"> {{description_short}}</p>
         				       <a href="/blog/{{slug}}">
 				                    <p class="read_more caps">Read More <i class="fa fa-long-arrow-right"></i></p>
