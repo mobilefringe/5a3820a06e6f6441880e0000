@@ -890,6 +890,7 @@ p#all_loaded_1 {
         font-weight: 300;
         width: 70%;
         font-size: 20px;
+        line-height: normal;
         &:hover {
             color: $red;
         }
