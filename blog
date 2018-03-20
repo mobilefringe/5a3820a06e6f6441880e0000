@@ -231,7 +231,7 @@
         
     });
     $(".youtube_container").load(function(){
-        console.log("$(".youtube_container")",$(".youtube_container .main_title").height());
+        console.log("youtube_container",$(".youtube_container .main_title").height());
         if($(".youtube_container .main_title").height() > 30) {
             $(".see_all_video").css({"margin-bottom": "46px", "margin-top": "40px"});
             console.log("hellooo")
