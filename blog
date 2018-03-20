@@ -230,12 +230,12 @@
         
         
     });
-    $(".youtube_container").load(function(){
+    $(".youtube_container").onLoad  = function(){
         console.log($(".youtube_container .main_title").height());
         if($(".youtube_container .main_title").height() > 30) {
             $(".see_all_video").css({"margin-bottom": "46px", "margin-top": "40px"});
             console.log("hellooo")
     
         }
-    })
+    }
 </script>
