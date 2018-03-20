@@ -454,7 +454,7 @@ function renderSearchPosts(container, template, collection, search){
         var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
         console.log(val.publish_date);
         val.published_date = published_on.format("MMMM D, YYYY");
-        console.log("dates", val.title, published_on, val.publish_date);
+        console.log("dates", val.title, published_on, val.published_date);
         //get first tag 
         if(val.tag != null && val.tag !== undefined) {
             val.main_tag = val.tag[0];
