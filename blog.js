@@ -28,7 +28,7 @@ function renderPostsPageData(){
         $(".bottom_blogs").hide();
         $("#blog_banner_container").hide();
         $(".blogs_container").css("margin-top","40px");
-        $(".youtube").css("margin-bottom","40px");
+        $(".youtube_container").css("margin-bottom","40px");
         var search_part = query.split('?')[1];
         var search_tag = search_part.split('=')[0];
         console.log("search_part",search_tag);
