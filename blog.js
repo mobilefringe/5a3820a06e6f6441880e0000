@@ -66,20 +66,6 @@ function renderPostsPageData(){
         regularPostList();
 
     }
-    var youtube_videos = [];
-    $.ajax({
-    	type: "GET",
-    	url: "https://gdata.youtube.com/feeds/api/users/CornwallCentre/uploads?max-results=3&orderby=published&v=2&alt=jsonc",
-    	cache: false,
-    	dataType:'jsonp',
-    	success: function(data){
-// 		show_my_videos(data);
-		//If you want to see in console...
-		console.log(data);
-        // console.log(data.data.items);
-		// });
-        }
-    });
    show_content();
 }
 function renderPostDetailData(){
