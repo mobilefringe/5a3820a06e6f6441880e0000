@@ -452,6 +452,7 @@ function renderSearchPosts(container, template, collection, search){
         val.description_short = val.description_short.replace("&amp;", "&");
         
         var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
+        console.log(val.publish_date);
         val.publish_date = published_on.format("MMMM D, YYYY");
         console.log("dates", val.title, published_on.year(), val.publish_date);
         //get first tag 
