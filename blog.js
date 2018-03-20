@@ -274,7 +274,7 @@ function renderMainPost(container, template, val){
         val.description_short = val.description_short.replace("&amp;", "&");
         
         var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
-        val.publish_date = published_on.format("MMM. DD");
+        val.published_date = published_on.format("MMM. DD");
         
         if(val.additional_images.length > 0) {
             val.second_image_url = val.additional_images[0].image_url;
@@ -310,7 +310,7 @@ function renderPosts(container, template, collection){
         val.description_short = val.description_short.replace("&amp;", "&");
         
         var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
-        val.publish_date = published_on.format("MMMM D, YYYY");
+        val.published_date = published_on.format("MMMM D, YYYY");
         
         //get first tag 
         if(val.tag != null && val.tag !== undefined) {
@@ -390,7 +390,7 @@ function renderPostDetails(container, template, collection, blog_posts){
             }
         }
         var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
-        val.publish_date = published_on.format("MMMM D, YYYY");
+        val.published_date = published_on.format("MMMM D, YYYY");
         
         if(val.tag != null && val.tag !== undefined) {
             val.main_tag = val.tag[0];
