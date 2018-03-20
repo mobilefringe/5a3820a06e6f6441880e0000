@@ -228,7 +228,7 @@
             renderYoutube('#youtube_container_2','#youtube_template_2', next_two_video);
         });
         
-        if() {
+        if($(".youtube_container .main_title").height() > 30) {
               $(".see_all_video").css({"margin-bottom": "46px", "margin-top": "40px"}) 
     
         }
