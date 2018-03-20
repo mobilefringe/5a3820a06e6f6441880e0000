@@ -611,7 +611,13 @@ function renderYoutube(container, template, collection){
         item_rendered.push(repo_rendered);
     });
     $(container).html(item_rendered.join(''));
-    console.log("youtube_container",$(".youtube_container .main_title").height());
+    if(){
+        if($(".youtube_container .main_title").height() > 30) {
+            $(".see_all_video").css({"margin-bottom": "46px", "margin-top": "40px"});
+            console.log("hellooo")
+    
+        }
+    }
 }
 function getId(url) {
     var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
