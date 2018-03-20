@@ -230,8 +230,4 @@
         
         
     });
-    $(".youtube_container").load(function(){
-        console.log("youtube_container",$(".youtube_container .main_title").height());
-        
-    })
 </script>
