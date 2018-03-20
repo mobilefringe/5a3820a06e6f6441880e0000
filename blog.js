@@ -1,7 +1,7 @@
 function searchFunction (e) {
     var search = $("input.site_search").val();
     if(search.length > 0) {
-        console.log("search",search);
+        // console.log("search",search);
         search = search.toLowerCase();
         document.location.href = '/blog?search='+search;
     }
@@ -9,7 +9,7 @@ function searchFunction (e) {
 function searchFunctionMobile (e) {
     var search = $("input.site_search_m").val();
     if(search.length > 0) {
-        console.log("search",search);
+        // console.log("search",search);
         search = search.toLowerCase();
         document.location.href = '/blog?search='+search;
     }
@@ -31,12 +31,12 @@ function renderPostsPageData(){
         $(".youtube_container").css("margin-bottom","40px");
         var search_part = query.split('?')[1];
         var search_tag = search_part.split('=')[0];
-        console.log("search_part",search_tag);
+        // console.log("search_part",search_tag);
         if(search_tag == "search"){
             var search_query = query.split('=')[1];
             if(search_query.length > 0) {
                 search_query = search_query.replace("%20"," ");
-                console.log("search",search_query);
+                // console.log("search",search_query);
                 var key_posts =  getPostsByKeyword(search_query);
                 if(key_posts.length === 0){
                     $("#no_posts").show();
@@ -53,7 +53,7 @@ function renderPostsPageData(){
         else {
             var tag_name = query.split('=')[1];
             tag_name = tag_name.replace("%20"," ");
-            console.log("tag_name",tag_name);
+            // console.log("tag_name",tag_name);
             
             // var blog_posts = getBlogDataBySlug('cornwall-queen-city').posts.sortBy(function(o){ return o.publish_date}).reverse();
             renderSearchPosts('#latest_blog_container_1','#latest_blog_template_1', blog_posts, tag_name);
@@ -76,7 +76,7 @@ function renderPostDetailData(){
     var slug = pathArray[pathArray.length-1];
     // var post = getPostDetailsBySlug(slug);
     var post = getPublishedPostDetailsBySlug(slug);
-    console.log(post);
+    // console.log(post);
     
     
     
@@ -94,7 +94,7 @@ function renderPostDetailData(){
     temp.image_url = post[0].image_url;
     post_banners.unshift(temp);
     
-    console.log(post_banners);
+    // console.log(post_banners);
     renderGeneral("#blog_banner_container", "#blog_banner_template",post_banners);
     renderPostDetails("#title_blog_container", "#title_blog_template", post, blog_posts);
     renderPostDetails("#current_blog_container", "#current_blog_template", post, blog_posts);
@@ -117,7 +117,7 @@ function renderPostDetailData(){
         // console.log("post.main_tag", current_tag, "o.tag", o.tag, compareArrays(current_tag, o.tag)); return compareArrays(current_tag, o.tag)
         
     });
-    console.log(filtered_posts);
+    // console.log(filtered_posts);
     renderPosts('#latest_blog_container_3','#latest_blog_template_3', filtered_posts.splice(0,4));
     if (filtered_posts.length === 0) {
         $(".you_may_like").hide();
@@ -137,7 +137,7 @@ function renderPostDetailData(){
     });
     $('.details_share_icons a').click(function(){
         var social_media = $(this).attr("data-value");
-        console.log("social_media", social_media, post[0].slug);
+        // console.log("social_media", social_media, post[0].slug);
         ga('send', 'social', social_media, 'share', 'http://cornwallcentre.com/blog/'+ post[0].slug);
     });
     show_content();
@@ -219,7 +219,7 @@ function blogNewsletterSignup (){
     blog_cm_url = "//mobilefringe.createsend.com/t/d/s/fjdtyy/";
     $('.blogNewsletterForm').submit(function(e) {
         e.preventDefault();
-        console.log("e",e);
+        // console.log("e",e);
         values = [];
         values = JSON.stringify($(this).serializeArray());
         // console.log($(this).attr("id"));
@@ -403,10 +403,10 @@ function renderTags (container, template, post){
     var item_rendered = [];
     var template_html = $(template).html();
     var collection = post[0].tag;
-    console.log("collection", collection);
+    // console.log("collection", collection);
     if(collection != null && collection !== undefined) {
         $.each(collection , function( key, val ) {
-        console.log(key,val)
+        // console.log(key,val)
         var new_val = {};
         new_val.name = val;
         var rendered = Mustache.render(template_html,new_val);
@@ -441,9 +441,9 @@ function renderSearchPosts(container, template, collection, search){
         val.description_short = val.description_short.replace("&amp;", "&");
         
         var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
-        console.log(val.publish_date);
+        // console.log(val.publish_date);
         val.published_date = published_on.format("MMMM D, YYYY");
-        console.log("dates", val.title, published_on, val.published_date);
+        // console.log("dates", val.title, published_on, val.published_date);
         //get first tag 
         if(val.tag != null && val.tag !== undefined) {
             val.main_tag = val.tag[0];
@@ -528,7 +528,7 @@ function load_more_2(num){
     }
     var blog_posts = getBlogDataBySlug('cornwall-queen-city').posts.sortBy(function(o){ return o.impression_count}).reverse();
     var posts = blog_posts.splice(3);
-    console.log(posts[0]);
+    // console.log(posts[0]);
     var total_posts = posts.length;
     if(i >= total_posts){
         $('#loaded_posts_2').hide();
@@ -544,12 +544,12 @@ function regularPostList () {
     var blog_posts = getBlogDataBySlug('cornwall-queen-city').posts.sortBy(function(o){ return o.publish_date}).reverse();
     //three posts before subscription
     var first_3 = blog_posts.splice(0,3);
-    console.log("first_3",first_3);
+    // console.log("first_3",first_3);
     renderPosts('#latest_blog_container_1','#latest_blog_template_1', first_3);
     
     var blog_popular_posts = blog_posts.sortBy(function(o){ return o.impression_count}).reverse();
     var pop_first_3 = blog_popular_posts.splice(0,3);
-    console.log("pop_first_3",pop_first_3);
+    // console.log("pop_first_3",pop_first_3);
     renderPosts('#popular_blog_container_1','#popular_blog_template_1', pop_first_3);
     
     //render all the rest of the posts 
@@ -572,7 +572,7 @@ function regularPostList () {
     
     $(".blog_selector").click(function(){
         var current_choice =$(this).text();
-        console.log("clicked!", current_choice);
+        // console.log("clicked!", current_choice);
         
         $(".blog_selector").removeClass("active");
         $(this).addClass("active");
