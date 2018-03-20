@@ -603,7 +603,7 @@ function renderYoutube(container, template, collection){
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
         val.embedded_url = "//www.youtube.com/embed/" + getId(val.link)+"?rel=0&autoplay=1&mute=1";
-        val.title = truncate(val.title, 6);
+        // val.title = truncate(val.title, 6);
         var repo_rendered = Mustache.render(template_html,val);
         item_rendered.push(repo_rendered);
     });
