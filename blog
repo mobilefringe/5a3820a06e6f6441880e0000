@@ -229,7 +229,8 @@
         });
         
         if($(".youtube_container .main_title").height() > 30) {
-              $(".see_all_video").css({"margin-bottom": "46px", "margin-top": "40px"}) 
+              $(".see_all_video").css({"margin-bottom": "46px", "margin-top": "40px"});
+              console.log("hellooo")
     
         }
     });
