@@ -611,6 +611,7 @@ function renderYoutube(container, template, collection){
         item_rendered.push(repo_rendered);
     });
     $(container).html(item_rendered.join(''));
+    console.log("youtube_container",$(".youtube_container .main_title").height());
 }
 function getId(url) {
     var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
