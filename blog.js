@@ -52,6 +52,7 @@ function renderPostsPageData(){
             tag_name = tag_name.replace("%20"," ");
             console.log("tag_name",tag_name);
             $("#blog_banner_container").hide();
+            $(".blogs_container").css("margin-top","40px")
             // var blog_posts = getBlogDataBySlug('cornwall-queen-city').posts.sortBy(function(o){ return o.publish_date}).reverse();
             renderSearchPosts('#latest_blog_container_1','#latest_blog_template_1', blog_posts, tag_name);
             $('.inner_select_bar_div').prepend('<span class="col-xs-6 col-sm-3 blog_selector active">'+tag_name+'</span>')
