@@ -81,7 +81,7 @@
 		        <form class="blogNewsletterForm" method="post" id="sideNewsletterBlogForm">
                     <label for="fieldEmail" style="display:none"></label>
                     <input id="fieldEmail" name="cm-fjdtyy-fjdtyy" class="form-control" type="email" value="" placeholder="Enter your email" required/> 
-                    <button class="contact_btn" data-i18n="general.submit">Sign Up</button>
+                    <button class="contact_btn blog_newsletter_btn" data-i18n="general.submit">Sign Up</button>
                     
                     <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
                 </form>
