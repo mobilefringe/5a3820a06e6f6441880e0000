@@ -148,7 +148,7 @@
             
             // var store_list = _.uniq(all_stores, function(o){ return o.name; });
             if(store_list.length > 0){
-                renderStoreList('#store_list_container','#store_list_template', store_list, "stores");
+                renderStoreList('#store_list_container','#store_list_template', all_stores, "stores");
             }
             
             show_content();
