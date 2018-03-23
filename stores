@@ -136,15 +136,15 @@
 
             // var store_list = getStoresList();
             var all_stores = getStoresList();
-            var shops = [];
-            $.each(all_stores, function(key, val){
-                if(val.categories != null){
-                    var store_categories = val.categories;
-                    if(findOne(store_categories, category_list)){
-                        shops.push(val)
-                    }
-                }
-            });
+            // var shops = [];
+            // $.each(all_stores, function(key, val){
+            //     if(val.categories != null){
+            //         var store_categories = val.categories;
+            //         if(findOne(store_categories, category_list)){
+            //             shops.push(val)
+            //         }
+            //     }
+            // });
             
             var all_stores = _.uniq(shops, function(o){ return o.name; });
             if(store_list.length > 0){
