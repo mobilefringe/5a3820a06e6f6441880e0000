@@ -146,7 +146,7 @@
             //     }
             // });
             
-            var all_stores = _.uniq(shops, function(o){ return o.name; });
+            // var store_list = _.uniq(all_stores, function(o){ return o.name; });
             if(store_list.length > 0){
                 renderStoreList('#store_list_container','#store_list_template', store_list, "stores");
             }
