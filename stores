@@ -125,7 +125,7 @@
             
             if(stores_list.length > 0){
                 renderGeneral("#category_select", "#category_select_template", categories);
-                $('#category_select').prepend('<li class="show_cat_stores" data-id="000" name="All">ALL</li>');
+                $('#category_select').prepend('<li class="dropdown-item show_cat_stores" data-id="000" name="All">ALL</li>');
             }
             
             var category_list = [];
