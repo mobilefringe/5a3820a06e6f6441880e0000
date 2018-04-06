@@ -73,8 +73,6 @@
                     return false;
                 }
                 e.preventDefault();
-                // add in pixel in here too just for the hell of it
-                new Image().src='http://clickserv.basis.net/conv/c26d4c65188608f3';
                 $.getJSON(
                     this.action + "?callback=?",
                     $(this).serialize(),
