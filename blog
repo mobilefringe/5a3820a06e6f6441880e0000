@@ -50,7 +50,7 @@
         		<script id = "popular_blog_template_1" type="x-tmpl/mustache">
         			<div class="row blog_post">
         			    <div class="col-sm-4">
-        				    <a href="/blog/{{slug}}">
+        				    <a href="/posts/{{slug}}">
         				        <img src="{{image_url}}"/>
         				    </a>
         				</div>
