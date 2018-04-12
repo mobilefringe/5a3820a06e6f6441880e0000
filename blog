@@ -176,7 +176,7 @@
         		<script id = "popular_blog_template_2" type="x-tmpl/mustache">
         			<div class="row  blog_post hidden_now"  id="pop_show_{{counter}}">
         			    <div class="col-sm-4">
-        				    <a href="/blog/{{slug}}">
+        				    <a href="/posts/{{slug}}">
         				        <img src="{{image_url}}"/>
         				    </a>
         				</div>
