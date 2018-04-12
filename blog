@@ -142,7 +142,7 @@
         		<script id = "latest_blog_template_2" type="x-tmpl-mustache">
         		    <div class="row blog_post hidden_now"  id="latest_show_{{counter}}">
         			    <div class="col-sm-4">
-        			        <a href="/blog/{{slug}}">
+        			        <a href="/posts/{{slug}}">
         				        <img src="{{image_url}}"/>
         				    </a>
         				</div>
@@ -150,10 +150,10 @@
         				<div class="col-sm-8">
         				    <div class="dets_div">
         				       <span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span>
-        				       <a href="/blog/{{slug}}"><h3>  {{title}} <h3/><a/>
+        				       <a href="/posts/{{slug}}"><h3>  {{title}} <h3/><a/>
         				       <p class="blog_dates">{{published_date}}</p>
         				       <p class="blog_short_desc"> {{description_short}}</p>
-        				       <a href="/blog/{{slug}}">
+        				       <a href="/posts/{{slug}}">
 				                    <p class="read_more caps">Read More <i class="fa fa-long-arrow-right"></i></p>
 				                </a>
         				   </div>
