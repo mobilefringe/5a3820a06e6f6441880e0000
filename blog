@@ -7,7 +7,7 @@
     		    <div class="col-sm-6 no_padding hidden_phone"><img src="{{second_image_url}}"/></div>
     			<div class="blog_banner_title">
     			    <h1>  {{title}} <h1/>
-    			    <a href="/blog/{{slug}}">
+    			    <a href="/posts/{{slug}}">
 				        <p>Read More</p>
 				    </a>
     			</div>
@@ -27,7 +27,7 @@
         		<script id = "latest_blog_template_1" type="x-tmpl-mustache">
         		    <div class="row blog_post" >
         			    <div class="col-sm-4">
-        				    <a href="/blog/{{slug}}">
+        				    <a href="/posts/{{slug}}">
         				        <img src="{{image_url}}"/>
         				    </a>
         				</div>
@@ -35,7 +35,7 @@
         				<div class="col-sm-8">
         				    <div class="dets_div">
         				        <a href="/blog?tag={{main_tag}}"><span class="blog_tag" style="{{show_tag}}">{{main_tag}}</span></a>
-        				        <a href="/blog/{{slug}}"><h3>  {{title}} <h3/><a/>
+        				        <a href="/posts/{{slug}}"><h3>  {{title}} <h3/><a/>
         				        <p class="blog_dates">{{published_date}}</p>
         				        <p class="blog_short_desc"> {{description_short}}</p>
         				        <a href="/blog/{{slug}}">
