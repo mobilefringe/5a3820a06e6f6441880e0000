@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,initial-scale=1">
     <meta name="description" content="{{meta_description}}">
     <meta name="keywords" content="{{meta_keywords}}">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="author" content="">
     <title>{{meta_title}}</title>
    
