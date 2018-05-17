@@ -4,6 +4,7 @@
     <!-- Favicon -->
     <link rel="icon" href="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1513706773932/cornwall_logo_white.png"> <!--Add Favicon-->
     <!--Update each web pages SEO to set values for {{meta_title}}, {{meta_description}}, {{meta_keywords}} -->
+    <meta name="twitter:card" content="summary">
     <meta property="og:title" content="{{meta_title}}">
     <meta property="og:description" content="{{meta_description}}">
     <meta property="og:image" content="{{meta_image}}">
