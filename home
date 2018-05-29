@@ -1,14 +1,3 @@
-<!--<div class="home_banner">   -->
-<!--    <div class="flexslider">-->
-<!--        <ul class="slides" id="home_banner">-->
-<!--            <li>-->
-<!--                <a href="/blog">-->
-<!--                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/jpeg/1520883393932/11453_COR_website_banner_HOME.jpg');"></div>-->
-<!--                </a>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--</div>-->
 <div class="home_banner">   
     <div class="flexslider">
         <ul class="slides" id="home_banner">
@@ -26,21 +15,6 @@
 <div class="feature_container">
     <div class="content_container">
         <div class="flex_container">
-            <!--<div class="width_30">-->
-            <!--    <a href="/stores">-->
-            <!--        <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1517940249000/directory.png" class="" alt="">-->
-            <!--    </a>-->
-            <!--</div>-->
-            <!--<div class="width_30">-->
-            <!--    <a href="/promotions">-->
-            <!--        <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1517940260000/tag.png" class="" alt="">-->
-            <!--    </a>-->
-            <!--</div>-->
-            <!--<div class="width_30">-->
-            <!--    <a href="/hours">-->
-            <!--        <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1517940241000/hours.png" class="" alt="">-->
-            <!--    </a>-->
-            <!--</div>-->
             <div id="feature_container">
                 <script id="feature_template" type="x-tmpl-mustache/text">
                     <div class="width_30">
@@ -62,11 +36,6 @@
                 </a>
             </script>
         </div>
-        <!--<div class="col-sm-6 text-center">-->
-        <!--    <a href="/pages/cornwall-gift-cards">-->
-        <!--        <img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/jpeg/1519934725572/promo_placeholder2.jpg" class="" alt="">-->
-        <!--    </a>-->
-        <!--</div>-->
         <div class="col-sm-6">
             <div class="home_promos">
                 <h2 class="details_title caps">Promos</h2>
