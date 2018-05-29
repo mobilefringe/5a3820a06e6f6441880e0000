@@ -20,7 +20,7 @@
             				<div class="sparkNowTileTitle">
             				    <a href="/posts/{{slug}}"><h3>{{ title }}</h3></a>
             				    {{#video_link}}
-            				        <img src="http://kodekloud.s3.amazonaws.com/sites/5512e0606e6f64112d000000/29a93cc9dd3b7f858a31366f54bbc07b/video_icon.png" class="" alt="">
+            				        <img src="//kodekloud.s3.amazonaws.com/sites/5512e0606e6f64112d000000/29a93cc9dd3b7f858a31366f54bbc07b/video_icon.png" class="" alt="">
             				    {{/video_link}}
             				</div>
             				<a class="sparkNowTileRead" href="/posts/{{slug}}">READ <i class="fa fa-caret-right fa-lg"></i></a>
