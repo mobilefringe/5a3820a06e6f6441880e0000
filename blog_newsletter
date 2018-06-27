@@ -31,10 +31,10 @@
                 <input id="fieldEmail" name="cm-fjdtyy-fjdtyy" class="form-control" type="email" value="" placeholder="Your Email" required/> 
                 
                 <label for="agree_terms">
-                    <input type="checkbox" class="info_check" id="agree_terms" required>
-                    I agree to receive emails from Cornwall Centre <!--Change to Mall Name -->
+                    <input type="checkbox" class="info_check" id="agree_terms" required >
+                    I agree to receive emails from Cornwall Centre
                 </label>
-                <div id="RecaptchaField1"></div>
+                <!--<div id="RecaptchaField1"></div>-->
                 <br>
                 <button class="contact_btn" data-i18n="general.submit">SUBMIT</button>
                 <br>
@@ -57,33 +57,33 @@
             }
             
             $.validate();
-            $('#subForm').submit(function (e) {
-                data = {"g-recaptcha-response": $('#subForm .g-recaptcha-response').val()}
-                $.post("https://cornwall.mallmaverick.com/verify_captcha", data, function(response){
-                    if(response.success == false){
-                        grecaptcha.reset(widgetId1);
-                        alert("Please validate captcha");
-                        return false;
-                    }
-                })
-                if ($("#agree_terms").prop("checked") != true){
-                    alert("Please agree to the term and conditions.");
-                    $("#agree_terms").focus();
-                    return false;
-                }
-                e.preventDefault();
-                $.getJSON(
-                    this.action + "?callback=?",
-                    $(this).serialize(),
-                    function (data) {
-                        if (data.Status === 400) {
-                            alert("Please try again later.");
-                        } else { // 200
-                            $('#subForm').trigger('reset');
-                            $("#success_subscribe").fadeIn();
-                        }
-                    });
-            });
+            // $('#subForm').submit(function (e) {
+            //     data = {"g-recaptcha-response": $('#subForm .g-recaptcha-response').val()}
+            //     $.post("https://cornwall.mallmaverick.com/verify_captcha", data, function(response){
+            //         if(response.success == false){
+            //             grecaptcha.reset(widgetId1);
+            //             alert("Please validate captcha");
+            //             return false;
+            //         }
+            //     })
+            //     if ($("#agree_terms").prop("checked") != true){
+            //         alert("Please agree to the term and conditions.");
+            //         $("#agree_terms").focus();
+            //         return false;
+            //     }
+            //     e.preventDefault();
+            //     $.getJSON(
+            //         this.action + "?callback=?",
+            //         $(this).serialize(),
+            //         function (data) {
+            //             if (data.Status === 400) {
+            //                 alert("Please try again later.");
+            //             } else { // 200
+            //                 $('#subForm').trigger('reset');
+            //                 $("#success_subscribe").fadeIn();
+            //             }
+            //         });
+            // });
             show_content();
         }
         loadMallDataCached(renderAll); 
