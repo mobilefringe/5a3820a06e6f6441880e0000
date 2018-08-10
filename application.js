@@ -627,8 +627,9 @@ function renderStoreList(container, template, collection, type){
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
     var store_initial="";
+    console.log(collection)
     $.each(collection, function(key, val) {
-        console.log(collection)
+        
         if(type == "stores" || type == "category_stores"){
             if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
                 val.store_front_url_abs = default_image.image_url;
