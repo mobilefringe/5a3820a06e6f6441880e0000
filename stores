@@ -106,28 +106,12 @@
         init(e);
         function renderAll(){
             var categories = getStoreCategories().sortBy(function(o){ return o.name});
-            renderGeneral("#category_select", "#category_select_template", categories);
-            $('#category_select').prepend('<li class="dropdown-item show_cat_stores" data-id="000" name="All">ALL</li>');
-            
-            // var category_list = [];
-            // $.each(categories, function(key, val){
-            //     var category_id = parseInt(val.id, 10);
-            //     category_list.push(category_id)
-            // });
+            if(categories.length > 0){
+                renderGeneral("#category_select", "#category_select_template", categories);
+                $('#category_select').prepend('<li class="dropdown-item show_cat_stores" data-id="000" name="All">ALL</li>');
+            }
 
-            // var store_list = getStoresList();
             var all_stores = getStoresList();
-            // var shops = [];
-            // $.each(all_stores, function(key, val){
-            //     if(val.categories != null){
-            //         var store_categories = val.categories;
-            //         if(findOne(store_categories, category_list)){
-            //             shops.push(val)
-            //         }
-            //     }
-            // });
-            
-            // var store_list = _.uniq(all_stores, function(o){ return o.name; });
             if(all_stores.length > 0){
                 renderStoreList('#store_list_container','#store_list_template', all_stores, "stores");
             }
