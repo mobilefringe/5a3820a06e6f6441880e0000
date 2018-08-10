@@ -635,7 +635,11 @@ function renderStoreList(container, template, collection, type){
                 val.store_front_url_abs = default_image.image_url;
             } 
             if(!val.store_front_alt_url_abs ||  val.store_front_alt_url_abs.indexOf('missing.png') > -1 || val.store_front_alt_url_abs.length === 0){
-                val.hover_img = val.store_front_url_abs;
+                if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
+                    val.hover_img = default_image.image_url;
+                } else {
+                    val.hover_img = val.store_front_url_abs;    
+                }
             } else {
                 val.hover_img = val.store_front_alt_url_abs;
             }
