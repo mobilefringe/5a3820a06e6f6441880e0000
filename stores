@@ -129,7 +129,7 @@
             // }
             
             var category_list = [];
-            $.each(stores_list, function(key, val){
+            $.each(categories, function(key, val){
                 var category_id = parseInt(val.id, 10);
                 category_list.push(category_id)
             });
