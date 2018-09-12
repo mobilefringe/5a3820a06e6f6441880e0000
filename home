@@ -133,16 +133,15 @@
             
             var all_feature_items = getFeatureList();
             var three_items = all_feature_items.slice(0, 3);
-            console.log('three_items',three_items);
             renderGeneral('#feature_container','#feature_template', three_items);
-            var giftcard_image = all_feature_items[3];
-            var blog_image = all_feature_items[4];
-            // console.log("giftcard_image", giftcard_image, "blog_image", blog_image);
-            // renderGeneral('#feature_container','#feature_template', three_items);
-            renderSingleItem('#giftcard_feature_container','#giftcard_feature_template', giftcard_image);
-            renderSingleItem('#blog_feature_container','#blog_feature_template', blog_image);
-
             
+            var giftcard_image = all_feature_items[3];
+            renderSingleItem('#giftcard_feature_container','#giftcard_feature_template', giftcard_image);
+            
+            var blog_image = all_feature_items[4];
+            renderSingleItem('#blog_feature_container','#blog_feature_template', blog_image);
+            
+            // PROMOTIONS
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
             var published_promos = [];
             $.each(promotions, function(key, val){
@@ -152,17 +151,15 @@
                     published_promos.push(val);
                 }
             });
-            // if(published_promos.length > 0){
-            //     renderPromotions("#promo_container","#promo_template", published_promos);
-            // }
             renderPromotions('#home_promo_container','#home_promo_template', published_promos);
+            
+            // BLOGS
             var blog_posts = getBlogDataBySlug('cornwall-queen-city').posts.sortBy(function(o){return o.publish_date;}).reverse().slice(0, 4);
             blog_posts[0].latest_post = "/ NEW POST!";
             renderPosts('#home_blog_container','#home_blog_template', blog_posts);
             renderPosts('#home_mblog_container','#home_mblog_template', blog_posts);
-            console.log(blog_posts);
             
-            // LOGO SCROLL //
+            // LOGO SCROLL
             var stores = getStoresList();
             stores = stores.filter(function( val, index ) {
                 return (!$.isNumeric(val.name[0])) && !(val.store_front_url_abs.indexOf('missing') > -1);
