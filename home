@@ -162,7 +162,9 @@
             // LOGO SCROLL
             var stores = getStoresList();
             stores = stores.filter(function( val, index ) {
-                return (!$.isNumeric(val.name[0])) && !(val.store_front_url_abs.indexOf('missing') > -1);
+                if (val.tags != null && _.includes(val.tags, 'featured')) {
+                    return (!$.isNumeric(val.name[0])) && !(val.store_front_url_abs.indexOf('missing') > -1);
+                }
             });
             renderLogoScroll('#logo_container','#logo_template', stores);
 
