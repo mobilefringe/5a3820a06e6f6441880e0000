@@ -161,8 +161,12 @@
             renderPosts('#home_blog_container','#home_blog_template', blog_posts);
             renderPosts('#home_mblog_container','#home_mblog_template', blog_posts);
             console.log(blog_posts);
+            
             // LOGO SCROLL //
             var stores = getStoresList();
+            stores = stores.filter(function( val, index ) {
+                return (!$.isNumeric(val.name[0])) && !(val.store_front_url_abs.indexOf('missing') > -1);
+            });
             renderLogoScroll('#logo_container','#logo_template', stores);
 
             show_content();
