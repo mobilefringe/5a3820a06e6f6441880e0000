@@ -3,8 +3,8 @@
         <div class="blog_banner text-center" id="blog_banner_container">
     		<!--<img src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/png/1515692811302/Screen Shot 2018-01-11 at 12.46.36 PM.png" class="" alt="">-->
     		<script id = "blog_banner_template" type="x-tmpl-mustache">
-    		    <div class="col-sm-6 no_padding"><img src="{{image_url}}"/></div>
-    		    <div class="col-sm-6 no_padding hidden_phone"><img src="{{second_image_url}}"/></div>
+    		    <div class="col-md-6 no_padding"><img src="{{image_url}}"/></div>
+    		    <div class="col-md-6 no_padding hidden_phone"><img src="{{second_image_url}}"/></div>
     			<div class="blog_banner_title">
     			    <h1>  {{title}} <h1/>
     			    <a href="/blog/{{slug}}">
