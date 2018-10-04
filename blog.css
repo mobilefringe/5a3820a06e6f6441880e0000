@@ -745,6 +745,7 @@ img{
     border-top: $red 2px solid;
     z-index: 5;
     height: 150px;
+    padding: 5px;
     h1 {
         font-size:36px;
         font-weight: lighter;
