@@ -1506,6 +1506,10 @@ p#all_loaded_1 {
     .flexslider .banner_img {
         height: 350px;
     }
+    .blog_banner_title{
+        min-height: 200px;
+        padding: 5px;
+    }
     .blog_banner_title h1 {
         font-size: 28px;
     }
