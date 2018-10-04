@@ -1579,6 +1579,9 @@ p#all_loaded_1 {
     #blog_banner_container {
         overflow: hidden;
         margin-top: 118px;
+        [class*="col-"] {
+            padding:0;
+        }
     }
 }
 
