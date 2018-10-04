@@ -737,7 +737,7 @@ img{
 .blog_banner_title {
     position: absolute;
     border: 0;
-    bottom: -100px;
+    bottom: -80px;
     left: 50%;
     transform: translateX(-50%);
     background: #fff;
