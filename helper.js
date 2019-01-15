@@ -36,7 +36,7 @@ function init() {
     var repo = getRepoDetailsByName("Downloadable Directory");
     if (repo) {
         console.log("repo", repo)
-        var asset_url = getImageURL(repo.images[0].photo_url);
+        var asset_url = getImageURL(repo.photo_url);
         $("#dd_brochure_desktop").attr('herf', asset_url);
         $("#dd_brochure_mobile").attr('herf', asset_url);
     }
