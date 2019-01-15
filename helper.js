@@ -31,8 +31,6 @@ function init() {
     // var hours = getPropertyRegularHours();
     // renderHours('#home_reg_hours_container','#home_reg_hours_template', hours, 'reg_hours');
             
-            
-    
     //dynamically changing copyright year
     var current_year = moment().year();
     $("#current_year").text(current_year);
@@ -70,6 +68,15 @@ function show_content() {
     renderHours('#hours_sat_container','#hours_sat_template', hours_sat, 'reg_hours');
     renderHours('#hours_sun_container','#hours_sun_template', hours_sun, 'reg_hours');
     renderHours('#home_reg_hours_container','#home_reg_hours_template', hours, 'reg_hours');
+    
+    //get downlad directory link dynamically
+    var repo = getRepoDetailsByName("Downloadable Directory");
+    if (repo) {
+        console.log("repo", repo)
+        var asset_url = getImageURL(repo.photo_url);
+        $("#dd_brochure_desktop").attr('href', asset_url);
+        $("#dd_brochure_mobile").attr('href', asset_url);
+    }
 }
 
 var default_image = {
