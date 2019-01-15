@@ -38,6 +38,7 @@ function init() {
         console.log("repo", repo)
         var asset_url = getImageURL(repo.images[0].photo_url);
         $("#dd_brochure_desktop").attr('herf', asset_url);
+        $("#dd_brochure_mobile").attr('herf', asset_url);
     }
     //dynamically changing copyright year
     var current_year = moment().year();
