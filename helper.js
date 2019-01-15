@@ -31,6 +31,13 @@ function init() {
     // var hours = getPropertyRegularHours();
     // renderHours('#home_reg_hours_container','#home_reg_hours_template', hours, 'reg_hours');
             
+            
+    //get downlad directory link dynamically
+    var repo = getRepoDetailsByName("Downloadable Directory");
+    if (repo != undefined) {
+        var banner = getImageURL(repo.images[0].photo_url);
+        $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+    }
     //dynamically changing copyright year
     var current_year = moment().year();
     $("#current_year").text(current_year);
