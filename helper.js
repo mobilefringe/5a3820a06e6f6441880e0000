@@ -34,9 +34,8 @@ function init() {
             
     //get downlad directory link dynamically
     var repo = getRepoDetailsByName("Downloadable Directory");
-     console.log("repo", repo)
     if (repo) {
-       
+        console.log("repo", repo)
         var asset_url = getImageURL(repo.images[0].photo_url);
         $("#dd_brochure_desktop").attr('herf', asset_url);
         $("#dd_brochure_mobile").attr('herf', asset_url);
