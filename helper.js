@@ -34,7 +34,7 @@ function init() {
             
     //get downlad directory link dynamically
     var repo = getRepoDetailsByName("Downloadable Directory");
-    if (repo != undefined) {
+    if (repo && repo.images) {
         var asset_url = getImageURL(repo.images[0].photo_url);
         $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
     }
