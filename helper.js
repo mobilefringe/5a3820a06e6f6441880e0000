@@ -37,7 +37,7 @@ function init() {
     if (repo && repo.images) {
         console.log("repo", repo)
         var asset_url = getImageURL(repo.images[0].photo_url);
-        $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+        $("#").css({backgroundImage: "url(" + banner + ")"});
     }
     //dynamically changing copyright year
     var current_year = moment().year();
