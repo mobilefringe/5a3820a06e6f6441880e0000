@@ -70,7 +70,7 @@ function show_content() {
     renderHours('#home_reg_hours_container','#home_reg_hours_template', hours, 'reg_hours');
     
     //get downlad directory link dynamically
-    var repo = getRepoDetailsByName("Downloadable Directory");
+    var repo = getRepoDetailsByID(48375)
     if (repo) {
         console.log("repo", repo)
         var asset_url = getImageURL(repo.photo_url);
