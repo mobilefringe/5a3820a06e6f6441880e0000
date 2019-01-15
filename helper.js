@@ -35,7 +35,7 @@ function init() {
     //get downlad directory link dynamically
     var repo = getRepoDetailsByName("Downloadable Directory");
     if (repo != undefined) {
-        var banner = getImageURL(repo.images[0].photo_url);
+        var asset_url = getImageURL(repo.images[0].photo_url);
         $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
     }
     //dynamically changing copyright year
