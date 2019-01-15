@@ -32,14 +32,7 @@ function init() {
     // renderHours('#home_reg_hours_container','#home_reg_hours_template', hours, 'reg_hours');
             
             
-    //get downlad directory link dynamically
-    var repo = getRepoDetailsByName("Downloadable Directory");
-    if (repo) {
-        console.log("repo", repo)
-        var asset_url = getImageURL(repo.photo_url);
-        $("#dd_brochure_desktop").attr('href', asset_url);
-        $("#dd_brochure_mobile").attr('href', asset_url);
-    }
+    
     //dynamically changing copyright year
     var current_year = moment().year();
     $("#current_year").text(current_year);
