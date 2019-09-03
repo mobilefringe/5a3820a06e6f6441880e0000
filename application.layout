@@ -45,10 +45,10 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/jquery.flexslider.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
-    <script src="//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/text/javascript/1446569669000/instafeed.min.js"></script>
-    <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507772000/moment.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/text/javascript/1567541288040/instafeed.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/text/javascript/1567541289711/moment.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
-    <script src="//codecloud.cdn.speedyrails.net/sites/5438407c6e6f64462d020000/601617fe9ab691b1b62a66ac3ca3e8b7/jquery.cookie.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/text/javascript/1567541283554/jquery.cookie.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jssor-slider/27.5.0/jssor.slider.min.js"></script>
@@ -235,8 +235,8 @@
                         <ul class="footer_menu footer_menu_right">
                             <li><a href="/events">Events</a></li>
                             <li><a href="/leasing">Leasing</a></li>
-                            <li class="hidden_phone"><a href="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/application/pdf/1547571880000/11910_COR_8.5x11_Directory_Jan2019.pdf" target="_blank" id="dd_brochure_desktop">Downloadable Directory Brochure</a></li>
-                            <li class="show_phone"><a href="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/application/pdf/1522875358000/Directory Brochure - Updated April 2018 (1).pdf" target="_blank" id="dd_brochure_mobile">Directory Brochure</a></li>
+                            <li class="hidden_phone"><a href="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/application/pdf/1547571880000/11910_COR_8.5x11_Directory_Jan2019.pdf" target="_blank">Downloadable Directory Brochure</a></li>
+                            <li class="show_phone"><a href="//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/application/pdf/1522875358000/Directory Brochure - Updated April 2018 (1).pdf" target="_blank">Directory Brochure</a></li>
                         </ul>  
                         <div class="margin_30 hidden_phone"></div>
                         <a href="/blog_newsletter">
