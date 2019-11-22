@@ -31,6 +31,9 @@
             </div>
         </div>
     </div>
+    <div class="hidden_now" id="be-a-dear">
+        <img src="https://clickserv.sitescout.com/conv/7806acf1519dd4cc" width="1" height="1" style="position: absolute; left: -150px;" />
+    </div>
 </div>
 <script>
     $(document).ready(function(e){
@@ -48,7 +51,10 @@
             
             renderPromoDetails('#promo_header_container', '#promo_header_template', promo_details)
             renderPromoDetails('#promo_details_container', '#promo_details_template', promo_details)
-            console.log(promo_details);
+            
+            if (slug == "cornwall-cornwall-centre-this-year-be-a-dear") {
+               $("#be-a-dear").show();
+            }
             show_content();
         }
         loadMallDataCached(renderAll); 
