@@ -582,7 +582,6 @@ function renderPromoDetails(container, template, collection){
             var store_details = getStoreDetailsByID(val.promotionable_id);
             val.store_detail_btn = store_details.slug;
             val.store_name = store_details.name;
-            console.log(store_details);
             if(store_details.store_front_url_abs.indexOf('missing.png') > 0){
                 val.store_image_url = default_image.image_url;
             } else {
