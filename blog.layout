@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Favicon -->
+    <link rel="icon" href="//codecloud.cdn.speedyrails.net/sites/5de172e86e6f643344020000/image/png/1513706773932/cornwall_logo_white.png"> <!--Add Favicon-->
+    <!--Update each web pages SEO to set values for {{meta_title}}, {{meta_description}}, {{meta_keywords}} -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@CornwallCentre" />
+    <meta property="og:title" content="{{meta_title}}">
+    <meta property="og:description" content="{{meta_description}}">
+    <meta property="og:image" content="{{meta_image}}">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,initial-scale=1">
+    <meta name="description" content="{{meta_description}}">
+    <meta name="keywords" content="{{meta_keywords}}">
+    
+    <meta name="author" content="">
+    <title>{{meta_title}}</title>
+   
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-40014802-27', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: //bootswatch.com/flatly/ -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        
+    <!--CSS-->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/flexslider.css" rel="stylesheet">
+    <link href="//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/text/css/1438916432000/ihover.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.css" rel="stylesheet">
+    <link href="/blog.css" rel="stylesheet">
+    <link href="/custom_popup.css" rel="stylesheet">
+    
+    <!--Javascript-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/jquery.flexslider.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/text/javascript/1446569669000/instafeed.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507772000/moment.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/5438407c6e6f64462d020000/601617fe9ab691b1b62a66ac3ca3e8b7/jquery.cookie.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script src="//s3.amazonaws.com/kodekloud/sites/59d3dc256e6f6459f8960000/text/javascript/1410850608000/jssor.core.js"></script>
+    <script src="//s3.amazonaws.com/kodekloud/sites/59d3dc256e6f6459f8960000/text/javascript/1410850608000/jssor.utils.js"></script>
+    <script src="//s3.amazonaws.com/kodekloud/sites/59d3dc256e6f6459f8960000/text/javascript/1410850608000/jssor.slider.min.js"></script>
+    
+    <!--MallMaverick SDK-->
+    <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
+    
+    <script src="/blog.js" type="text/javascript"></script>
+    <script src="/helper.js" type="text/javascript"></script>
+    
+    <script>
+        setEndPoint('//cornwall.mallmaverick.com/api/v4/cornwall/all.json');
+    </script>
+    
+   
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="social_header">
+                <div class="content_container">
+                    <div class="row">
+                        <div class="col-md-6 pull-left hidden_phone">
+                            <!--<div class="hours_container">-->
+                            <!--    <span id="home_hours_container" class="">-->
+                            <!--        <script id="home_hours_template" type="x-tmpl-mustache/text">-->
+                            <!--            <span class="hours_dot"></span><span class="todays_hours caps">{% raw %} {{open}} {{hours}} {% endraw %}</span>-->
+                            <!--        </script>-->
+                            <!--    </span>-->
+                                <!--<a class="view_holiday_hours" href="/hours">View Holiday Hours</a>-->
+                            <!--</div>-->
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <div class="nav_header_social_container">
+                                <div class="social_container">
+                                    <a href="https://www.facebook.com/CornwallCentre" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="https://twitter.com/CornwallCentre" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="https://www.instagram.com/CornwallCentre" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.youtube.com/CornwallCentre" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                    <!--<span id="header_search" class="header_search"><i class="fa fa-search" aria-hidden="true"></i></span>-->
+                                    <div class="site_search show_phone">
+                                        <label class="top_form_control no_margin">
+                                            <input type="text" placeholder="Search" id="site_search" class="site_search_m" onkeypress="javascript: if(event.keyCode == 13) searchFunctionMobile()"/>
+                                            <i id="search_icon" class="fa fa-search search_icon"  onclick="searchFunction()"></i>
+                                            <i id="close_search" class="fa fa-times-circle close_search"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="site_search hidden_phone">
+                                    <label class="top_form_control no_margin">
+                                        <input type="text" placeholder="Search" id="site_search" class="site_search" onkeypress="javascript: if(event.keyCode == 13) searchFunction()"/>
+                                        <i id="search_icon" class="fa fa-search search_icon" onclick="searchFunction()" ></i>
+                                        <i id="close_search" class="fa fa-times-circle close_search"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_header">
+                <div class="content_container position_rel">
+                    <div class="logo_container col-sm-4 col-xs-8">
+                        <a href="/blog">
+                            <img class="logo" src="//codecloud.cdn.speedyrails.net/sites/5de172e86e6f643344020000/image/png/1518727138809/qcc_logo_high_res.png">
+                        </a>
+                    </div>
+                    <div class="nav_header_menu_container col-sm-6 hidden_phone">
+                        <div class="nav_container pull-right">
+                            <nav id="primary_nav">
+                                <ul class="">
+                                    <li class="menu_item"><a href="/blog?tag=fashion">Fashion</a></li>
+                                    <li class="menu_item"><a href="/blog?tag=beauty">Beauty</a></li>
+                                    <li class="menu_item"><a href="/blog?tag=home">Home</a></li>
+                                    <li class="menu_item"><a href="/blog?tag=streetstyle">Streetstyle</a></li>
+                                    <li class="menu_item"><a href="/blog?tag=community">Community</a></li>
+                                    <li class="menu_item"><a href="/blog?tag=wellness">Wellness</a></li>
+                                    <li class="menu_item"><a href="/blog?tag=video">Video</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="logo_container col-sm-2 hidden_phone" style="height: 55px;">
+                        <a href="/" target="_blank">
+                            <img class="logo" src="//codecloud.cdn.speedyrails.net/sites/5de172e86e6f643344020000/image/png/1517341893000/logo.png"/>
+                        </a>
+                    </div>
+                    <!--<div class="nav_header_social_container col-sm-2 hidden_phone">-->
+                    <!--    <div class="social_container pull-right">-->
+                    <!--        <a href="https://www.facebook.com/CornwallCentre" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>-->
+                    <!--        <a href="https://twitter.com/CornwallCentre" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>-->
+                    <!--        <a href="https://www.instagram.com/CornwallCentre" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>-->
+                    <!--        <span id="header_search" class="header_search"><i class="fa fa-search" aria-hidden="true"></i></span>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <!--<div id="header_search" class="show_phone header_search"><i class="fa fa-search" aria-hidden="true"></i>-->
+                    <!--</div>-->
+                    <!--<span </span>-->
+                    <div id="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="mobile_menu_container hidden_now">
+            <nav id="primary_nav">
+                <ul class="">
+                    <li class="menu_item"><a href="/blog?tag=fashion">Fashion</a></li>
+                    <li class="menu_item"><a href="/blog?tag=beauty">Beauty</a></li>
+                    <li class="menu_item"><a href="/blog?tag=homedecor">Home + Decor</a></li>
+                    <li class="menu_item"><a href="/blog?tag=streetstyle">Streetstyle</a></li>
+                    <li class="menu_item"><a href="/blog?tag=community">Community</a></li>
+                    <li class="menu_item"><a href="/blog?tag=wellness">Wellness</a></li>
+                    <li class="menu_item"><a href="/blog?tag=video">Video</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--<div class="row search_bar">-->
+        <!--    <div class="col-xs-10 no_padding">-->
+        <!--        <input id= "search_string" type="text" placeholder="Search..."/>-->
+        <!--    </div>-->
+        <!--    <div class="col-xs-2 no_padding">-->
+        <!--        <div class="search_btn" onclick="searchFunction()">Search</div>-->
+        <!--    </div>-->
+        <!--</div>-->
+    </header>
+    <section id="content">
+        {{yield}}
+        <img src="//pixel-a.basis.net/iap/4ca169346024a1b2" width="1" height="1" style="position: absolute; left: -150px;" />
+    </section>
+    <footer>
+        <div class="footer_nav">
+            <div class="content_container">
+                <div class="row">
+                    <div class="col-sm-8 footer_center">
+                        <div class="footer_logo">
+                            <a href="/">
+                                <img src="//codecloud.cdn.speedyrails.net/sites/5de172e86e6f643344020000/image/png/1518307756348/logo_footer.png" class="" alt="">
+                            </a>
+                        </div>    
+                        <hr class="horizontal_div">
+                        <div class="footer_text">
+                            <p>
+                                Queen City Current is an online publication by Cornwall Centre highlighting fashion, beauty, lifestyle and streetstyle in our home city of Regina, Saskatchewan, Canada.  
+                                <br/>
+Visit us for hair and makeup video tutorials, styling advice and how-to, fashion trends and style features, and product roundups – all carefully curated and developed to complement your creative and stylish life. Sign-up for our email list to receive a weekly does of Queen City Current inspiration right to your inbox, and visit Cornwall Centre in downtown Regina to shop the posts.
+                            </p>
+                        </div>
+                        <div class="footer_menu">
+                            <span><a href="/pages/cornwall-mall-info">About</a></span>
+                            <span><a href="/contact_us">Contact</a></span>
+                            <br class="show_phone"><br class="show_phone">
+                            <span>Follow us: </span>
+                            <span><a href="https://www.facebook.com/CornwallCentre" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></span>
+                            <span><a href="https://twitter.com/CornwallCentre" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+                            <span><a href="https://www.instagram.com/CornwallCentre" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+                        </div>
+                    </div>
+                    <!--<hr class="horizontal_div show_phone">-->
+                    <div class="col-md-4" style="margin-top:68px;">
+                        <h4 style="letter-spacing: 2px;"> SUBSCRIBE</h4>
+                        <hr class="horizontal_div">
+                        <div class="position_rel">
+                            <form class="blogNewsletterForm" method="post" id="newsletterForm">
+                                <label for="fieldEmail" style="display:none"></label>
+                                <input id="fieldEmail" name="cm-fjdtyy-fjdtyy" class="form-control" type="email" value="" placeholder="Enter your email" required/> 
+                                <button class="contact_btn" data-i18n="general.submit"><i class="fa fa-chevron-right"></i></button>
+                                
+                                <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="content_container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-2">
+                        <a href="/">
+                            <img class="show_phone logo" src="//codecloud.cdn.speedyrails.net/sites/5de172e86e6f643344020000/image/png/1520287579515/logosmall-w.png"/>
+                        </a>
+                            
+                        <p>&copy; <span id="current_year"></span> Cornwall Centre. All rights reserved. <a href="/pages/cornwall-privacy-policy">Privacy Policy</a> | <a href="">Terms & Conditions</a>. Powered by <a href="http://www.mallmaverick.com/" target="_blank">Mall Maverick</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">var ssaUrl = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'clickserv.basis.net/conv/1e23ee68c364dfe4';new Image().src = ssaUrl; (function(d) {  var syncUrl = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'pixel-a.basis.net/dmp/asyncPixelSync'; var iframe = d.createElement('iframe'); (iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0;"; iframe.src = "javascript:false"; d.body.appendChild(iframe); var doc = iframe.contentWindow.document; doc.open().write('<body onload="window.location.href=\''+syncUrl+'\'">'); doc.close(); })(document); </script>
+</body>
+
+</html>
