@@ -263,7 +263,7 @@
         }
     }
 
-    /*desktop map*/
+/*desktop map*/
 
     #map2 {
         max-width: 100%;
