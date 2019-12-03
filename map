@@ -38,8 +38,8 @@
                 <div class="map_container">
                     <div class="zoom_container" id="zoom_container_directory">
         			    <img alt="Centre Map" id="zoom_image" src=""/>
-    				    <div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>
-    				    <!--<div id="mapsvg_store_detail"></div>-->
+    				    <!--<div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>-->
+    				    <div id="mapsvg_store_detail"></div>
     			    </div>
                 </div>
             </div> 
@@ -54,7 +54,7 @@
 </div>
 
 
-<link href="//codecloud.cdn.speedyrails.net/sites/582e04fa6e6f644b9c000000/text/css/1432640222000/smoothzoom.css" rel="stylesheet">
+
 <!--libraries-->
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
