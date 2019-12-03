@@ -444,7 +444,7 @@ function detectIE() {
     // other browser
     return false;
 }
-
+    
 function getAssetURL(id){
     var store_id = id;
     var store_assets = "https://cornwall.mallmaverick.com/api/v4/cornwall/stores/" + store_id + "/store_files.json"
