@@ -56,51 +56,54 @@
     #_zo_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -58px -9px no-repeat !important}
     /*.map{max-width:100%;max-height:586px;position:relative;top:0;left:0;border-radius:4px;overflow:hidden}*/
 </style>
-<div class="inside_banner">   
-    <div class="content_container">
-        <div class="inside_banner_content">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1>Centre Map</h1>
-                </div>
-                <div class="col-md-6 hidden_phone">
-                    <h4 class="pull-right">Stores <i class="fa fa-angle-right" aria-hidden="true"></i> Centre Map</h4>
+
+<div id="desktopMap">
+    <div class="inside_banner">   
+        <div class="content_container">
+            <div class="inside_banner_content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Centre Map</h1>
+                    </div>
+                    <div class="col-md-6 hidden_phone">
+                        <h4 class="pull-right">Stores <i class="fa fa-angle-right" aria-hidden="true"></i> Centre Map</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="content_container margin_30">
-    <div class="margin_30"></div>
-    <div class="row">
-        <div class="col-md-12 center hidden_phone">
-            <a href="/stores"><div class="directory_btn caps ">Stores</div></a>
-            <div class="directory_btn caps active">Centre Map</div>
-        </div>
-        <div class="col-sm-12 center">
-            <a href="/stores"><div class="directory_btn caps directory_back"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to Directory</div></a>
-        </div>
-    </div>
-    <div class="margin_30"></div>
-    <div class="row">
-        <div class="col-md-12">
-            <a href="#" class="locate_store">Locate store <i class="fa fa-search"></i></a>
-            <div class="stores_table">
-                <ul id="store_list_container_map">
-                    <script id="store_list_template_map" type="x-tmpl-mustache/text">
-                        <li><a class="map_pin_a" href="#" store_id="{{id}}" store_name="{{name}}" store_x_coordinate="{{x_coordinate}}" store_y_coordinate="{{y_coordinate}}">{{name}}</a><li>
-                    </script>
-                </ul>
+    <div class="content_container margin_30">
+        <div class="margin_30"></div>
+        <div class="row">
+            <div class="col-md-12 center hidden_phone">
+                <a href="/stores"><div class="directory_btn caps ">Stores</div></a>
+                <div class="directory_btn caps active">Centre Map</div>
             </div>
-            <div class="map_container">
-                <!--<div id="mappedin-map"></div>-->
-                <!--<main data-venue="10-dundas" data-key="" data-header="0" id="mappedin-app"></main> -->
-                <div class="zoom_container" id="zoom_container_directory">
-    			    <img alt="Centre Map" id="zoom_image" src=""/>
-				    <div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>
-			    </div>
+            <div class="col-sm-12 center">
+                <a href="/stores"><div class="directory_btn caps directory_back"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to Directory</div></a>
             </div>
-        </div> 
+        </div>
+        <div class="margin_30"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#" class="locate_store">Locate store <i class="fa fa-search"></i></a>
+                <div class="stores_table">
+                    <ul id="store_list_container_map">
+                        <script id="store_list_template_map" type="x-tmpl-mustache/text">
+                            <li><a class="map_pin_a" href="#" store_id="{{id}}" store_name="{{name}}" store_x_coordinate="{{x_coordinate}}" store_y_coordinate="{{y_coordinate}}">{{name}}</a><li>
+                        </script>
+                    </ul>
+                </div>
+                <div class="map_container">
+                    <!--<div id="mappedin-map"></div>-->
+                    <!--<main data-venue="10-dundas" data-key="" data-header="0" id="mappedin-app"></main> -->
+                    <div class="zoom_container" id="zoom_container_directory">
+        			    <img alt="Centre Map" id="zoom_image" src=""/>
+    				    <div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>
+    			    </div>
+                </div>
+            </div> 
+        </div>
     </div>
 </div>
 
