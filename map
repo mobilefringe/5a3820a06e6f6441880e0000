@@ -65,6 +65,7 @@
             console.log('IE ' + detectIE());
             if(detectIE()){
                 var svg_url = '//assets.mallmaverickstaging.com'+getPropertyDetails().svgmap_url;
+                
                 $('#iFrame1').remove();
                 $("#IE_map").attr("src", svg_url)
                 $('#IE_map_text').show();
@@ -90,6 +91,7 @@
             });
             renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
             show_content();
+            console.log(getPropertyDetails())
             var map = $('#mapsvg_store_detail').mapSvg({
                 source: '//assets.mallmaverickstaging.com'+getPropertyDetails().svgmap_url,
                 colors: {stroke: '#fff', selected: "#000", hover: "#a6a6a6"},
