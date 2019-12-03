@@ -163,6 +163,9 @@
         display:block!important;
     }
     @media (max-width: 768px) {
+        #content {
+            margin-top: 106px;
+        }
         html, iframe, #IE_map{
             height: calc(100vh - 101.63px) !important;
         }
