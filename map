@@ -139,7 +139,7 @@
                 window.location.href= "/stores/"+store.slug
             }
         }
-    }); 
+    });
 </script>
 
 <style>
