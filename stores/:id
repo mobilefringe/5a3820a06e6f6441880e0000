@@ -30,14 +30,6 @@
             <!-- MAP -->
             
             <div class="map-container"  id="desktopMap">
-                <!--<div class="store_map_container">-->
-                <!--    <div id="mapView">-->
-                <!--    </div>-->
-                <!--    <div class="zoom_container" id="zoom_container_store">-->
-            		  <!--  <img id="zoom_image" src=""/>-->
-            		  <!--  <div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>-->
-                <!--	</div>-->
-                <!--</div> -->
                 <div id="mapsvg_store_detail"></div>  
             </div>
             
@@ -327,69 +319,6 @@
 </script>
 
 <style>
-    .demo1{
-        height:625px;
-        margin-bottom:20px;
-        border: solid 1px #ccc
-    }
-    @media(max-width: 768px){
-        .demo1{
-            height:300px;
-        }
-        #map{
-           width:auto;
-           height:325px;
-        }
-    }
-    #map {
-        max-width: 100%;
-        /*max-height: 586px;*/
-        position: relative;
-        top: 0;
-        left: 0;
-        border-radius: 4px;
-        overflow: hidden;
-    }
-    #zoom_image{
-		width:795px;
-		height: 1230px;
-		min-width:795px;
-		min-height: 1230px;
-		max-width: none;
-	    z-index: 1!important;
-		
-	}
-   .zoom_container .landmarks{
-    	position:absolute;
-    	z-index:10;	
-    	top:0px;
-    	left:0px;
-    	font-family: Helvetica, Arial, Verdana;
-    	font-size:12px;
-    	color: #ffffff;
-    }	
-    .zoom_container .landmarks .item {
-    	position:absolute;		
-    	text-align:center;		
-    	display: none;
-    }	
-    .zoom_container .landmarks .lable div {
-    	width: 100px;
-    	padding: 4px;	
-    }	
-    .zoom_container .landmarks .mark .text{
-    	background-color:#000000;
-    	padding:2px 6px;
-    	min-width: 75px;	
-    }
-     #_zi_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -8px -9px no-repeat !important}
-    #_zo_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -58px -9px no-repeat !important}
-    /*@media(max-width: 768px){*/
-    /*    #_zi_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -10px -10px no-repeat !important}*/
-    /*#_zo_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -60px -10px no-repeat !important}*/
-    /*}*/
-    
-    
     #IE_map{
         margin:auto;
         height:400px;
