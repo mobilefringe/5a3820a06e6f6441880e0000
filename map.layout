@@ -75,7 +75,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="clearfix>
         <div class="header">
             <div class="social_header">
                 <div class="content_container">
