@@ -107,6 +107,7 @@
             $(window).resize();
             $("#zoom_image").click();
         }
+        loadMallDataCached(renderAll); 
         
         // mobile map
         function renderPageData(){
@@ -174,7 +175,10 @@
                 }
             }
         }
-        loadMallDataCached(renderAll); 
+        
+        loadMallDataCached(renderPageData);
+        
+
         
         
         
