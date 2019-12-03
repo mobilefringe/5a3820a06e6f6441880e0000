@@ -170,7 +170,7 @@
             margin-top: 106px;
         }
         html, iframe, #IE_map{
-            height: calc(100vh - 112.63px) !important;
+            height: calc(100vh - 113.63px) !important;
         }
         #mobileMap{
             display:block!important;
