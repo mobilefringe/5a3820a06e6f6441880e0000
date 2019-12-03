@@ -165,10 +165,9 @@
                     } 
                 }
             }
-        }
-        
-        
-        // Enhanced map code
+            
+            
+                    // Enhanced map code
         $('#iFrame1').css('display','block')
             console.log('IE ' + detectIE());
             if(detectIE()){
@@ -230,6 +229,10 @@
             }
         }
         drop_pin(store_details.svgmap_region, map)
+        }
+        
+        
+
          show_content();
         loadMallDataCached(renderAll); 
     });
