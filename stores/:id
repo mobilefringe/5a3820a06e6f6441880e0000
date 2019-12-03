@@ -118,7 +118,7 @@
 <script>
     $(document).ready(function(e){
         init(e);
-        var store_details = null;
+        let store_details = null;
         function renderAll(){
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
