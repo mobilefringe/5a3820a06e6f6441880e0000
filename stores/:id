@@ -136,12 +136,6 @@
                     renderStoreDetailsHours('#hours_container','#hours_template', hours, 'reg_hours');
                     $('#hours').show();
                 }
-                
-                /* MAP */
-                // var name = store_details.name;
-                // setTimeout(function(){
-                //     hightlightStore(name)
-                // }, 3000);
 
                 /* PROMOS */
                 var store_promo_ids = store_details.promotions
