@@ -243,6 +243,8 @@
         }
         drop_pin(store_details.svgmap_region, map)
         console.log(store_details)
+        
+        
         loadMallDataCached(renderAll); 
     });
     
