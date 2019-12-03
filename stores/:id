@@ -116,220 +116,69 @@
 
 <script>
     let store_details = null;
-    $(document).ready(function(e){
-        init(e);
-        
-        function renderAll(){
-            var pathArray = window.location.pathname.split( '/' );
-            var slug = pathArray[pathArray.length-1];
-            store_details = getStoreDetailsBySlug(slug);
-            if(store_details === undefined){
-                window.location = "/";
-            } else {
-                renderStoreDetails('#store_header_container', '#store_header_template', store_details);
-                renderStoreDetails("#store_details_container", "#store_details_template", store_details, slug);
-
-                /* HOURS */
-                var hour_ids = store_details.store_hours;
-                if (hour_ids != null){
-                    var hours = getHoursForStoreSlug(store_details.slug).sortBy(function(o){ return o.day_of_week });
-                    renderStoreDetailsHours('#hours_container','#hours_template', hours, 'reg_hours');
-                    $('#hours').show();
-                }
-                
-                /* MAP */
-                // var name = store_details.name;
-                // setTimeout(function(){
-                //     hightlightStore(name)
-                // }, 3000);
-
-                /* PROMOS */
-                var store_promo_ids = store_details.promotions
-                if(store_promo_ids != null){
-                    var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
-                    var published_promos = [];
-                    $.each(store_promos, function(key, val){
-                        today = moment();
-                        webDate = moment(val.show_on_web_date)
-                        if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
-                            published_promos.push(val);
-                        } 
-                    });
-                    if( published_promos.length > 0){
-                        renderPromotions("#promo_container","#promo_template", published_promos);
-                        $('#promotions').show();
-                    }
-                }
-                
-                /* JOBS */
-                var store_job_ids = store_details.jobs
-                if(store_job_ids != null){
-                    var store_jobs = getJobsForIds(store_job_ids).sortBy(function(o){ return o.start_date });
-                    var published_jobs = [];
-                    $.each( store_jobs , function( key, val ){
-                        today = moment();
-                        webDate = moment(val.show_on_web_date)
-                        if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
-                            published_jobs.push(val);
-                        } 
-                    });
-                    if(published_jobs.length > 0){
-                        renderJobs('#jobs_container', '#jobs_template', published_jobs);
-                        $('#jobs').show();
-                    } 
-                }
-            }
+    // Enhanced map code
+    $('#iFrame1').css('display','block')
+        console.log('IE ' + detectIE());
+        if(detectIE()){
+            var svg_url = '//mallmaverick.com'+getPropertyDetails().svgmap_url;
+            $('#iFrame1').remove();
+            $("#IE_map").attr("src", svg_url)
+        } else {
+            $('#IE_map').remove();
+    }
+    //setup map
+    var stores = getStoresList();
+    regions = {}
+    $.each( stores , function( key, val ) {
+        if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+            if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
+                val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
+            } 
+            obj = {};
+            obj["tooltip"] = "<p class='tooltip_name'>"+val.name+"</p>"
+            obj["popover"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'  >View Details</a>"
+            obj["attr"] = {}
+            // obj["attr"]["href"] = "/stores/"+val.slug
+            regions[val.svgmap_region] = obj
         }
-        
-        
-        // Enhanced map code
-        $('#iFrame1').css('display','block')
-            console.log('IE ' + detectIE());
-            if(detectIE()){
-                var svg_url = '//mallmaverick.com'+getPropertyDetails().svgmap_url;
-                $('#iFrame1').remove();
-                $("#IE_map").attr("src", svg_url)
-            } else {
-                $('#IE_map').remove();
-        }
-        //setup map
-        var stores = getStoresList();
-        regions = {}
-        $.each( stores , function( key, val ) {
-            if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-                if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
-                    val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
-                } 
-                obj = {};
-                obj["tooltip"] = "<p class='tooltip_name'>"+val.name+"</p>"
-                obj["popover"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'  >View Details</a>"
-                obj["attr"] = {}
-                // obj["attr"]["href"] = "/stores/"+val.slug
-                regions[val.svgmap_region] = obj
-            }
-        });
-        
-        var map = $('#mapsvg_store_detail').mapSvg({
-            source: '//assets.mallmaverickstaging.com'+getPropertyDetails().svgmap_url,
-            colors: {stroke: '#fff', selected: "#D8836C", hover: "#a6a6a6"},
-            disableAll: true,
-            regions: regions,
-            height:1700,
-            width:2300,
-            tooltipsMode:'custom',
-            zoom:true,
-            zoomButtons: {'show': true, 'location': 'left'},
-            pan:true,
-            cursor:'pointer',
-            responsive:true,
-            zoomLimit: [0,5],
-            onClick: function(e,mapsvg){
-              var region = this;
-              mapsvg.marksHide();
-              console.log(this.id);
-              drop_pin(region.id,mapsvg)
-            }
-        });
-        
-        $('.map_pin_a').click(function(e){
-            e.preventDefault();
-            var id = $(this).attr('data-svg')
-            map_pin(id)
-        })
-        
-        function map_pin(value){
-            map.marksHide();
-            if (value){
-                drop_pin(value, map);    
-            }
-        }
-        drop_pin(store_details.svgmap_region, map)
-        
-        loadMallDataCached(renderAll); 
     });
+    // renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
     
-     // Enhanced map code
-    window.addEventListener('message', function(event) {
-        // IMPORTANT: check the origin of the data! 
-        if (event.origin.startsWith('https://mf-map.netlify.com') && event.data.event === "store-details-clicked") { 
-            // The data was sent from your site.
-            // Data sent with postMessage is stored in event.data:
-            if(event.data && event.data.selectedStore) {
-                var store = event.data.selectedStore
-                window.location.href= "/stores/"+store.slug
-            }
-        } else if (event.origin.startsWith('https://mf-map.netlify.com') && event.data.event === "map-loaded") {
-            if(event.data) {
-                var loading = event.data.loading;
-                if (!loading){
-                    let frame = document.getElementById('iFrame1');
-                    frame.contentWindow.postMessage({ event: "select-store", selectedStore: store_details }, '*');
-                }
-            }
+    var map = $('#mapsvg_store_detail').mapSvg({
+        source: '//assets.mallmaverickstaging.com'+getPropertyDetails().svgmap_url,
+        colors: {stroke: '#fff', selected: "#D8836C", hover: "#a6a6a6"},
+        disableAll: true,
+        regions: regions,
+        height:1700,
+        width:2300,
+        tooltipsMode:'custom',
+        zoom:true,
+        zoomButtons: {'show': true, 'location': 'left'},
+        pan:true,
+        cursor:'pointer',
+        responsive:true,
+        zoomLimit: [0,5],
+        onClick: function(e,mapsvg){
+          var region = this;
+          mapsvg.marksHide();
+          console.log(this.id);
+          drop_pin(region.id,mapsvg)
         }
     });
     
-   
-   
-   $(window).load(function(e){
-        
-		
-//         var pathArray = window.location.pathname.split( '/' );
-//         var slug = pathArray[pathArray.length-1];
-// 		var store_details = getStoreDetailsBySlug(slug);
-// 	    var store_x_coordinate = store_details.x_coordinate;
-// 	    var store_y_coordinate = store_details.y_coordinate;
-// 		var pin_id = store_details.id; 
-// 		var store_name = store_details.name;
-// 		add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
-//     	$("#anchor_id").click(function(e){
-//                 e.preventDefault();
-//                 $('#zoom_image').smoothZoom('focusTo',{
-//         			x: store_x_coordinate,
-//         			y: store_y_coordinate,
-//         			zoom: 120,
-//         			speed: 5
-//         		});
-//             });	
-    //     $('.map_pin_a').click(function(e){
-    //         console.log("in map_pin_a");
-    //         e.preventDefault();
-    //         var store_x_coordinate = $(this).attr('store_x_coordinate');
-    // 		var store_y_coordinate = $(this).attr('store_y_coordinate');
-    //         var pin_id = $(this).attr('store_id');
-    //         var store_name = $(this).attr('store_name');
-
-    //         $('.show_pin').hide();
-    //         $('.no_pin').show();
-    //         $('#show_pin_store_' + pin_id).show();
-    //         $('#no_pin_store_' + pin_id).hide();
-    //         $('.stores_table').hide();
-    //         add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
-    //     });
-            
-        show_content();
-        // $(window).resize();
-        $("#zoom_image").click();
-    });
-    $("#zoom_image").load(function () {
-	    var pathArray = window.location.pathname.split( '/' );
-        var slug = pathArray[pathArray.length-1];
-		var store_details = getStoreDetailsBySlug(slug);
-	    var store_x_coordinate = store_details.x_coordinate;
-	    var store_y_coordinate = store_details.y_coordinate;
-		var pin_id = store_details.id; 
-		var store_name = store_details.name;
-		add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
-    // 	$("#anchor_id").click(function(e){
-    //             e.preventDefault();
-    //             $('#zoom_image').smoothZoom('focusTo',{
-    //     			x: store_x_coordinate,
-    //     			y: store_y_coordinate,
-    //     			zoom: 120,
-    //     			speed: 5
-    //     		});
-    //         });	
-	})
+    $('.map_pin_a').click(function(e){
+        e.preventDefault();
+        var id = $(this).attr('data-svg')
+        map_pin(id)
+    })
+    
+    function map_pin(value){
+        map.marksHide();
+        if (value){
+            drop_pin(value, map);    
+        }
+    }
+    drop_pin(store_details.svgmap_region, map)
 </script>
 
 <style>
