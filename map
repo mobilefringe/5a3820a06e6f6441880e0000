@@ -51,6 +51,12 @@
     </div>
 </div>
 
+<div id="mobileMap" style="text-align:center;display:none;">
+    <iframe src="https://mf-map.netlify.com/map?iframe=true&staging=true&subdomain=cornwall" frameborder="0" width="100%" height="100%" id="iFrame1" sandbox="allow-top-navigation allow-scripts allow-same-origin"></iframe>
+    <h3 id="IE_map_text">Functionality works best while viewing with Google Chrome or Firefox</h3>
+    <img id="IE_map" src="">
+</div>
+
 <link href="//codecloud.cdn.speedyrails.net/sites/582e04fa6e6f644b9c000000/text/css/1432640222000/smoothzoom.css" rel="stylesheet">
 <script src="//codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24.js"></script> 
 <script>
