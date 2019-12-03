@@ -1,68 +1,12 @@
 <link href="//codecloud.cdn.speedyrails.net/sites/582e04fa6e6f644b9c000000/text/css/1432640222000/smoothzoom.css" rel="stylesheet">
 <script src="//codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24.js"></script> 
-<style>
-    .demo1{
-        height:625px;
-        margin-bottom:20px;
-        border: solid 1px #ccc
-    }
-    @media(max-width: 768px){
-        .demo1{
-            height:300px;
-        }
-        #map{
-           width:auto;
-           height:325px;
-        }
-    }
-    #map {
-        max-width: 100%;
-        /*max-height: 586px;*/
-        position: relative;
-        top: 0;
-        left: 0;
-        border-radius: 4px;
-        overflow: hidden;
-    }
-    #zoom_image{
-		width:795px;
-		height: 1230px;
-		min-width:795px;
-		min-height: 1230px;
-		max-width: none;
-	    z-index: 1!important;
-		
-	}
-   .zoom_container .landmarks{
-    	position:absolute;
-    	z-index:10;	
-    	top:0px;
-    	left:0px;
-    	font-family: Helvetica, Arial, Verdana;
-    	font-size:12px;
-    	color: #ffffff;
-    }	
-    .zoom_container .landmarks .item {
-    	position:absolute;		
-    	text-align:center;		
-    	display: none;
-    }	
-    .zoom_container .landmarks .lable div {
-    	width: 100px;
-    	padding: 4px;	
-    }	
-    .zoom_container .landmarks .mark .text{
-    	background-color:#000000;
-    	padding:2px 6px;
-    	min-width: 75px;	
-    }
-     #_zi_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -8px -9px no-repeat !important}
-    #_zo_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -58px -9px no-repeat !important}
-    /*@media(max-width: 768px){*/
-    /*    #_zi_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -10px -10px no-repeat !important}*/
-    /*#_zo_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -60px -10px no-repeat !important}*/
-    /*}*/
-</style>
+
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+
+
 <div class="inside_banner">   
     <div class="content_container">
         <div class="inside_banner_content">
@@ -172,6 +116,72 @@
 <script>
     $(document).ready(function(e){
         init(e);
+        
+        // Enhanced map code
+        $('#iFrame1').css('display','block')
+            console.log('IE ' + detectIE());
+            if(detectIE()){
+                var svg_url = '//mallmaverick.com'+getPropertyDetails().svgmap_url;
+                $('#iFrame1').remove();
+                $("#IE_map").attr("src", svg_url)
+            } else {
+                $('#IE_map').remove();
+        }
+        //setup map
+        var stores = getStoresList();
+        regions = {}
+        $.each( stores , function( key, val ) {
+            if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
+                    val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
+                } 
+                obj = {};
+                obj["tooltip"] = "<p class='tooltip_name'>"+val.name+"</p>"
+                obj["popover"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'  >View Details</a>"
+                obj["attr"] = {}
+                // obj["attr"]["href"] = "/stores/"+val.slug
+                regions[val.svgmap_region] = obj
+            }
+        });
+        // renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
+        
+        var map = $('#mapsvg_store_detail').mapSvg({
+            source: '//assets.mallmaverickstaging.com'+getPropertyDetails().svgmap_url,
+            colors: {stroke: '#fff', selected: "#D8836C", hover: "#a6a6a6"},
+            disableAll: true,
+            regions: regions,
+            height:1700,
+            width:2300,
+            tooltipsMode:'custom',
+            zoom:true,
+            zoomButtons: {'show': true, 'location': 'left'},
+            pan:true,
+            cursor:'pointer',
+            responsive:true,
+            zoomLimit: [0,5],
+            onClick: function(e,mapsvg){
+              var region = this;
+              mapsvg.marksHide();
+              console.log(this.id);
+              drop_pin(region.id,mapsvg)
+            }
+        });
+        
+        $('.map_pin_a').click(function(e){
+            e.preventDefault();
+            var id = $(this).attr('data-svg')
+            map_pin(id)
+        })
+        
+        function map_pin(value){
+            map.marksHide();
+            if (value){
+                drop_pin(value, map);    
+            }
+        }
+        drop_pin(store_details.svgmap_region, map)
+        
+        
         // initMappedin();
         function renderAll(){
             // var repo = getRepoDetailsByName("Store Directory Banner");
@@ -390,3 +400,67 @@
     	});console.log("zooming to spot");
     }
 </script>
+
+<style>
+    .demo1{
+        height:625px;
+        margin-bottom:20px;
+        border: solid 1px #ccc
+    }
+    @media(max-width: 768px){
+        .demo1{
+            height:300px;
+        }
+        #map{
+           width:auto;
+           height:325px;
+        }
+    }
+    #map {
+        max-width: 100%;
+        /*max-height: 586px;*/
+        position: relative;
+        top: 0;
+        left: 0;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    #zoom_image{
+		width:795px;
+		height: 1230px;
+		min-width:795px;
+		min-height: 1230px;
+		max-width: none;
+	    z-index: 1!important;
+		
+	}
+   .zoom_container .landmarks{
+    	position:absolute;
+    	z-index:10;	
+    	top:0px;
+    	left:0px;
+    	font-family: Helvetica, Arial, Verdana;
+    	font-size:12px;
+    	color: #ffffff;
+    }	
+    .zoom_container .landmarks .item {
+    	position:absolute;		
+    	text-align:center;		
+    	display: none;
+    }	
+    .zoom_container .landmarks .lable div {
+    	width: 100px;
+    	padding: 4px;	
+    }	
+    .zoom_container .landmarks .mark .text{
+    	background-color:#000000;
+    	padding:2px 6px;
+    	min-width: 75px;	
+    }
+     #_zi_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -8px -9px no-repeat !important}
+    #_zo_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -58px -9px no-repeat !important}
+    /*@media(max-width: 768px){*/
+    /*    #_zi_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -10px -10px no-repeat !important}*/
+    /*#_zo_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -60px -10px no-repeat !important}*/
+    /*}*/
+</style>
