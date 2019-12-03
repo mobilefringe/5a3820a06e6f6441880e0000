@@ -230,6 +230,7 @@
                 window.location.href= "/stores/"+store.slug
             }
         }
+        console.log('mobile should work')
     }); 
 </script>
 
