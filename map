@@ -163,6 +163,9 @@
         display:block!important;
     }
     @media (max-width: 768px) {
+        body {
+            height: 100%;
+        }
         #content {
             margin-top: 106px;
         }
