@@ -30,14 +30,15 @@
             <!-- MAP -->
             
             <div class="map-container"  id="desktopMap">
-                <div class="store_map_container">
-                    <div id="mapView">
-                    </div>
-                    <div class="zoom_container" id="zoom_container_store">
-            		    <img id="zoom_image" src=""/>
-            		    <div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>
-                	</div>
-                </div> 
+                <!--<div class="store_map_container">-->
+                <!--    <div id="mapView">-->
+                <!--    </div>-->
+                <!--    <div class="zoom_container" id="zoom_container_store">-->
+            		  <!--  <img id="zoom_image" src=""/>-->
+            		  <!--  <div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>-->
+                <!--	</div>-->
+                <!--</div> -->
+                <div id="mapsvg_store_detail"></div>  
             </div>
             
             <div id="mobileMap" style="display:none;">
