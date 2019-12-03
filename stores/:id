@@ -484,4 +484,29 @@
     /*    #_zi_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -10px -10px no-repeat !important}*/
     /*#_zo_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -60px -10px no-repeat !important}*/
     /*}*/
+    
+    
+    #IE_map{
+        margin:auto;
+        height:400px;
+    }
+    #mobileMap{
+        display:none!important;
+    }
+    #desktopMap{
+        display:block!important;
+    }
+    @media (max-width: 768px) {
+        #iFrame1 {
+            display: none;
+            min-height: 400px;
+        }
+         #mobileMap{
+            display:block!important;
+        }
+        #desktopMap{
+            display:none!important;
+        }
+    }
+
 </style>
