@@ -93,16 +93,23 @@
     <div class="row">
         <div class="col-md-6">
             <!-- MAP -->
-            <div class="store_map_container">
-                <div id="mapView">
-                    
-                </div>
-                <div class="zoom_container" id="zoom_container_store">
-        		    <img id="zoom_image" src=""/>
-        		    <div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>
-            	</div>
-
+            
+            <div class="map-container"  id="desktopMap">
+                <div class="store_map_container">
+                    <div id="mapView">
+                    </div>
+                    <div class="zoom_container" id="zoom_container_store">
+            		    <img id="zoom_image" src=""/>
+            		    <div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>
+                	</div>
+                </div> 
             </div>
+            
+            <div id="mobileMap" style="display:none;">
+               <iframe src="https://mf-map.netlify.com/map?iframe=true&staging=true&subdomain=cornwall&hideStoreList=true" frameborder="0" width="100%" height="100%" id="iFrame1" sandbox="allow-top-navigation allow-scripts allow-same-origin"></iframe>
+               <img id="IE_map" src="">
+            </div>
+
         </div>
         <div class="col-md-6 border_left">
             <div id="store_details_container">
