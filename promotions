@@ -1,0 +1,74 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Promotions</h1>
+                </div>
+                <div class="col-md-6 hidden_phone">
+                    <h4 class="pull-right">Promotions</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <p id="no_promos" class="hidden_now">There are no Promotions at this time. Please check back soon.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div id="promo_container">
+            <script id="promo_template" type="x-tmpl-mustache/text">
+                <div class="col-sm-6 col-md-4">
+                    <div class="promo_img_container {{store_logo_bg}}" style="background-image: url({{image_url}})"></div>
+                    <div class="promo_content">
+                        <h2 class="promo_name"> {{name}} </h2>
+                        <p class="promo_dates"> {{dates}} </p>
+                        <a class="promo_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>
+                    </div>
+                </div>
+            </script>
+        </div>
+    </div>
+</div>
+<div id="lmgOffersWidget"></div>
+<script>
+window.lmgWidgetConfig = {
+  integration: 'JCOPEIVGdtdWo84_HNLfQY1eIC5Tlg_7hTc1jRjqbImBmIRjn-K8Hs6AvavxbWbtXo6OCkjadgthv30F1FZE5xT5jLSwSsVx2Q_LOfeidtr3htdwk1y3_UCcyAxolVuOsxgvpcA4qMLAv7PXga6g7W0nINA5WzNGmHkWYaz5b3VDzRneQ_aHGFNMXe7gND9ayMH_XfhcZH7F8xW7MfYohLus6LCBq6RN6IHDSpuQmSD4vKeHVCyKLbMzrDuUJ9fbUIJHLf_s_ewos_KYBwHAWg2',
+  collection: 'cornwall-centre', display: { header: 'Promotions on GetintheLoop', footer: { url: 'https://getintheloop.ca/deals/regina/cornwall-centre' } }, tracking: { source: 'cornwall-centre' }
+};
+</script>
+<script src="https://widget.loopmediagroup.com/js/1/tiles.js"></script>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            // var repo = getRepoDetailsByName("Events Banner");
+            // if (repo != undefined) {
+            //     var banner = getImageURL(repo.images[0].photo_url);
+            //     $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+            // }
+            
+            var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
+            var published_promos = [];
+            $.each(promotions, function(key, val){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_promos.push(val);
+                }
+            });
+            if(published_promos.length > 0){
+                renderPromotions("#promo_container","#promo_template", published_promos);
+            } else {
+                $('#no_promos').show();
+            }
+            
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
