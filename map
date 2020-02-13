@@ -216,7 +216,6 @@
         function mapLoaded (map){
             self = map.data('mapplic');
             var svg = document.getElementById('landmarks-1');
-            // console.log("svg", svg);
             
             //get floors to be visible 
             $(".mapplic-layer").show();
@@ -270,7 +269,6 @@
             }, 500);
         }
         loadMallDataCached(renderAll); 
-        // https://www.mallmaverick.com/system/site_images/photos/000/037/939/original/St.Vital_-_Map_-_Mar-21-2018.svg?1521739249
     });
     function dropPin(svgmap_region) {
         self = map.data('mapplic');
