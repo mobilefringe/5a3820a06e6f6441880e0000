@@ -204,8 +204,8 @@
             floor_2.id = "second-floor";
             floor_2.title = "Level Two";
             floor_2.map =  getSVGMapURL().split("?")[0];
-            floor_1.z_index = 1;
-            floor_1.show = true;
+            floor_2.z_index = 1;
+            floor_2.show = true;
             floor_list.push(floor_2);
             
             return floor_list;
