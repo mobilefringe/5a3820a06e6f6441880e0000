@@ -204,7 +204,7 @@
             // floor_1.map= 'https://www.mallmaverick.com/system/site_images/photos/000/061/865/original/Cornwall_Centre_-_Web_Map_-_Feb-14-2020-01.svg?1581710417'.split("?")[0];
             
             
-            floor_1.map = getRepoDetailsByName('SVG Maps')
+            floor_1.map = getRepoDetailsByName('SVG Maps').images[0].image_url;
             console.log(floor_1.map)
             
             // floor_1.map = getRepoDetailsByName('SVG Maps').split("?")[0];
