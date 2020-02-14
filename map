@@ -167,46 +167,6 @@
                 
                 
                 mall_json.levels.push(floor_1);
-                
-                
-                var floor_2 = {};
-                floor_2.id = value.id;
-                floor_2.title = value.title;
-                floor_2.map = value.map;
-                
-                floor_2.show = value.show;
-                floor_2.locations = [];
-                var stores_on_floors =  _.filter(stores, function(o) {return value.z_index === o.z_coordinate;}); // ['z_coordinate', value.z_index]);
-                _.forEach(stores_on_floors, function(val, key) {
-                    //for testing limiting the store numbers to vm
-                    var temp_val = {};
-                    temp_val.id = val.svgmap_region;
-                    temp_val.title = val.name;
-                    temp_val.about = val.description.substring(0,200);
-                    if(val.categories != null) {
-                        if(val.categories.length>1){
-                        temp_val.category = val.categories[1];
-                        }
-                        else {
-                            temp_val.category = val.categories[0];
-                        }
-                    }
-                    temp_val.link = "/stores/" + val.slug;
-                    temp_val.pin = "hidden";
-                   
-                    
-                    //get svg's wifth/height by checking the map
-                    var svg_width = 2500;
-                    var svg_height = 2500;
-
-                    temp_val.x = val.x_coordinate / svg_width;
-                    temp_val.y = val.y_coordinate / svg_height;
-                    floor_2.locations.push(temp_val);
-                });
-                
-                
-                mall_json.levels.push(floor_2);
-
             });
                      console.log('mall json', mall_json)
             
