@@ -286,7 +286,7 @@
             
             
             var mallDataJSON = JSON.parse(getStorage().mallData);
-            console.log(mallDataJSON)
+            console.log('test', mallDataJSON)
         }
         
         
