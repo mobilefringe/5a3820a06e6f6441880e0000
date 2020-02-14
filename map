@@ -162,7 +162,13 @@
                     temp_val.y = val.y_coordinate / svg_height;
                     floor_1.locations.push(temp_val);
                 });
+                
+                console.log(mall_json)
                 mall_json.levels.push(floor_1);
+                
+                
+                
+                
                 
                 
                 
