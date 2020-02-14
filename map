@@ -261,28 +261,28 @@
         //     this.floorTwo = floor_two;
         // }
         
-        // function floorList () {
-        //     var floor_list = [];
+        function floorList () {
+            var floor_list = [];
             
-        //     var floor_1 = {};
-        //     floor_1.id = "first-floor";
-        //     floor_1.title = "Level One";
-        //     floor_1.map =  getSVGMapURL().split("?")[0];
-        //     floor_1.z_index = 1;
-        //     floor_1.show = true;
-        //     floor_list.push(floor_1);
+            var floor_1 = {};
+            floor_1.id = "first-floor";
+            floor_1.title = "Level One";
+            floor_1.map =  getSVGMapURL().split("?")[0];
+            floor_1.z_index = 1;
+            floor_1.show = true;
+            floor_list.push(floor_1);
             
-        //     var floor_2 = {};
-        //     floor_2.id = "second-floor";
-        //     floor_2.title = "Level Two";
-        //     floor_2.map =  getSVGMapURL().split("?")[0];
-        //     floor_2.z_index = 1;
-        //     floor_2.show = true;
-        //     floor_list.push(floor_2);
+            var floor_2 = {};
+            floor_2.id = "second-floor";
+            floor_2.title = "Level Two";
+            floor_2.map =  getSVGMapURL().split("?")[0];
+            floor_2.z_index = 1;
+            floor_2.show = true;
+            floor_list.push(floor_2);
             
-        //     console.log(floor_list)
-        //     return floor_list;
-        // }
+            console.log(floor_list)
+            return floor_list;
+        }
         
         
         function svgList () {
