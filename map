@@ -286,9 +286,6 @@
             console.log(floor_list)
             return floor_list;
             
-            
-            var mallDataJSON = JSON.parse(getStorage().mallData);
-            console.log('test', mallDataJSON)
         }
         
         
