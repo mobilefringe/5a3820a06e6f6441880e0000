@@ -280,7 +280,7 @@
             floor_2.title = "Level Two";
             // floor_2.map =  getSVGMapURL().split("?")[0];
             floor_2.map = 'https://www.mallmaverick.com/system/site_images/photos/000/061/854/original/Cornwall_Centre_-_Web_Map_-_Feb-13-2020-02.svg?1581699143'.split("?")[0];
-            floor_2.z_index = 1;
+            floor_2.z_index = 2;
             floor_2.show = false;
             floor_list.push(floor_2);
             
