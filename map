@@ -165,7 +165,7 @@
                 mall_json.levels.push(floor_1);
             });
             
-            getSVGMap()
+            // getSVGMap()
             
             map = $('#mapplic').mapplic({
             	source: mall_json,
