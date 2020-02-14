@@ -165,6 +165,8 @@
                 mall_json.levels.push(floor_1);
             });
             
+            getSVGMap()
+            
             map = $('#mapplic').mapplic({
             	source: mall_json,
             	height: 900,
@@ -196,7 +198,9 @@
             var floor_one = "";
             var floor_two = "";
             _.forEach(svg_maps, function(value, key) {
+                
                 console.log(value)
+                
                 if(value.id == 41084) {
                     floor_one = _.split(value.image_url, '?');
                     floor_one = floor_one[0];
