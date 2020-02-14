@@ -283,7 +283,6 @@
             floor_2.show = true;
             floor_list.push(floor_2);
             
-            console.log(floor_list)
             return floor_list;
             
         }
