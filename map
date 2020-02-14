@@ -127,7 +127,7 @@
             mall_json.categories = [];
             mall_json.levels = [];
             
-            // need to add the following for each floor we want to configure.
+            // need to add the following for each floor we want to configure. the floor is set in floorList and looping over here so won't need to write for floor 2, etc.
             console.log(floorList())
             _.forEach(floorList(), function(value, key) { 
                 var floor_1 = {};
@@ -168,9 +168,6 @@
                 
                 mall_json.levels.push(floor_1);
             });
-                     console.log('mall json', mall_json)
-            
-            // getSVGMap()
             
             map = $('#mapplic').mapplic({
             	source: mall_json,
@@ -197,28 +194,7 @@
 			});
             
         }
-        
-        // gerrard
-        // function getSVGMap() {
-        //     var svg_maps = this.findRepoByName("SVG Maps").images 
-        //     var floor_one = "";
-        //     var floor_two = "";
-        //     _.forEach(svg_maps, function(value, key) {
-                
-        //         console.log(value)
-                
-        //         if(value.id == 61853) {
-        //             floor_one = _.split(value.image_url, '?');
-        //             floor_one = floor_one[0];
-        //         }
-        //         if (value.id == 61854) {
-        //             floor_two = _.split(value.image_url, '?');
-        //             floor_two = floor_two[0];
-        //         }
-        //     });
-        //     this.floorOne = floor_one;
-        //     this.floorTwo = floor_two;
-        // }
+    
         
         function floorList () {
             var floor_list = [];
