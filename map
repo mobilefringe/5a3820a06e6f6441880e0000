@@ -81,10 +81,11 @@
         height: 100%!important;
     }
     .mapplic-zoom-buttons{
-        bottom: initial!important;
-        top: 0!important;
-        left: initial!important;
-        right: 0!important;
+        /*bottom: initial!important;*/
+        /*top: 0!important;*/
+        top: 65px !important;
+        /*left: initial!important;*/
+        right: 0;
     }
     .mapplic-popup-link {
         float: left!important;
