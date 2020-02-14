@@ -202,8 +202,10 @@
                     floor_1.locations.push(temp_val);
                 });
                 
-                console.log('mall json', mall_json)
+                
                 mall_json.levels.push(floor_2);
+                
+                console.log('mall json', mall_json)
                 
                 
                 
