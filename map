@@ -271,6 +271,7 @@
             // floor_1.map =  getSVGMapURL().split("?")[0];
             floor_1.map= 'https://www.mallmaverick.com/system/site_images/photos/000/061/853/original/Cornwall_Centre_-_Web_Map_-_Feb-13-2020-01.svg?1581699109'.split("?")[0];
             floor_1.z_index = 1;
+            // floor to start with
             floor_1.show = true;
             floor_list.push(floor_1);
             
@@ -280,7 +281,7 @@
             // floor_2.map =  getSVGMapURL().split("?")[0];
             floor_2.map = 'https://www.mallmaverick.com/system/site_images/photos/000/061/854/original/Cornwall_Centre_-_Web_Map_-_Feb-13-2020-02.svg?1581699143'.split("?")[0];
             floor_2.z_index = 1;
-            floor_2.show = true;
+            floor_2.show = false;
             floor_list.push(floor_2);
             
             return floor_list;
