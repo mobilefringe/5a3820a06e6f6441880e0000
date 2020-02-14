@@ -201,8 +201,11 @@
             var floor_1 = {};
             floor_1.id = "first-floor";
             floor_1.title = "Level One";
-            // floor_1.map =  getSVGMapURL().split("?")[0];
-            floor_1.map= 'https://www.mallmaverick.com/system/site_images/photos/000/061/865/original/Cornwall_Centre_-_Web_Map_-_Feb-14-2020-01.svg?1581710417'.split("?")[0];
+            // floor_1.map= 'https://www.mallmaverick.com/system/site_images/photos/000/061/865/original/Cornwall_Centre_-_Web_Map_-_Feb-14-2020-01.svg?1581710417'.split("?")[0];
+            
+            
+            floor_1.map = getRepoDetailsByName('SVG Maps')
+            console.log(floor_1.map)
             
             // floor_1.map = getRepoDetailsByName('SVG Maps').split("?")[0];
             
