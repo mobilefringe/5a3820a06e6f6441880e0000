@@ -189,6 +189,27 @@
 			});
             
         }
+        
+        // gerrard
+        function getSVGMap() {
+            var svg_maps = this.findRepoByName("SVG Maps").images 
+            var floor_one = "";
+            var floor_two = "";
+            _.forEach(svg_maps, function(value, key) {
+                console.log(value)
+                if(value.id == 41084) {
+                    floor_one = _.split(value.image_url, '?');
+                    floor_one = floor_one[0];
+                }
+                if (value.id == 41085) {
+                    floor_two = _.split(value.image_url, '?');
+                    floor_two = floor_two[0];
+                }
+            });
+            this.floorOne = floor_one;
+            this.floorTwo = floor_two;
+        },
+        
         function floorList () {
             var floor_list = [];
             
