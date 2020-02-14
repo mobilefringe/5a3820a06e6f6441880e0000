@@ -128,7 +128,6 @@
             mall_json.levels = [];
             
             // need to add the following for each floor we want to configure. the floor is set in floorList and looping over here so won't need to write for floor 2, etc.
-            console.log(floorList())
             _.forEach(floorList(), function(value, key) { 
                 var floor_1 = {};
                 floor_1.id = value.id;
