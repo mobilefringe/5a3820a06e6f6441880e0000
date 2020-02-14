@@ -206,13 +206,9 @@
                 
                 
                 mall_json.levels.push(floor_2);
-                
-                console.log('mall json', mall_json)
-                
-                
-                
-                
+
             });
+                     console.log('mall json', mall_json)
             
             // getSVGMap()
             
