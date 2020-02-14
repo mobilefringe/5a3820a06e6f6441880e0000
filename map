@@ -208,7 +208,7 @@
             });
             this.floorOne = floor_one;
             this.floorTwo = floor_two;
-        },
+        }
         
         function floorList () {
             var floor_list = [];
