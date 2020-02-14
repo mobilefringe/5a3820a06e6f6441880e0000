@@ -84,7 +84,7 @@
         /*bottom: initial!important;*/
         /*top: 0!important;*/
         top: 65px !important;
-        /*left: initial!important;*/
+        left: initial!important;
         right: 0 !important;
     }
     .mapplic-popup-link {
