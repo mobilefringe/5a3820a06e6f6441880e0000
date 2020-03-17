@@ -3,7 +3,7 @@
         <div class="inside_banner_content">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 id="mm_page_title"></h1>
+                    <h1 class="hidden_now" id="mm_page_title"></h1>
                 </div>
             </div>
         </div>
@@ -30,6 +30,7 @@
                     $('#mm_page_content').html(data.body);
                 } else {
                     $('#mm_page_title').html(data.title);
+                    $('#mm_page_title').show();
                     $('#mm_page_content').html(data.body);
                 }
             }).fail(function(jqXHR) {
