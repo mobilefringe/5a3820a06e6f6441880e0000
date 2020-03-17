@@ -28,6 +28,7 @@
             $.getJSON(pages_json).done(function(data) {
                 if(slug.includes('cornwall-covid-19-update')) {
                     $('#mm_page_content').html(data.body);
+                    $('.inside_banner').css({"height": "106px"});
                 } else {
                     $('#mm_page_title').html(data.title);
                     $('#mm_page_title').show();
