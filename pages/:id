@@ -26,8 +26,12 @@
             prefix = get_prefix();
             var pages_json = prefix + "/pages/" + slug + ".json"
             $.getJSON(pages_json).done(function(data) {
-                $('#mm_page_title').html(data.title);
-                $('#mm_page_content').html(data.body);
+                if(slug.includes('cornwall-covid-19-update')) {
+                    $('#mm_page_content').html(data.body);
+                } else {
+                    $('#mm_page_title').html(data.title);
+                    $('#mm_page_content').html(data.body);
+                }
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
