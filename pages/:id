@@ -1,7 +1,7 @@
 <div class="inside_banner">   
     <div class="content_container">
         <div class="inside_banner_content">
-            <div class="row">
+            <div class="margin_28">
                 <div class="col-md-12">
                     <h1 class="hidden_now" id="mm_page_title"></h1>
                 </div>
