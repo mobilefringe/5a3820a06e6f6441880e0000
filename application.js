@@ -363,12 +363,12 @@ function renderPopup(){
 	        $(".custom_popup").remove();
         });
         if(popup.contest.id != null){
-            $('.custom_img').attr('src', '//mallmaverick.cdn.speedyrails.net'+ popup.photo_url);
+            $('.custom_img').attr('src', '//assets.mallmaverick.com'+ popup.photo_url);
             $('.custom_text').text(popup.description1);
             $('.p_name').text(popup.name);
         } else {
             $('.popup_form_div').css('visibility', 'hidden');
-            $('.custom_popup').css('background-image', 'url(//mallmaverick.cdn.speedyrails.net' + popup.photo_url + ')');
+            $('.custom_popup').css('background-image', 'url(//assets.mallmaverick.com' + popup.photo_url + ')');
         }
         $('#form_popup').submit(function(){
             $('#cm-name').val($('#FNAME').val() + " " + $('#LNAME').val());
