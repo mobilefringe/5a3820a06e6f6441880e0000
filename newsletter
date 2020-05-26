@@ -41,7 +41,7 @@
                 <!--<div id="RecaptchaField1"></div>-->
                 <br>
                 <!--<button class="contact_btn" data-i18n="general.submit" onclick="new Image().src='http://clickserv.basis.net/conv/c26d4c65188608f3'">SUBMIT</button>-->
-                <button type="submit" class="contact_btn">Subscribe</button>
+                <button type="submit" class="contact_btn">Submit</button>
                 <br>
                 <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
             </form>
