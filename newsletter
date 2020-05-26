@@ -26,33 +26,23 @@
             <hr class="horizontal_div show_phone">
         </div> 
         <div class="col-md-6">
-            <!--<form action="//mobilefringe.createsend.com/t/d/s/ykouu/" method="post" id="subForm">-->
-            <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A1378558D116C0DBE5E6DC0272EDED0720A1D6BF56217F5037A3347638416D1DD92D002B2A3FDD5EBAB0C9CB6EA5B8952">
-                <!--<label for="fieldEmail" style="display:none"></label>-->
-                <!--<input id="fieldEmail" name="cm-ykouu-ykouu" class="form-control" type="email" value="" placeholder="Your Email" required/> -->
-                <input autocomplete="Email" aria-label="Email" class="form-control" id="fieldEmail" maxlength="200" name="cm-ykouu-ykouu" required="" type="email">
+            <form action="//mobilefringe.createsend.com/t/d/s/ykouu/" method="post" id="subForm">
+                <label for="fieldEmail" style="display:none"></label>
+                <input id="fieldEmail" name="cm-ykouu-ykouu" class="form-control" type="email" value="" placeholder="Your Email" required/> 
                 
-                <!--<label for="agree_terms">-->
-                    <!--<input type="checkbox" class="info_check" id="agree_terms" required>-->
-                    <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox">
-                    <!--I agree to receive emails from Cornwall Centre--> <!--Change to Mall Name --><label for="cm-privacy-consent"> I agree to receive emails from Cornwall Centre</label>
-                    
-                <!--</label>-->
+                <label for="agree_terms">
+                    <input type="checkbox" class="info_check" id="agree_terms" required>
+                    I agree to receive emails from Cornwall Centre <!--Change to Mall Name -->
+                </label>
                 <!--<div id="RecaptchaField1"></div>-->
                 <br>
-                <!--<button class="contact_btn" data-i18n="general.submit" onclick="new Image().src='http://clickserv.basis.net/conv/c26d4c65188608f3'">SUBMIT</button>-->
-                <button type="submit" class="contact_btn">Submit</button>
+                <button class="contact_btn" data-i18n="general.submit" onclick="new Image().src='http://clickserv.basis.net/conv/c26d4c65188608f3'">SUBMIT</button>
                 <br>
                 <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
             </form>
-            
-            <!--<div><h1 color="#000"></h1><form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A1378558D116C0DBE5E6DC0272EDED0720A1D6BF56217F5037A3347638416D1DD92D002B2A3FDD5EBAB0C9CB6EA5B8952"><div><div><label>Email </label><input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-ykouu-ykouu" required="" type="email"></div><div><div><div><input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox"><label for="cm-privacy-consent"> I agree to receive emails from Cornwall Centre</label></div><input id="cm-privacy-consent-hidden" name="cm-privacy-consent-hidden" type="hidden" value="true"></div></div></div><button type="submit">Subscribe</button></form></div><script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>-->
-            
-            
         </div>
     </div>
 </div>
-<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
 <script>
     $(document).ready(function(e){
         init(e);
