@@ -28,16 +28,16 @@
         <div class="col-md-6">
             <!--<form action="//mobilefringe.createsend.com/t/d/s/ykouu/" method="post" id="subForm">-->
             <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A1378558D116C0DBE5E6DC0272EDED0720A1D6BF56217F5037A3347638416D1DD92D002B2A3FDD5EBAB0C9CB6EA5B8952">
-                <label for="fieldEmail" style="display:none"></label>
+                <!--<label for="fieldEmail" style="display:none"></label>-->
                 <!--<input id="fieldEmail" name="cm-ykouu-ykouu" class="form-control" type="email" value="" placeholder="Your Email" required/> -->
                 <input autocomplete="Email" aria-label="Email" class="form-control" id="fieldEmail" maxlength="200" name="cm-ykouu-ykouu" required="" type="email">
                 
-                <label for="agree_terms">
+                <!--<label for="agree_terms">-->
                     <!--<input type="checkbox" class="info_check" id="agree_terms" required>-->
                     <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox">
-                    I agree to receive emails from Cornwall Centre <!--Change to Mall Name -->
+                    <!--I agree to receive emails from Cornwall Centre--> <!--Change to Mall Name --><label for="cm-privacy-consent"> I agree to receive emails from Cornwall Centre</label>
                     
-                </label>
+                <!--</label>-->
                 <!--<div id="RecaptchaField1"></div>-->
                 <br>
                 <!--<button class="contact_btn" data-i18n="general.submit" onclick="new Image().src='http://clickserv.basis.net/conv/c26d4c65188608f3'">SUBMIT</button>-->
