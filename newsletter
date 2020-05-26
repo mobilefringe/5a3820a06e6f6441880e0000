@@ -34,13 +34,13 @@
                 
                 <label for="agree_terms">
                     <!--<input type="checkbox" class="info_check" id="agree_terms" required>-->
-                    <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" class="info_check" type="checkbox">
+                    <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox">
                     I agree to receive emails from Cornwall Centre <!--Change to Mall Name -->
                 </label>
                 <!--<div id="RecaptchaField1"></div>-->
                 <br>
                 <!--<button class="contact_btn" data-i18n="general.submit" onclick="new Image().src='http://clickserv.basis.net/conv/c26d4c65188608f3'">SUBMIT</button>-->
-                <button class="contact_btn" type="submit">SUBMIT</button>
+                <button type="submit">Subscribe</button>
                 <br>
                 <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
             </form>
